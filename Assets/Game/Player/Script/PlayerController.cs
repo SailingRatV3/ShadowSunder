@@ -1,9 +1,21 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 
 public class PlayerController : MonoBehaviour
 {
     // VAR
+    // Check VID ~7:53
+    bool IsMoving
+    {
+        set
+        {
+            isMoving = value;
+            animator.SetBool("isMoving", isMoving);
+        }
+    }
+    
     public float moveSpeed = 150f;
     public float maxSpeed = 8f;
     
@@ -13,6 +25,9 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     SpriteRenderer spriteRenderer;
     Vector2 moveInput = Vector2.zero;
+    
+    bool isMoving = false;
+    bool canMove = true;
 
     void Start()
     {
@@ -23,10 +38,60 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(moveInput != Vector2.zero)
+        if(canMove == true && moveInput != Vector2.zero)
         {
-            spriteRenderer.flipX = moveInput.x > 0;
+            // Move Anim & +Velocity
+            
+            // Moving Accelerates Player
+            // IMPORTANT: Acceleration max <= Max Speed
+            rb.linearVelocity = Vector2.ClampMagnitude(rb.linearVelocity + (moveInput * moveSpeed * Time.deltaTime), maxSpeed);
+            
+            // Looking Left or Right
+            if (moveInput.x > 0)
+            {
+                spriteRenderer.flipX = false;
+            }else if (moveInput.x < 0)
+            {
+                spriteRenderer.flipX = true;
+            }
+            IsMoving = true;
         }
+        else
+        {
+            // No Movement
+            rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, Vector2.zero, idleFriction);
+            IsMoving = false;
+        }            
+        // UpdateAnimatorParameters();
+
     }
     
+    // Input Values
+    void OnMove(InputValue value)
+    {
+        moveInput = value.Get<Vector2>();
+    }
+    
+    // play attack animation
+    void OnFire()
+    {
+        // VID 11:40
+        animator.SetTrigger("swordAttack");
+    }
+
+    void LockMovement()
+    {
+        canMove = false;
+    }
+
+    void UnlockMovement()
+    {
+        canMove = true;
+    }
+  /*  void UpdateAnimatorParameters()
+    {
+        // animator.SetFloat("moveX", moveInput.x);
+       // animator.SetFloat("moveY", moveInput.y);
+       animator.SetBool("isMoving", isMoving);
+    }*/
 }
