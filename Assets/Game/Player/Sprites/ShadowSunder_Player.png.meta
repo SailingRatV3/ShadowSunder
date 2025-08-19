@@ -1,0 +1,400 @@
+fileFormatVersion: 2
+guid: 792365600b572f54ab4cd55cf4485c6d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5539996513770916531
+    second: ShadowSunder_Player_0
+  - first:
+      213: -3413177708987887076
+    second: ShadowSunder_Player_1
+  - first:
+      213: -2624164977166346924
+    second: ShadowSunder_Player_2
+  - first:
+      213: -4939825826439803153
+    second: ShadowSunder_Player_3
+  - first:
+      213: -5348257203790279318
+    second: ShadowSunder_Player_4
+  - first:
+      213: -7034626011795845592
+    second: ShadowSunder_Player_5
+  - first:
+      213: 46186469439421141
+    second: ShadowSunder_Player_6
+  - first:
+      213: -4793036740757321172
+    second: ShadowSunder_Player_7
+  - first:
+      213: -6420641532493308013
+    second: ShadowSunder_Player_8
+  - first:
+      213: -7426972589740004606
+    second: ShadowSunder_Player_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RP_idle_01
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 2110
+        width: 301
+        height: 706
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bac7342a7502ec40800000000000000
+      internalID: 5539996513770916531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RP_idle_02
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 2110
+        width: 301
+        height: 706
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c12de7c15f4f1a0d0800000000000000
+      internalID: -3413177708987887076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RP_idle_03
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 2110
+        width: 301
+        height: 706
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4559aff4bd7159bd0800000000000000
+      internalID: -2624164977166346924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RP_walk_01
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1406
+        width: 257
+        height: 631
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee41ca4596327bb0800000000000000
+      internalID: -4939825826439803153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RP_walk_02
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 1406
+        width: 312
+        height: 631
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d08a0d86c27c5b0800000000000000
+      internalID: -5348257203790279318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RP_walk_03
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 1406
+        width: 257
+        height: 631
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e8f2fc9ecff5e90800000000000000
+      internalID: -7034626011795845592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RP_walk_04
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 702
+        width: 301
+        height: 631
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dabd58695614a000800000000000000
+      internalID: 46186469439421141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RP_walk_05
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 704
+        width: 301
+        height: 629
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a83c79a76bb7db0800000000000000
+      internalID: -4793036740757321172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RP_attack_01
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 702
+        width: 422
+        height: 642
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39fdd915b8c45e6a0800000000000000
+      internalID: -6420641532493308013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RP_attack_02
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 565
+        height: 695
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20bebf787c71ee890800000000000000
+      internalID: -7426972589740004606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RP_attack_03
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 0
+        width: 301
+        height: 704
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6dfa55ab6781147a95db21d0bfd8e7
+      internalID: -385875552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 44c18b250d7858941a40da4a9a07acd6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      RP_attack_01: -6420641532493308013
+      RP_attack_02: -7426972589740004606
+      RP_attack_03: -385875552
+      RP_idle_01: 5539996513770916531
+      RP_idle_02: -3413177708987887076
+      RP_idle_03: -2624164977166346924
+      RP_walk_01: -4939825826439803153
+      RP_walk_02: -5348257203790279318
+      RP_walk_03: -7034626011795845592
+      RP_walk_04: 46186469439421141
+      RP_walk_05: -4793036740757321172
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

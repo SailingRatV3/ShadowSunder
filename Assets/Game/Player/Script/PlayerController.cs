@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     // VAR
-    // Check VID ~7:53
+    
     bool IsMoving
     {
         set
@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
     // play attack animation
     void OnFire()
     {
-        // VID 11:40
+        // Vid : 13:31
         animator.SetTrigger("swordAttack");
     }
 
