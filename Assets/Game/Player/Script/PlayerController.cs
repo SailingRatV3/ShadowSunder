@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     // VAR
-    
+     GrappleClaw gc;
     public GameObject swordHitbox;
     Collider2D swordCollider;
     bool IsMoving
@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
        rb = GetComponent<Rigidbody2D>();
+       gc = gameObject.GetComponent<GrappleClaw>();
        animator = GetComponent<Animator>();
        spriteRenderer = GetComponent<SpriteRenderer>();
        swordCollider = swordHitbox.GetComponent<Collider2D>();
@@ -43,47 +44,56 @@ public class PlayerController : MonoBehaviour
     [Obsolete("Obsolete")]
     void FixedUpdate()
     {
-        if(canMove == true && moveInput != Vector2.zero)
-        {
-            // Move Anim & +Velocity
-            
-            // Moving Accelerates Player
-            // IMPORTANT: Acceleration max <= Max Speed
-            // rb.linearVelocity = Vector2.ClampMagnitude(rb.linearVelocity + (moveInput * moveSpeed * Time.deltaTime), maxSpeed);
-            rb.AddForce(moveInput * (moveSpeed * Time.deltaTime));
-            if (rb.velocity.magnitude > maxSpeed)
+        //if (!gc.retracting)
+        //{
+            if(canMove == true && moveInput != Vector2.zero)
             {
-               // rb.velocity = Vector2.Lerp(rb.velocity, maxSpeed, idleFriction);
-                float limitSpeed = Mathf.Lerp(rb.velocity.x, maxSpeed, idleFriction);
-                rb.velocity = rb.velocity.normalized * limitSpeed;
+                // Move Anim & +Velocity
+                
+                // Moving Accelerates Player
+                // IMPORTANT: Acceleration max <= Max Speed
+                // rb.linearVelocity = Vector2.ClampMagnitude(rb.linearVelocity + (moveInput * moveSpeed * Time.deltaTime), maxSpeed);
+                rb.AddForce(moveInput * (moveSpeed * Time.deltaTime));
+                if (rb.velocity.magnitude > maxSpeed)
+                {
+                   // rb.velocity = Vector2.Lerp(rb.velocity, maxSpeed, idleFriction);
+                    float limitSpeed = Mathf.Lerp(rb.velocity.x, maxSpeed, idleFriction);
+                    rb.velocity = rb.velocity.normalized * limitSpeed;
+                }
+                // Looking Left or Right
+                if (moveInput.x > 0)
+                {
+                    spriteRenderer.flipX = false;
+                    gameObject.BroadcastMessage("IsFacingRight", true);
+                }else if (moveInput.x < 0)
+                {
+                    spriteRenderer.flipX = true;
+                    gameObject.BroadcastMessage("IsFacingRight", false);
+                }
+                IsMoving = true;
             }
-            // Looking Left or Right
-            if (moveInput.x > 0)
+            else
             {
-                spriteRenderer.flipX = false;
-                gameObject.BroadcastMessage("IsFacingRight", true);
-            }else if (moveInput.x < 0)
-            {
-                spriteRenderer.flipX = true;
-                gameObject.BroadcastMessage("IsFacingRight", false);
-            }
-            IsMoving = true;
-        }
-        else
-        {
-            // No Movement
-           // Don't need this line if using angular damp
-            rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, Vector2.zero, idleFriction);
-            IsMoving = false;
-        }            
-        // UpdateAnimatorParameters();
+                // No Movement
+               // Don't need this line if using angular damp
+                rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, Vector2.zero, idleFriction);
+                IsMoving = false;
+            }            
+            // UpdateAnimatorParameters();
+
         
-    }
+            
+        }
+       // else
+        //{
+            //rb.velocity = Vector2.zero;
+        //}
+   // }
     
     // Input Values
     void OnMove(InputValue value)
     {
-        moveInput = value.Get<Vector2>();
+      moveInput = value.Get<Vector2>();
     }
     
     // play attack animation

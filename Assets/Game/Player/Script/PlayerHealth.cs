@@ -1,7 +1,27 @@
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour, IDamageable
 {
+    public Slider healthSlider;
+    public Slider easeHealthSlider;
+    public Text healthText;
+    public float maxHealth = 3f;
+    private float lerpSpeed = 0.05f;
+    private void Update()
+    {
+        if (healthSlider.value != _health)
+        {
+            healthSlider.value = _health;
+        }
+
+        if (healthSlider.value != easeHealthSlider.value)
+        {
+            easeHealthSlider.value = Mathf.Lerp(easeHealthSlider.value, _health, lerpSpeed);
+        }
+    }
+
     public float Health
     {
         get
