@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 4e154eb2750a45b40b368e7dc6b04344
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8586664639276723229
+    second: ShadowSunder_StormMage_0
+  - first:
+      213: 6601081217044405019
+    second: ShadowSunder_StormMage_1
+  - first:
+      213: -1289226275089117210
+    second: ShadowSunder_StormMage_2
+  - first:
+      213: 1321490025715899652
+    second: ShadowSunder_StormMage_3
+  - first:
+      213: -543305925445230166
+    second: ShadowSunder_StormMage_4
+  - first:
+      213: 5138622570136709144
+    second: ShadowSunder_StormMage_5
+  - first:
+      213: 2872062001004532972
+    second: ShadowSunder_StormMage_6
+  - first:
+      213: -3235574467982726655
+    second: ShadowSunder_StormMage_7
+  - first:
+      213: 4456914864280508647
+    second: ShadowSunder_StormMage_8
+  - first:
+      213: -3194540014992227027
+    second: ShadowSunder_StormMage_9
+  - first:
+      213: -2418916727234767917
+    second: ShadowSunder_StormMage_10
+  - first:
+      213: -4410311634341596375
+    second: ShadowSunder_StormMage_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: StormMage_Idle_01
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 2132
+        width: 488
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e3d082310a06d880800000000000000
+      internalID: -8586664639276723229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StormMage_Idle_02
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 2110
+        width: 488
+        height: 706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b5f639460cb9b50800000000000000
+      internalID: 6601081217044405019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StormMage_Idle_03
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 2154
+        width: 488
+        height: 662
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef863e888fbb1ee0800000000000000
+      internalID: -1289226275089117210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StormMage_Attack_01
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1428
+        width: 532
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d94054d20e65210800000000000000
+      internalID: 1321490025715899652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StormMage_Attack_02
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1406
+        width: 532
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa1e87da32ac578f0800000000000000
+      internalID: -543305925445230166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StormMage_Attack_03
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1450
+        width: 532
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818adcf700e005740800000000000000
+      internalID: 5138622570136709144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StormMage_Attack_04
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 724
+        width: 576
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4d5ce4c2d9bd720800000000000000
+      internalID: 2872062001004532972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StormMage_Attack_05
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 702
+        width: 576
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ae0970a2ee813d0800000000000000
+      internalID: -3235574467982726655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StormMage_Attack_06
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 746
+        width: 576
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8199f84742add30800000000000000
+      internalID: 4456914864280508647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StormMage_Hit_01
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 20
+        width: 488
+        height: 631
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d250e9128c6baa3d0800000000000000
+      internalID: -3194540014992227027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StormMage_Hit_02
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 0
+        width: 488
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3dbe37d084e6ed0800000000000000
+      internalID: -2418916727234767917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StormMage_Hit_03
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 0
+        width: 488
+        height: 695
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 923fb467fec6bc2c0800000000000000
+      internalID: -4410311634341596375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9fd03dc9705658c44b18b5c5a3057cce
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      StormMage_Attack_01: 1321490025715899652
+      StormMage_Attack_02: -543305925445230166
+      StormMage_Attack_03: 5138622570136709144
+      StormMage_Attack_04: 2872062001004532972
+      StormMage_Attack_05: -3235574467982726655
+      StormMage_Attack_06: 4456914864280508647
+      StormMage_Hit_01: -3194540014992227027
+      StormMage_Hit_02: -2418916727234767917
+      StormMage_Hit_03: -4410311634341596375
+      StormMage_Idle_01: -8586664639276723229
+      StormMage_Idle_02: 6601081217044405019
+      StormMage_Idle_03: -1289226275089117210
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
