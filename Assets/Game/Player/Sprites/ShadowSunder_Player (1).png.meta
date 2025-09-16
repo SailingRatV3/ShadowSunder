@@ -1,0 +1,623 @@
+fileFormatVersion: 2
+guid: b38b65b98cbafc148b1d3d942d2b9bc9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 988327669066075904
+    second: ShadowSunder_Player (1)_0
+  - first:
+      213: 2902912073661690613
+    second: ShadowSunder_Player (1)_1
+  - first:
+      213: -5127004119374370791
+    second: ShadowSunder_Player (1)_2
+  - first:
+      213: 523005223121388784
+    second: ShadowSunder_Player (1)_3
+  - first:
+      213: 1523655675737691780
+    second: ShadowSunder_Player (1)_4
+  - first:
+      213: 4759130319301003927
+    second: ShadowSunder_Player (1)_5
+  - first:
+      213: 7638132488557193233
+    second: ShadowSunder_Player (1)_6
+  - first:
+      213: 6029962461497292452
+    second: ShadowSunder_Player (1)_7
+  - first:
+      213: 38570596586871669
+    second: ShadowSunder_Player (1)_8
+  - first:
+      213: 7767519009533892677
+    second: ShadowSunder_Player (1)_9
+  - first:
+      213: 1974814742211179086
+    second: ShadowSunder_Player (1)_10
+  - first:
+      213: 8883546522515091047
+    second: ShadowSunder_Player (1)_11
+  - first:
+      213: -3631939141803705471
+    second: ShadowSunder_Player (1)_12
+  - first:
+      213: -2824797461945659408
+    second: ShadowSunder_Player (1)_13
+  - first:
+      213: -1133538840207681307
+    second: ShadowSunder_Player (1)_14
+  - first:
+      213: -3576946687951946536
+    second: ShadowSunder_Player (1)_15
+  - first:
+      213: -6452841973702992267
+    second: ShadowSunder_Player (1)_16
+  - first:
+      213: 1828278516145066134
+    second: ShadowSunder_Player (1)_17
+  - first:
+      213: 7716401664316608062
+    second: ShadowSunder_Player (1)_18
+  - first:
+      213: 6722900686349557605
+    second: ShadowSunder_Player (1)_19
+  - first:
+      213: -5052678122055415701
+    second: ShadowSunder_Player (1)_20
+  - first:
+      213: -9045648235326321172
+    second: ShadowSunder_Player (1)_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShadowSunder_Player (1)_0
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2119
+        width: 226
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f8f5457ce37bd00800000000000000
+      internalID: 988327669066075904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player (1)_1
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 2119
+        width: 226
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f23cc49627394820800000000000000
+      internalID: 2902912073661690613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player (1)_2
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 2119
+        width: 226
+        height: 474
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918e9bedae839d8b0800000000000000
+      internalID: -5127004119374370791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 2119
+        width: 193
+        height: 474
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f403dbba76124700800000000000000
+      internalID: 523005223121388784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player (1)_4
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1589
+        width: 234
+        height: 474
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4865a50b3cc152510800000000000000
+      internalID: 1523655675737691780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player (1)_5
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1589
+        width: 193
+        height: 474
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a4ab97fc3db0240800000000000000
+      internalID: 4759130319301003927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player (1)_6
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1589
+        width: 226
+        height: 474
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11862df9709100a60800000000000000
+      internalID: 7638132488557193233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player (1)_7
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1059
+        width: 226
+        height: 532
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a67c7e19eabea350800000000000000
+      internalID: 6029962461497292452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player (1)_8
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 1589
+        width: 193
+        height: 474
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57bd554d0c7098000800000000000000
+      internalID: 38570596586871669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player (1)_9
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1059
+        width: 317
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5489c559265cbcb60800000000000000
+      internalID: 7767519009533892677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player (1)_10
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1059
+        width: 424
+        height: 524
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e42b3b68b83f76b10800000000000000
+      internalID: 1974814742211179086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player (1)_11
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 1059
+        width: 226
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e2b24ce72b84b70800000000000000
+      internalID: 8883546522515091047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SD_01
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 530
+        width: 234
+        height: 491
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bf3f6e792c89dc0800000000000000
+      internalID: -3631939141803705471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SD_02
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 527
+        width: 209
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ffcd4ebcad4cc8d0800000000000000
+      internalID: -2824797461945659408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SD_03
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 529
+        width: 184
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6901e41bf995f5910800000000000000
+      internalID: 1828278516145066134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SD_04
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 529
+        width: 184
+        height: 497
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e03d13e6a261b60800000000000000
+      internalID: 7716401664316608062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SD_05
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 184
+        height: 467
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f58160e8a8c4d50800000000000000
+      internalID: 6722900686349557605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SD_06
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 0
+        width: 184
+        height: 497
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68cf7aa40841e9b0800000000000000
+      internalID: -5052678122055415701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SD_07
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 0
+        width: 184
+        height: 497
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced4c3a1bd6677280800000000000000
+      internalID: -9045648235326321172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: de0db914418071a4ba2008d4832164f0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SD_01: -3631939141803705471
+      SD_02: -2824797461945659408
+      SD_03: 1828278516145066134
+      SD_04: 7716401664316608062
+      SD_05: 6722900686349557605
+      SD_06: -5052678122055415701
+      SD_07: -9045648235326321172
+      ShadowSunder_Player (1)_0: 988327669066075904
+      ShadowSunder_Player (1)_1: 2902912073661690613
+      ShadowSunder_Player (1)_10: 1974814742211179086
+      ShadowSunder_Player (1)_11: 8883546522515091047
+      ShadowSunder_Player (1)_14: -1133538840207681307
+      ShadowSunder_Player (1)_15: -3576946687951946536
+      ShadowSunder_Player (1)_16: -6452841973702992267
+      ShadowSunder_Player (1)_2: -5127004119374370791
+      ShadowSunder_Player (1)_3: 523005223121388784
+      ShadowSunder_Player (1)_4: 1523655675737691780
+      ShadowSunder_Player (1)_5: 4759130319301003927
+      ShadowSunder_Player (1)_6: 7638132488557193233
+      ShadowSunder_Player (1)_7: 6029962461497292452
+      ShadowSunder_Player (1)_8: 38570596586871669
+      ShadowSunder_Player (1)_9: 7767519009533892677
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

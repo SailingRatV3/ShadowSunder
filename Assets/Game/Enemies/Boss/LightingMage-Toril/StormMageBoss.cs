@@ -9,11 +9,15 @@ public class StormMageBoss : MonoBehaviour
     Rigidbody2D rb;
     DamageableCharacters damageableCharacter;
     RadialAttack shootRadial;
+    BossLightningStrike bossLightningStrike;
+    PlayerController player;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();    
         damageableCharacter = GetComponent<DamageableCharacters>();
         shootRadial = GetComponent<RadialAttack>();
+        bossLightningStrike = GetComponent<BossLightningStrike>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     void Update()
@@ -22,8 +26,16 @@ public class StormMageBoss : MonoBehaviour
 
         if (damageableCharacter.Targetable && detectionZone.detectedObjects.Count > 0)
         {
+            // radial Projectile
+            /*
             shootRadial.isShooting = true;
             StartCoroutine(shootRadial.ShootRadialBursts());
+            */
+            
+            // testing lighningstrike
+            bossLightningStrike.TriggerLightningStrike(player.transform);
+           // StartCoroutine(bossLightningStrike.LightningStrikeCoroutine(player.transform));
+            
             
             // Calc direction to target 0 
             //Vector2 direction = (detectionZone.detectedObjects[0].transform.position - transform.position).normalized;

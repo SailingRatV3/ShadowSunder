@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     // VAR
+    
      GrappleClaw gc;
     public GameObject swordHitbox;
     Collider2D swordCollider;
@@ -101,6 +102,8 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetTrigger("swordAttack");
     }
+
+    
 
     void LockMovement()
     {
