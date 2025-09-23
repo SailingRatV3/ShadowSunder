@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 public class DamageableCharacters : MonoBehaviour, IDamageable
 {
+    [Header("Damageable Characters Settings")]
      public bool disableSimulation = false;
      public float invincibilityTime = 0.25f;
      public bool isInvinciblityEnable = false;
@@ -10,6 +12,20 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
     Collider2D physicsCollider;
     bool isAlive = true;
     private float invincibilityTimeElapse = 0f;
+    
+    public event Action OnDamage;
+    public event Action OnDeath;
+
+    public void TakeDamage(float damage)
+    {
+        Health -= damage;
+        OnDamage?.Invoke();
+        if (Health <= 0)
+        {
+            OnDeath?.Invoke();
+        }
+    }
+    
     public float Health
     {
         set

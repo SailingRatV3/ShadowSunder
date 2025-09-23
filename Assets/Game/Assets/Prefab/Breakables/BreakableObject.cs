@@ -2,7 +2,14 @@ using UnityEngine;
 
 public class BreakableObject : MonoBehaviour, IDamageable
 {
+    [Header("HP")]
     public float hitPoints = 2;
+    
+    [Header("Item Drop")]
+    public GameObject itemDropPrefab;
+    public bool hasItemInside = false;
+    public float maxDropChance = 0.5f;
+    public float minDropChance = 0.1f;
     public float Health { set
         {
             
@@ -53,8 +60,33 @@ public class BreakableObject : MonoBehaviour, IDamageable
         Health -= damage;
     }
 
+    private void DropItemBasedOnPlayerHealth()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null || itemDropPrefab == null)
+        {
+            return;
+        }
+        
+        PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+        if(playerHealth == null)
+            return;
+
+        float healthPercent = playerHealth.HealthPercent;
+        float dropChance = Mathf.Lerp(maxDropChance, minDropChance, healthPercent);
+
+        if (Random.value < dropChance)
+        {
+            Instantiate(itemDropPrefab, player.transform.position, Quaternion.identity);
+        }
+    }
     public void OnObjectDestroyed()
     {
+        if (hasItemInside && itemDropPrefab != null)
+        {
+            Instantiate(itemDropPrefab, transform.position, Quaternion.identity);
+        }
+        
         Destroy(gameObject); 
     }
 }

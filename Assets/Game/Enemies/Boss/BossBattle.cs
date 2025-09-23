@@ -83,7 +83,9 @@ public class BossBattle : MonoBehaviour
     private void StartBattle()
     {
         Debug.Log("StartBattle");
+        stormMageBoss.StartBossPhase();
         StartNextStage();
+       // StartNextStage();
         // SpawnEnemy
         // Note: Have when the boss spawn enemy attack spawn enemies
         OnBossStarted?.Invoke(this, EventArgs.Empty);
