@@ -57,6 +57,7 @@ public class RadialAttack : MonoBehaviour
 
    public IEnumerator ShootRadialBursts()
     {
+        /*
         timeBetweenBurst += Time.deltaTime;
         if (timeBetweenBurst > maxTime)
         {
@@ -66,12 +67,17 @@ public class RadialAttack : MonoBehaviour
                        // Debug.Log("Shoot Radial Bursts " + i);
                         ShootRadial();
                         yield return new WaitForSeconds(timeBetweenBurst);
-                    }
+                    }*/
+        for (int i = 0; i < burstCount; i++)
+        {
+            ShootRadial();
+            yield return new WaitForSeconds(timeBetweenBurst);
         }
+    }
         //isShooting = true;
         
         //isShooting = false;
-    }
+    
 
    // Spiral Pattern
     public void ShootSpiral()

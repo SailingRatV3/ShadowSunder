@@ -1,18 +1,39 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SwordHitbox : MonoBehaviour
 {
+    [Header("Sword Settings")]
     public float swordDamage = 1f;
     public float knockbackForce = 1000f;
    public Collider2D swordCollider;
    // Facing Direction
+   [Header("Direction Offsets")]
    public Vector3 faceRight = new Vector3(2.03f, 0f, 0f);
    public Vector3 faceLeft = new Vector3(-2.03f, 0f, 0f);
+   public Vector3 faceUp = new Vector3(0f, 2.03f, 0f);
+   public Vector3 faceDown = new Vector3(0f, -2.03f, 0f);
+   
+   [Header("Rotation Angles")]
+   public float upAngle = 90f;
+   public float downAngle = -90f;
+   public float leftAngle = 180f;
+   public float rightAngle = 0f;
+
+   
    
    private List<GameObject> hitEnemies = new List<GameObject>();
+   
+   public enum AttackDirection
+   {
+       Left,
+       Right,
+       Up,
+       Down
+   }
     void Start()
    {
      //  swordCollider = GetComponent<Collider2D>();
@@ -92,6 +113,29 @@ public class SwordHitbox : MonoBehaviour
         yield return null; // Wait for one frame to ensure physics engine catches the change.
         yield return new WaitForFixedUpdate(); // Wait for one fixed frame
         // Now the collider is properly enabled and ready to trigger again.
+    }
+
+    public void SetAttackDirection(AttackDirection dir)
+    {
+        switch (dir)
+        {
+            case AttackDirection.Right:
+                transform.localPosition = faceRight;
+                transform.localRotation = Quaternion.Euler(0,0, rightAngle);
+                break;
+            case AttackDirection.Left:
+                transform.localPosition = faceLeft;
+                transform.localRotation = Quaternion.Euler(0,0, leftAngle);
+                break;
+            case AttackDirection.Up:
+                transform.localPosition = faceUp;
+                transform.localRotation = Quaternion.Euler(0,0, upAngle);
+                break;
+            case AttackDirection.Down:
+                transform.localPosition = faceDown;
+                transform.localRotation = Quaternion.Euler(0,0, downAngle);
+                break;
+        }
     }
     
 }

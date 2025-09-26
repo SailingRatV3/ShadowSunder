@@ -22,12 +22,19 @@ public class ShadowDive : MonoBehaviour
     
     [Header("Settings")] 
     [SerializeField] private Collider2D lightCollider; // The raycasting if player is in the light
+
+    [SerializeField] private Collider2D playerCollider;
     
     [Header("Lights")] 
     [SerializeField] private float lightDetectionThreshold = 0.1f; // sensitivity light detect
     [SerializeField] private string lightTag = "LightSource"; // Light2D Tag private
     List<Light2D> detectedLights = new List<Light2D>();
 
+    [Header("Layers")]
+    [SerializeField] private String normalLayerName = "Player";
+    [SerializeField] private String shadowLayerName = "PlayerShadow";
+    private int normalLayer;
+    private int shadowLayer;
     private bool IsPlayerInShadow()
     {
         return true; // In shadow unless enter light
@@ -49,6 +56,11 @@ public class ShadowDive : MonoBehaviour
     private void Start() { 
         
         animator = GetComponent<Animator>(); // Cache all Light2D sources with the given tag
+       
+        normalLayer = LayerMask.NameToLayer(normalLayerName);
+        shadowLayer = LayerMask.NameToLayer(shadowLayerName);
+        Debug.Log("Normal Layer: " + normalLayer);     
+        Debug.Log("Shadow Layer: " + shadowLayer);
         GameObject[] lightObjects = GameObject.FindGameObjectsWithTag(lightTag);
         foreach (GameObject lightObj in lightObjects)
         {
@@ -94,6 +106,9 @@ public class ShadowDive : MonoBehaviour
         wasHoldingE = isHoldingE;
     } 
     private void EnterShadowForm() { 
+        SetLayerRecursively(gameObject, shadowLayer);
+        playerCollider.enabled = false;
+        
         Debug.Log("[STATE] Entering Shadow Form"); 
         isShadowForm = true; ignoreNextExit = true; 
         animator.ResetTrigger(ExitShadowTrigger); // Extra safe
@@ -105,6 +120,9 @@ public class ShadowDive : MonoBehaviour
     {
         yield return new WaitForSeconds(Delay); ignoreNextExit = false;
     } private void ExitShadowForm() { 
+        SetLayerRecursively(gameObject, normalLayer);
+        playerCollider.enabled = true;
+        
         Debug.Log("[STATE] Exiting Shadow Form"); 
         isShadowForm = false; 
         animator.SetTrigger(ExitShadowTrigger); 
@@ -182,6 +200,16 @@ public class ShadowDive : MonoBehaviour
             Debug.Log("[LIGHT] Pushed player away from light!"); }
     } 
    
+    // Change Child Layers
+    void SetLayerRecursively(GameObject obj, int newLayer)
+    {
+        obj.layer = newLayer;
+        foreach (Transform child in obj.transform)
+        {
+            SetLayerRecursively(child.gameObject, newLayer);
+        }
+    }
+    
     }
     
 

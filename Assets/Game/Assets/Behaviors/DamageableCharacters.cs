@@ -12,7 +12,8 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
     Collider2D physicsCollider;
     bool isAlive = true;
     private float invincibilityTimeElapse = 0f;
-    
+    [Header("Knockback Settings")]
+    public bool canRecieveKnockback = true;
     public event Action OnDamage;
     public event Action OnDeath;
 
@@ -96,8 +97,8 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
         }
     }
 
-    float _health = 3;
-    float _maxHealth = 3;
+   public float _health = 3;
+    public float _maxHealth = 3;
      bool _targetable = true;
      bool _invincible = false;
     public void Start()
@@ -116,7 +117,11 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
         {
            Health -= damage; 
            // apply knockback force
-           rb.AddForce(knockback, ForceMode2D.Impulse);
+           if (canRecieveKnockback)
+           {
+               rb.AddForce(knockback, ForceMode2D.Impulse);
+
+           }
 
            if (isInvinciblityEnable)
            {
@@ -166,6 +171,14 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
             {
                 Invincible = false;
             }
+        }
+    }
+
+    public void Die()
+    {
+        if (OnDeath != null)
+        {
+            OnDeath.Invoke();
         }
     }
     

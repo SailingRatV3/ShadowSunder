@@ -1,8 +1,11 @@
+using System;
 using UnityEngine;
 
 public class ProjectileControl : MonoBehaviour
 {
     public float speed = 10f;
+    public float knockbackForce = 10f;
+    public float damage = 1f;
     private Vector2 moveDirection;
     private Rigidbody2D rb;
 
@@ -31,5 +34,22 @@ public class ProjectileControl : MonoBehaviour
             rb.linearVelocity = moveDirection * speed;
         }
         Destroy(gameObject, lifetime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        // Only hit if it's the player
+        if (col.CompareTag("Player"))
+        {
+            IDamageable damageable = col.GetComponent<IDamageable>();
+            if (damageable != null)
+            {
+                Vector2 direction = (Vector2)(col.transform.position - transform.position).normalized;
+                Vector2 knockback = direction * knockbackForce;
+                damageable.OnHit(damage, knockback);
+            }
+
+            Destroy(gameObject); // Destroy projectile on impact
+        }
     }
 }

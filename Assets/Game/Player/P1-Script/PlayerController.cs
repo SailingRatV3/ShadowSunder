@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     // VAR
     
      GrappleClaw gc;
+     SwordHitbox swordHitboxScript;
     public GameObject swordHitbox;
     Collider2D swordCollider;
     bool IsMoving
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
        animator = GetComponent<Animator>();
        spriteRenderer = GetComponent<SpriteRenderer>();
        swordCollider = swordHitbox.GetComponent<Collider2D>();
+       swordHitboxScript = swordHitbox.GetComponent<SwordHitbox>();
     }
 
     [Obsolete("Obsolete")]
@@ -100,6 +102,26 @@ public class PlayerController : MonoBehaviour
     // play attack animation
     void OnFire()
     {
+        //9/24 NEW
+        SwordHitbox.AttackDirection attackDir;
+        if (moveInput.y > 0.5f)
+        {
+            attackDir = SwordHitbox.AttackDirection.Up;
+        }else if (moveInput.y < -0.5f)
+        {
+            attackDir = SwordHitbox.AttackDirection.Down;
+
+        }else if (spriteRenderer.flipX)
+        {
+            attackDir = SwordHitbox.AttackDirection.Left;
+        }
+        else
+        {
+            attackDir = SwordHitbox.AttackDirection.Right;
+        }
+         swordHitboxScript.SetAttackDirection(attackDir);
+         swordHitboxScript.StartAttack();
+        
         animator.SetTrigger("swordAttack");
     }
 

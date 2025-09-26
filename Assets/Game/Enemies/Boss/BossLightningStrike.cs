@@ -12,6 +12,7 @@ public class BossLightningStrike : MonoBehaviour
     public float warningDuration = 0.1f;
     public float strikeRadius = 1f;
     public int damage = 2;
+    public float knockbackForce = 1f;
     bool isStriking = false;
 
      void Start()
@@ -56,6 +57,13 @@ public class BossLightningStrike : MonoBehaviour
         if (distance <= strikeRadius)
         {
             // Apply damage to player
+            IDamageable damageable = player.GetComponent<IDamageable>();
+            if (damageable != null)
+            {
+                Vector2 direction = (Vector2)(player.transform.position - transform.position).normalized;
+                Vector2 knockback = direction * knockbackForce;
+                damageable.OnHit(damage, knockback);
+            }
         }
         
         yield return new WaitForSeconds(warningDuration);
