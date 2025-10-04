@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5660938736309888177}
   - component: {fileID: 2057697019479449749}
   - component: {fileID: 5674842344047556622}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 2368691975650159595}
   - component: {fileID: 8715926869145116773}
   - component: {fileID: 2409081642734586952}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DetectionZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8046018118819302702}
@@ -169,7 +169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2389481537699678735}
   - component: {fileID: 622662623489540851}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: EaseHealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 6528083956349252746}
   - component: {fileID: 1086907726799021262}
   - component: {fileID: 447018158626209549}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: OBJ_Dog
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -332,7 +332,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4854345307612975610, guid: 303fcb1fea8468b4e81585c05d55ce25, type: 3}
+  m_Sprite: {fileID: 224473303075231194, guid: 9d767d83240348444a9be145067e4e46, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -491,7 +491,7 @@ GameObject:
   - component: {fileID: 5009317320452495110}
   - component: {fileID: 5996189146464865442}
   - component: {fileID: 1238289632595102872}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -590,7 +590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7597814963437099086}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -625,7 +625,7 @@ GameObject:
   - component: {fileID: 4473317950517809808}
   - component: {fileID: 8952935191045319139}
   - component: {fileID: 146168334330802961}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -700,7 +700,7 @@ GameObject:
   - component: {fileID: 3643909000404358293}
   - component: {fileID: 2674909909956584736}
   - component: {fileID: 3535398012474358921}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -774,7 +774,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6902180904968604777}
   - component: {fileID: 43141188816628799}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -864,7 +864,7 @@ GameObject:
   - component: {fileID: 5963702987681630939}
   - component: {fileID: 1363143396484817265}
   - component: {fileID: 3300207120718205524}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}

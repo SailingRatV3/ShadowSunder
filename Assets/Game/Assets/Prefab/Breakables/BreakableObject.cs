@@ -1,7 +1,22 @@
+using System;
+using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class BreakableObject : MonoBehaviour, IDamageable
 {
+    [Header("FX")]
+    [SerializeField] private ParticleSystem psDestroy;
+    [SerializeField] private ParticleSystem psHit;
+    private Vector2 lastHitDirection = Vector2.down; // Default
+    
+    [Header("Knockback")]
+    public float knockbackForce = 5f;
+    public bool hasKnockback = false;
+    public float knockbackDuration = 0.2f;
+    private Coroutine knockbackRoutine;
+    Rigidbody2D rb;
+    
     [Header("HP")]
     public float hitPoints = 2;
     
@@ -27,7 +42,8 @@ public class BreakableObject : MonoBehaviour, IDamageable
                 Debug.Log("Triggering hit animation");
                 // Make Hit Animation: player hit animation
                 // animator.SetTrigger("hit");
-                
+                PlayDirectionalParticles(psHit,lastHitDirection);
+                GetComponent<DamageFlash>().Flash();
             }
             
 
@@ -40,6 +56,7 @@ public class BreakableObject : MonoBehaviour, IDamageable
                 // isAlive = false;
                 // Make Death Animation: play animation before destroy
                // animator.SetBool("isAlive", false);
+               PlayParticles(psDestroy);
                // Targetable = false; 
                 //Destroy(gameObject);
                 OnObjectDestroyed();
@@ -52,11 +69,21 @@ public class BreakableObject : MonoBehaviour, IDamageable
     public bool Targetable { get; set; }
     public void OnHit(float damage, Vector2 knockback)
     {
+        lastHitDirection = knockback.normalized;
         Health -= damage;
+        if (hasKnockback)
+        {
+            if (knockbackRoutine != null)
+                StopCoroutine(knockbackRoutine);
+
+            knockbackRoutine = StartCoroutine(ApplyKnockback(knockback.normalized * knockbackForce));
+
+        }
     }
 
     public void OnHit(float damage)
     {
+        lastHitDirection = Vector2.down; // Default direction
         Health -= damage;
     }
 
@@ -85,8 +112,35 @@ public class BreakableObject : MonoBehaviour, IDamageable
         if (hasItemInside && itemDropPrefab != null)
         {
             Instantiate(itemDropPrefab, transform.position, Quaternion.identity);
+            
         }
         
         Destroy(gameObject); 
+    }
+
+    void PlayParticles(ParticleSystem ps)
+    {
+        ParticleSystem effect = Instantiate(ps, transform.position, transform.rotation);
+       effect.Emit(1);
+       // effect.Play(); 
+      //  Destroy(this.gameObject, effect.main.duration + effect.main.startLifetime.constantMax);
+    }
+
+    void PlayDirectionalParticles(ParticleSystem ps, Vector2 direction)
+    {
+       Quaternion rotation = Quaternion.LookRotation(Vector3.forward, direction.normalized);
+        ParticleSystem effect = Instantiate(ps, transform.position, rotation);
+        effect.Emit(1);
+    }
+    private IEnumerator ApplyKnockback(Vector2 velocity)
+    {
+        rb.linearVelocity = velocity;
+        yield return new WaitForSeconds(knockbackDuration);
+        rb.linearVelocity = Vector2.zero;
+    }
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
     }
 }

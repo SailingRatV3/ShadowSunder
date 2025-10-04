@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7593507399726843696}
   - component: {fileID: 2211099175272197768}
   - component: {fileID: 5490813086322408088}
+  - component: {fileID: 3417195603801901707}
+  - component: {fileID: 341577739963758341}
   m_Layer: 0
   m_Name: BreakableWall
   m_TagString: Untagged
@@ -101,6 +103,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20704dd2d9d3fab499eba5b71efe16f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  psDestroy: {fileID: 2035979326920742795, guid: bdbc163b16ee4154b870b387ba072bbc, type: 3}
+  psHit: {fileID: 5971634962207375587, guid: b779cbf0518708f41871159f09203ee0, type: 3}
+  knockbackForce: 5
+  hasKnockback: 0
+  knockbackDuration: 0.2
   hitPoints: 2
   itemDropPrefab: {fileID: 0}
   hasItemInside: 0
@@ -152,3 +159,44 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3417195603801901707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7189053542570698899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05464c9679fc4cf469d2f487baa74a0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashColor: {r: 0.6528301, g: 0.6528301, b: 0.6528301, a: 1}
+  flashDuration: 0.2
+--- !u!50 &341577739963758341
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7189053542570698899}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

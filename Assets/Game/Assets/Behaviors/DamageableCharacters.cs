@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class DamageableCharacters : MonoBehaviour, IDamageable
 {
+    
     [Header("Damageable Characters Settings")]
      public bool disableSimulation = false;
      public float invincibilityTime = 0.25f;

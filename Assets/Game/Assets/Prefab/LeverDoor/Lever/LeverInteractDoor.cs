@@ -7,6 +7,8 @@ public class LeverInteractDoor : MonoBehaviour
     private IDoor door;
    // bool canOpen = false;
    bool leverOpen = false;
+  [SerializeField] public Teleporter teleporter; // Change this 
+   public bool triggerEvent = false; // Change this to an event system
    Animator animator;
    [SerializeField] InputActionReference interactAction;
    [SerializeField] private GameObject doorGameObject;
@@ -57,9 +59,15 @@ public class LeverInteractDoor : MonoBehaviour
     }
     
 
+    
+
     void TriggerLever()
     {
         animator.SetBool("EnableLever", true);
         door.OpenDoor();
+        if (triggerEvent)
+        {
+             teleporter.SetActive(true);
+        }
     }
 }

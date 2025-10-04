@@ -154,6 +154,7 @@ GameObject:
   - component: {fileID: 4272260051367982514}
   - component: {fileID: 3211857964913803237}
   - component: {fileID: 2340893686329912127}
+  - component: {fileID: 4713561595060026515}
   m_Layer: 7
   m_Name: OBJ_Player
   m_TagString: Player
@@ -576,6 +577,20 @@ MonoBehaviour:
   maxHealth: 3
   damageableCharacter: {fileID: 7754918743332737211}
   _health: 3
+--- !u!114 &4713561595060026515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4552533619935470929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee4f1a7b9765ad4aa54740b80a7d2e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPickupCount: 0
+  healAmount: 1
 --- !u!1 &7221858116794894520
 GameObject:
   m_ObjectHideFlags: 0

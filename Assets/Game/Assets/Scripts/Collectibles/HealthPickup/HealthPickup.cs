@@ -4,10 +4,11 @@ using System.Collections;
 using System;
 public class HealthPickup : MonoBehaviour, ICollectible
 {
-    [Header("SFX")]
+    [Header("FX")]
     public ParticleSystem ps;
-    [Header("Healing")]
-    public float healAmount = 1f;
+    
+    //[Header("Healing")]
+    //public float healAmount = 1f;
     
     public static event Action OnHealthCollected;
 
@@ -16,15 +17,17 @@ public class HealthPickup : MonoBehaviour, ICollectible
         
         if (other.gameObject.CompareTag("Player"))
         {
-            PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
+            // PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
+            PlayerInventory playerInventory = other.gameObject.GetComponent<PlayerInventory>();
+            if (playerInventory != null)
             {
-                if (playerHealth.IsFullHealth)
+                playerInventory.AddHealthPickup();
+               /* if (playerHealth.IsFullHealth)
                 {
                     return;
-                }
+                }*/
                 
-                playerHealth.Heal(healAmount);
+                // playerHealth.Heal(healAmount);
                 
                 this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 ParticleSystem effect = Instantiate(ps, transform.position, transform.rotation);

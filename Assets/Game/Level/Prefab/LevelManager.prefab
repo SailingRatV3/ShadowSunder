@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4249848357681770872}
   - component: {fileID: 3941648196254001880}
   - component: {fileID: 9088413986481769235}
+  - component: {fileID: 4644289521085925161}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -66,3 +67,16 @@ MonoBehaviour:
   tweenDuration: 0.5
   bossPanelRect: {fileID: 0}
   moveSpeed: 5
+--- !u!114 &4644289521085925161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303934708444384525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d3e241321b0fc54f91fe5e632a884c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPickuptext: {fileID: 0}

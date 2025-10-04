@@ -606,7 +606,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 2.01
+  m_Radius: 4.5
 --- !u!114 &3239141338556323501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,7 +744,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!58 &8099600466067758734
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -854,7 +854,8 @@ MonoBehaviour:
   firePoint: {fileID: 2961559267129778758}
   projectilePrefab: {fileID: 203197618936627433, guid: 2d59185938df67844bba1addf93985d6, type: 3}
   detectionZone: {fileID: 3239141338556323501}
-  wakeUpRange: 10
+  wakeUpRange: 26.99
+  fireRange: 7
   fireRate: 5
   fireCooldown: 1.5
 --- !u!1 &7960952836826865711

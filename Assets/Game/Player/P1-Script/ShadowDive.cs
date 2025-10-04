@@ -43,10 +43,12 @@ public class ShadowDive : MonoBehaviour
     private void OnEnable()
     {
         shadowDiveAction.Enable();
+        shadowDiveAction.performed += OnShadowDivePressed;
     }
 
     private void OnDisable()
     {
+        shadowDiveAction.performed -= OnShadowDivePressed;
         shadowDiveAction.Disable();
     } 
     private void Awake()
@@ -73,8 +75,8 @@ public class ShadowDive : MonoBehaviour
 
     private void Update()
     {
-        float rawInput = shadowDiveAction.ReadValue<float>();
-        bool isHoldingE = rawInput > 0.1f;
+       
+        
         bool isInLight = IsInLightRange();
 
        // Debug.Log($"[STATE] InLight: {isInLight} | ShadowForm: {isShadowForm} | KeyHeld: {isHoldingE}");
@@ -85,25 +87,12 @@ public class ShadowDive : MonoBehaviour
             Debug.Log("[LIGHT] Player entered light while in Shadow Form");
             PushPlayerBackFromLight();
             ExitShadowForm();
-            wasHoldingE = isHoldingE;
-            return;
+           
         }
 
-        // Enter shadow form if not already in it and not in light
-        if (isHoldingE && !isShadowForm && !isInLight)
-        {
-            Debug.Log("[INPUT] Entering Shadow Form");
-            EnterShadowForm();
-        }
+        
 
-        // Exit on key release
-        if (!isHoldingE && wasHoldingE && isShadowForm)
-        {
-            Debug.Log("[INPUT] Released key, exiting Shadow Form");
-            ExitShadowForm();
-        }
-
-        wasHoldingE = isHoldingE;
+        
     } 
     private void EnterShadowForm() { 
         SetLayerRecursively(gameObject, shadowLayer);
@@ -207,6 +196,29 @@ public class ShadowDive : MonoBehaviour
         foreach (Transform child in obj.transform)
         {
             SetLayerRecursively(child.gameObject, newLayer);
+        }
+    }
+    
+    private void OnShadowDivePressed(InputAction.CallbackContext context)
+    {
+        bool isInLight = IsInLightRange();
+
+        if (isShadowForm)
+        {
+            Debug.Log("[TOGGLE] Toggling OFF shadow form");
+
+            ExitShadowForm();
+        }
+        else
+        {
+            if (isInLight)
+            {
+                Debug.Log("[BLOCKED] Cannot enter shadow form in light.");
+                return;
+            }
+
+            Debug.Log("[TOGGLE] Toggling ON shadow form");
+            EnterShadowForm();
         }
     }
     
