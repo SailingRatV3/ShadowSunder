@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3941648196254001880}
   - component: {fileID: 9088413986481769235}
   - component: {fileID: 4644289521085925161}
+  - component: {fileID: 9175425502129699209}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -46,7 +47,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e14b03836ecb6cf4593cd0f9e63657b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settingsPanel: {fileID: 0}
+  resumeButton: {fileID: 0}
+  restartButton: {fileID: 0}
+  settingsButton: {fileID: 0}
+  quitButton: {fileID: 0}
+  usePauseAction: {fileID: 5922895033735902873, guid: 0cad8afddbec92047ae6bb67bd471566, type: 3}
+  pauseMenuPanel: {fileID: 0}
   isNewGame: 1
+  playerRespawnManager: {fileID: 0}
 --- !u!114 &9088413986481769235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,3 +89,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPickuptext: {fileID: 0}
+--- !u!114 &9175425502129699209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303934708444384525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b7367a6b8d190448dba9b3e980f2bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialPanel: {fileID: 0}
+  fadeDuration: 1

@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DamageableCharacters : MonoBehaviour, IDamageable
@@ -8,6 +10,8 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
      public bool disableSimulation = false;
      public float invincibilityTime = 0.25f;
      public bool isInvinciblityEnable = false;
+     private SpriteRenderer spriteRenderer;
+     private Coroutine invincibilityFlashCoroutine;
     Animator animator;
     Rigidbody2D rb;
     Collider2D physicsCollider;
@@ -15,9 +19,11 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
     private float invincibilityTimeElapse = 0f;
     [Header("Knockback Settings")]
     public bool canRecieveKnockback = true;
+    
     public event Action OnDamage;
     public event Action OnDeath;
-
+   
+    [SerializeField] private CameraShakeManager cameraShakeManager;
     public void TakeDamage(float damage)
     {
         Health -= damage;
@@ -43,8 +49,10 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
             Debug.Log($"{gameObject.name} new Health: {_health}");
 
             if (_health > 0)
-            {
-                Debug.Log("Triggering hit animation");
+            { 
+                cameraShakeManager.TriggerShakeByName("Hit");
+
+             //   Debug.Log("Triggering hit animation");
                 // Make Hit Animation: player hit animation
                 animator.SetTrigger("hit");
                // animator.SetBool("isAlive", true);
@@ -55,10 +63,11 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
 
             if (_health <= 0)
             {
-                Debug.Log("Health is zero. Setting isAlive = false");
+            //    Debug.Log("Health is zero. Setting isAlive = false");
                 _health = 0;
                 isAlive = false;
                // Make Death Animation: play animation before destroy
+               cameraShakeManager.TriggerShakeByName("Hit");
               animator.SetBool("isAlive", false);
               Targetable = false; 
               //Destroy(gameObject);
@@ -76,12 +85,38 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
         } set
         {
            _invincible = value;
+           
            if (_invincible == true)
            {
                invincibilityTimeElapse = 0f;
+               physicsCollider.enabled = false; // Disable hitbox
+
+               if (invincibilityFlashCoroutine != null)
+                   StopCoroutine(invincibilityFlashCoroutine);
+
+               invincibilityFlashCoroutine = StartCoroutine(InvincibilityFlash());
+           }
+           else
+           {
+               physicsCollider.enabled = true; // Re-enable hitbox
+
+               if (invincibilityFlashCoroutine != null)
+               {
+                   StopCoroutine(invincibilityFlashCoroutine);
+                   invincibilityFlashCoroutine = null;
+               }
+
+               // Ensure sprite is fully visible
+               if (spriteRenderer != null)
+               {
+                   var color = spriteRenderer.color;
+                   color.a = 1f;
+                   spriteRenderer.color = color;
+               }
+           }
            }
         }
-    }
+    
 
     public bool Targetable
     {
@@ -108,6 +143,7 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
         animator.SetBool("isAlive", true);
         rb = GetComponent<Rigidbody2D>();
         physicsCollider = GetComponent<Collider2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
     
 // Interface
@@ -120,8 +156,9 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
            // apply knockback force
            if (canRecieveKnockback)
            {
+               
                rb.AddForce(knockback, ForceMode2D.Impulse);
-
+               
            }
 
            if (isInvinciblityEnable)
@@ -143,7 +180,7 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
         {
             //Debug.Log("Dog Hit " + damage);
             Health -= damage;
-            
+            //cameraShakeManager.TriggerShakeByName("Hit");
             if (isInvinciblityEnable)
             {
                 // activate invincibility + timer
@@ -180,6 +217,23 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
         if (OnDeath != null)
         {
             OnDeath.Invoke();
+        }
+    }
+    
+    private IEnumerator InvincibilityFlash()
+    {
+        float flashInterval = 0.1f;
+
+        while (Invincible)
+        {
+            if (spriteRenderer != null)
+            {
+                var color = spriteRenderer.color;
+                color.a = (color.a == 1f) ? 0.2f : 1f; // Toggle between faded and visible
+                spriteRenderer.color = color;
+            }
+
+            yield return new WaitForSeconds(flashInterval);
         }
     }
     

@@ -10,7 +10,7 @@ public class PlayerRespawnManager : MonoBehaviour
     void Start()
     {
         //  uiManager = GetComponent<UIManager>();
-        reloadMenu.SetActive(false);
+//        reloadMenu.SetActive(false);
         if (SaveSystem.HasCheckpoint())
         {
             transform.position = SaveSystem.LoadCheckpoint();
@@ -31,6 +31,7 @@ public class PlayerRespawnManager : MonoBehaviour
        // reloadPanelAnim();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    
     
     // Call this on Player Death (playerRespawnManager.OnPlayerDeath();
     public void OnPlayerDeath()

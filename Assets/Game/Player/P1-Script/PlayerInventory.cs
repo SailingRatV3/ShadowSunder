@@ -34,7 +34,7 @@ public class PlayerInventory : MonoBehaviour
 
     private void Update()
     {
-        throw new NotImplementedException();
+      //  throw new NotImplementedException();
     }
 
     public void AddHealthPickup()
@@ -51,7 +51,7 @@ public class PlayerInventory : MonoBehaviour
             healthPickupCount--;
             onInventoryChanged?.Invoke(healthPickupCount);
         }
-        // Add: Else text goes red and shakes
+        // Add:  text goes red and shakes
     }
     
     private void OnHeal(InputAction.CallbackContext context)

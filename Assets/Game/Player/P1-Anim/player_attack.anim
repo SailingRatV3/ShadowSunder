@@ -31,7 +31,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.25
+        time: 0.18333334
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -40,7 +40,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.5
+        time: 0.36666667
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -61,9 +61,9 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: -6420641532493308013, guid: 792365600b572f54ab4cd55cf4485c6d, type: 3}
-    - time: 0.25
+    - time: 0.18333334
       value: {fileID: -7426972589740004606, guid: 792365600b572f54ab4cd55cf4485c6d, type: 3}
-    - time: 0.5
+    - time: 0.36666667
       value: {fileID: -385875552, guid: 792365600b572f54ab4cd55cf4485c6d, type: 3}
     attribute: m_Sprite
     path: 
@@ -104,7 +104,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.51666665
+    m_StopTime: 0.38333336
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -134,7 +134,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.25
+        time: 0.18333334
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -143,7 +143,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.5
+        time: 0.36666667
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -170,8 +170,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.5
+  - time: 0.36666667
     functionName: UnlockMovement
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.36666667
+    functionName: EndSwing
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

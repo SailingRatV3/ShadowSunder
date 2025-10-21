@@ -196,6 +196,7 @@ MonoBehaviour:
   invincibilityTime: 0.25
   isInvinciblityEnable: 0
   canRecieveKnockback: 1
+  cameraShakeManager: {fileID: 0}
   _health: 6
   _maxHealth: 6
 --- !u!114 &5029515287941137123
@@ -241,7 +242,13 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  restPositions: {fileID: 0}
+  centerPosition: {fileID: 0}
+  barrierObject: {fileID: 0}
+  lightSpawnPoints: []
+  lightPrefab: {fileID: 0}
+  pushbackForce: 500
+  pushbackPosition: {fileID: 0}
+  knockbackCooldown: 0.5
 --- !u!114 &61275350367882425
 MonoBehaviour:
   m_ObjectHideFlags: 0

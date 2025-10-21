@@ -105,6 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   psDestroy: {fileID: 2035979326920742795, guid: bdbc163b16ee4154b870b387ba072bbc, type: 3}
   psHit: {fileID: 5971634962207375587, guid: b779cbf0518708f41871159f09203ee0, type: 3}
+  cameraShakeManager: {fileID: 8162843768540481221, guid: d7dd6ba972958b3459cba7d99ecb7d14, type: 3}
   knockbackForce: 5
   hasKnockback: 0
   knockbackDuration: 0.2

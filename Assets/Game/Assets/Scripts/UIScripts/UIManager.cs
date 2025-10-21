@@ -35,12 +35,12 @@ public class UIManager : MonoBehaviour
 
    public void moveBossPanel()
     {
-        StopAllCoroutines();  // Stop any movement coroutines
+        StopAllCoroutines();  
         StartCoroutine(MovePanelSmoothly(targetPosition));
     }
     public void resetBossPanel()
     {
-        StopAllCoroutines();  // Stop any movement coroutines
+        StopAllCoroutines();  
         StartCoroutine(MovePanelSmoothly(originalPosition));
     }
 

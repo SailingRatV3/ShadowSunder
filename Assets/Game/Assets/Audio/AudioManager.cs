@@ -34,7 +34,8 @@ public class AudioManager : MonoBehaviour
     {
         // health sound
         // PlayAudioClip(healthSound);
-        audioSource.PlayOneShot(healthSound);
+       // audioSource.PlayOneShot(healthSound);
+        SoundFXManager.instance.PlayeSoundFXClip(healthSound, transform, 1f);
         
     }
 }

@@ -555,7 +555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2659518041785465395
 Transform:
   m_ObjectHideFlags: 0
@@ -819,6 +819,7 @@ MonoBehaviour:
   invincibilityTime: 0.25
   isInvinciblityEnable: 0
   canRecieveKnockback: 0
+  cameraShakeManager: {fileID: 8162843768540481221, guid: d7dd6ba972958b3459cba7d99ecb7d14, type: 3}
   _health: 3
   _maxHealth: 3
 --- !u!114 &4512747261997799254

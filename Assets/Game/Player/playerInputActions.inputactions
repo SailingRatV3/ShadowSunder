@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "playerInputActions",
     "maps": [
         {
@@ -63,6 +64,15 @@
                     "name": "Heal",
                     "type": "Button",
                     "id": "6ce12719-3b42-450b-a87d-64518182d814",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "e12ef79e-5991-463d-bbd4-5ecbecec354d",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -243,6 +253,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Heal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e53471af-30f8-41ee-9d12-e98b3579d6f4",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

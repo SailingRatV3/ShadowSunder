@@ -84,8 +84,8 @@ public class BossBattle : MonoBehaviour
         stormMageBoss.StartBossPhase();
         StartNextStage();
        // StartNextStage();
-        // SpawnEnemy
-        // Note: Have when the boss spawn enemy attack spawn enemies
+        // SpawnLights
+        // Note: Have when the boss spawn Lights
         OnBossStarted?.Invoke(this, EventArgs.Empty);
     }
 

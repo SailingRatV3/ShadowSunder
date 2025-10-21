@@ -96,23 +96,23 @@ public class SwordHitbox : MonoBehaviour
     {
         Debug.Log("StartAttack called: clearing hitEnemies list");
         hitEnemies.Clear();
-        // Optionally enable the collider here if you disable it outside attack time
+        // enable the collider here if you disable it outside attack time
         //swordCollider.enabled = true;
          StartCoroutine(EnableColliderForAttack());
     }
 
     public void EndAttack()
     {
-        // Optionally disable collider to avoid stray hits
+        // disable collider to avoid stray hits
          swordCollider.enabled = false;
     }
     
     private IEnumerator EnableColliderForAttack()
     {
         swordCollider.enabled = true; // Enable the collider just before the attack.
-        yield return null; // Wait for one frame to ensure physics engine catches the change.
-        yield return new WaitForFixedUpdate(); // Wait for one fixed frame
-        // Now the collider is properly enabled and ready to trigger again.
+        yield return null; 
+        yield return new WaitForFixedUpdate(); 
+        
     }
 
     public void SetAttackDirection(AttackDirection dir)

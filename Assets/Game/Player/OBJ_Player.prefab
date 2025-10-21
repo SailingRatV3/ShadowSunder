@@ -366,6 +366,7 @@ MonoBehaviour:
   moveSpeed: 600
   maxSpeed: 10
   idleFriction: 0.9
+  comboResetTime: 1
 --- !u!114 &7754918743332737211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +383,7 @@ MonoBehaviour:
   invincibilityTime: 0.2
   isInvinciblityEnable: 1
   canRecieveKnockback: 1
+  cameraShakeManager: {fileID: 8162843768540481221, guid: d7dd6ba972958b3459cba7d99ecb7d14, type: 3}
   _health: 3
   _maxHealth: 3
 --- !u!120 &679272207790088792
@@ -591,6 +593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPickupCount: 0
   healAmount: 1
+  useHealAction: {fileID: 0}
 --- !u!1 &7221858116794894520
 GameObject:
   m_ObjectHideFlags: 0

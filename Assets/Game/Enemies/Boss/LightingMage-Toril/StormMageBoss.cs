@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
+using Random = UnityEngine.Random;
 
 public class StormMageBoss : MonoBehaviour
 {
@@ -10,16 +13,33 @@ public class StormMageBoss : MonoBehaviour
     public float knockbackForce = 300f;
     public float movementSpeed = 2f; // Boss Movement
     public UIManager uiManager;
+    public ShadowDive shadowDive;
     
     [Header("Boss Fight Settings")]
+    // First Phase
     public DetectionZone detectionZone;
-   // public float lightningStrikeHealthThresholf = 2f;
+   
     [Range(0f, 1f)]
     public float lightningStrikeHealthThreshold = 0.5f;
     public int hitsBeforeRadialAttack = 3;
     public float restDuration = 3f;
     public Transform[] movePositions;
-    public Transform restPositions;
+    // Second Phase
+    public Transform centerPosition;
+    public GameObject barrierObject; 
+    public List<Transform> lightSpawnPoints; 
+    public GameObject lightPrefab;
+    public float pushbackForce = 500f;
+   
+    
+    private List<GameObject> spawnedLights = new List<GameObject>();
+    private bool barrierBroken = false;
+    private bool hasSpawnedLights = false;
+    
+    [Header("Knockback Settings")]
+    private Dictionary<Collider2D, float> knockbackCooldowns = new Dictionary<Collider2D, float>();
+    public float knockbackCooldown = 0.5f;
+    public float knockbackMultiplier = 0.5f;
     
     Rigidbody2D rb;
     DamageableCharacters damageableCharacter;
@@ -40,12 +60,17 @@ public class StormMageBoss : MonoBehaviour
     private bool pendingRadialAttack = false;
     private bool isWaitingAfterMove = false;
     private bool isDead = false;
+    private bool isReturningToCenter = false;
     private enum BossPhase
     {
         Inactive,
         Phase1,
         LightningStrike,
+        BarrierBreakSequence01,
+        LightningSetup,
+        WaitingLightHit,
         RadialAttack,
+        Phase2,
         Resting,
         Dead
     } 
@@ -53,20 +78,21 @@ public class StormMageBoss : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();  
-       // rb.isKinematic = true;  // manually move
-       // rb.simulated = false;   // Preventing physics interference
+       
         healthCharacter = GetComponent<CharacterHealth>();
         damageableCharacter = GetComponent<DamageableCharacters>();
         shootRadial = GetComponent<RadialAttack>();
         bossLightningStrike = GetComponent<BossLightningStrike>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-
-        damageableCharacter.OnDamage += HandleBossDamaged;
+        shadowDive = GameObject.FindGameObjectWithTag("Player").GetComponent<ShadowDive>();
+        
         damageableCharacter.OnDeath += HandleBossDeath;
     }
 
     void Update()
     {
+        
+        
         //Debug.Log($"Phase: {currentPhase}, IsDead: {isDead}");
         if (!isDead && damageableCharacter._health <= 0)
         {
@@ -83,6 +109,9 @@ public class StormMageBoss : MonoBehaviour
                 break;
             case BossPhase.Phase1:
                 HandlePhase1();
+                break; 
+            case BossPhase.Phase2:
+                HandlePhase2();
                 break;
             case BossPhase.LightningStrike:
                 HandleLightningPhase();
@@ -93,6 +122,13 @@ public class StormMageBoss : MonoBehaviour
                 { 
                     StartCoroutine(DoRadialAttack());
                 }
+                break;
+           
+            case BossPhase.LightningSetup:
+                StartCoroutine(SetupLightningPhase());
+                break;
+            case BossPhase.BarrierBreakSequence01:
+                StartCoroutine(HandleBarrierBreakSequence());
                 break;
             case BossPhase.Resting:
                 restTimer -= Time.deltaTime;
@@ -108,32 +144,16 @@ public class StormMageBoss : MonoBehaviour
         }
         
         
-        // Collider2D detectedObject0 = detectionZone.detectedObjects[0];
+        
 
         if (damageableCharacter.Targetable && detectionZone.detectedObjects.Count > 0)
         {
             uiManager.moveBossPanel();
-            // radial Projectile
-            /*
-            shootRadial.isShooting = true;
-            StartCoroutine(shootRadial.ShootRadialBursts());
-            */
             
-            // testing lighningstrike
-           // bossLightningStrike.TriggerLightningStrike(player.transform);
-           // StartCoroutine(bossLightningStrike.LightningStrikeCoroutine(player.transform));
-            
-            
-            // Calc direction to target 0 
-            //Vector2 direction = (detectionZone.detectedObjects[0].transform.position - transform.position).normalized;
-            
-            // move to first detected object
-           // rb.AddForce(direction * (movementSpeed * Time.deltaTime));
         }
-        else
-        {
-            // shootRadial.isShooting = false;
-        }
+        
+        
+        
     }
     
     void OnDrawGizmos()
@@ -142,6 +162,27 @@ public class StormMageBoss : MonoBehaviour
         Gizmos.DrawWireSphere(currentTargetPosition, 1f);
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, 1f);
+    }
+    
+    IEnumerator ReturnToCenter()
+    {
+        isReturningToCenter = true;
+
+        float distance = Vector2.Distance(transform.position, centerPosition.position);
+        while (distance > 0.05f)
+        {
+            Vector2 direction = ((Vector2)centerPosition.position - rb.position).normalized;
+            rb.linearVelocity = direction * movementSpeed;
+
+            yield return null;
+
+            distance = Vector2.Distance(transform.position, centerPosition.position);
+        }
+
+        
+
+        rb.linearVelocity = Vector2.zero; 
+        isReturningToCenter = false;
     }
 
     public void StartBossPhase()
@@ -168,9 +209,10 @@ public class StormMageBoss : MonoBehaviour
           //  Debug.Log("Is Moving");
             Vector2 newPos = Vector2.MoveTowards(rb.position, currentTargetPosition, movementSpeed * Time.deltaTime);
             rb.MovePosition(newPos);
-            //Vector2 direction = (currentTargetPosition - (Vector2)transform.position).normalized;
-         //   rb.linearVelocity = direction * movementSpeed;
-         //rb.AddForce(direction * (movementSpeed * Time.deltaTime));
+            
+            
+            
+            
         // Debug.Log($"Target: {currentTargetPosition}, Current: {rb.position}");
             if (Vector2.Distance(rb.position, currentTargetPosition) < 0.5f)
             {
@@ -191,7 +233,7 @@ public class StormMageBoss : MonoBehaviour
         // Check Health
         if (!isDead && currentPhase != BossPhase.LightningStrike && healthPercent<= lightningStrikeHealthThreshold)
         {
-            currentPhase = BossPhase.LightningStrike;
+            currentPhase = BossPhase.LightningSetup;
         }
     }
 
@@ -218,15 +260,14 @@ public class StormMageBoss : MonoBehaviour
             shootRadial.isShooting = false;
         }
         isAttacking = false;
-       // currentPhase = BossPhase.Phase1;
-        // yield return null;
+       
     }
 
     void HandleLightningPhase()
     {
         if (isDead) return;
         Debug.Log("Handling Lightning Phase");
-      //  rb.linearVelocity = Vector2.zero;
+      
         if (!isAttacking)
         {
             StartCoroutine(DoLightningPhase());
@@ -235,17 +276,18 @@ public class StormMageBoss : MonoBehaviour
 
     IEnumerator DoLightningPhase()
     {
-        Debug.Log("Doing Lightning Phase");
+        // Debug.Log("Doing Lightning Phase");
         if(isDead) yield break;
         
         isAttacking = true;
         bossLightningStrike.TriggerLightningStrike(player.transform);
+        
         yield return new WaitForSeconds(2f); // Lightning Animation
         
         if(isDead) yield break;
         
         restTimer = restDuration;
-        currentPhase = BossPhase.Phase1;
+        currentPhase = BossPhase.LightningStrike;
         isAttacking = false;
     }
 
@@ -271,11 +313,19 @@ public class StormMageBoss : MonoBehaviour
 
     void HandleBossDamaged()
     {
-        Debug.Log("Handle Boss Damaged");
         timesHit++;
+        Debug.Log($"Boss Damaged | Barrier Active: {barrierObject.activeSelf} | IsRadialAttacking: {isRadialAttacking} | IsAttacking: {isAttacking} | IsDead: {isDead}");
+        
+        if (barrierObject.activeSelf && !isRadialAttacking && !isDead)
+        {
+            Debug.Log("Boss inside barrier took damage. Reacting with radial attack.");
+            StartCoroutine(ReactWithRadialAttack());
+            return; 
+        }
+
+        
         if (timesHit >= hitsBeforeRadialAttack)
         {
-            
             timesHit = 0;
             if (isMoving)
             {
@@ -284,23 +334,53 @@ public class StormMageBoss : MonoBehaviour
             else
             {
                 currentPhase = BossPhase.RadialAttack;
-
             }
         }
+    }
+    IEnumerator ReactWithRadialAttack()
+    {
+        Debug.Log("Starting ReactWithRadialAttack");
+        isRadialAttacking = true;
+        isAttacking = true;
+
+        if (shootRadial != null)
+        {
+            Debug.Log("Calling ShootRadialBursts");
+            shootRadial.isShooting = true;
+            yield return StartCoroutine(shootRadial.ShootRadialBursts());
+            shootRadial.isShooting = false;
+        }
+        else
+        {
+            Debug.LogWarning("shootRadial is null!");
+        }
+
+        Debug.Log("Finishing ReactWithRadialAttack");
+
+        isAttacking = false;
+        isRadialAttacking = false;
     }
 
     void HandleBossDeath()
     {
         isDead = true;
-        Debug.Log("Handle Boss Death");
         currentPhase = BossPhase.Dead;
-        //rb.linearVelocity = Vector2.zero;
+    
         shootRadial.isShooting = false;
         StopAllCoroutines();
+    
+        damageableCharacter.OnDamage -= HandleBossDamaged;
+
+        Debug.Log("Handle Boss Death");
         // Defeated Animation
         // Ending Cutscene
     }
-    
+
+    void HandlePhase2()
+    {
+        currentPhase = BossPhase.Phase2;
+       
+    }
     void OnCollisionEnter2D(Collision2D col)
     {
         
@@ -309,14 +389,171 @@ public class StormMageBoss : MonoBehaviour
         if (damageable != null)
         {
             
-            // Vector3 parentPosition = gameObject.GetComponentInParent<Transform>().position;
-            Vector3 parentPosition = transform.position; // Get sprite orgin position
+            Vector3 parentPosition = transform.position; 
             Vector2 direction = (Vector2) (collider.gameObject.transform.position - transform.position).normalized; // normalized to not change the magnitude
+           
             Vector2 knockback = direction * knockbackForce;
                   
-            damageable.OnHit(damage, knockback); // implement OnHit
+            damageable.OnHit(damage, knockback); 
 
+           
+            
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D col)
+    {
+        Collider2D collider = col.collider;
+        IDamageable damageable = collider.GetComponent<IDamageable>();
+
+        if (damageable != null)
+        {
+            if (!knockbackCooldowns.ContainsKey(collider))
+            {
+                knockbackCooldowns[collider] = 0f;
+            }
+
+            if (Time.time >= knockbackCooldowns[collider])
+            {
+                Vector2 knockbackDir;
+
+                if (rb.linearVelocity.magnitude > 0.1f)
+                {
+                    knockbackDir = rb.linearVelocity.normalized; 
+                }
+                else
+                {
+                    knockbackDir = (collider.transform.position - transform.position).normalized;
+                }
+
+                Vector2 knockback = knockbackDir * knockbackForce;
+                damageable.OnHit(damage, knockback);
+
+                knockbackCooldowns[collider] = Time.time + knockbackCooldown;
+            }
         }
     }
     
+    IEnumerator SetupLightningPhase()
+    {
+        currentPhase = BossPhase.Inactive; 
+        isAttacking = true;
+        
+        // Push Player
+        if (player != null  && !hasSpawnedLights) 
+        {
+           
+        }
+        
+        // Move to center
+        while (Vector2.Distance(transform.position, centerPosition.position) > 0.1f)
+        {
+            rb.MovePosition(Vector2.MoveTowards(rb.position, centerPosition.position, movementSpeed * Time.deltaTime));
+            yield return null;
+        }
+
+        damageableCharacter.canRecieveKnockback = false;
+
+        // Spawn Lights
+        if (!hasSpawnedLights)
+        {
+            foreach (var spawnPoint in lightSpawnPoints)
+            {
+                GameObject light = Instantiate(lightPrefab, spawnPoint.position, Quaternion.identity);
+                spawnedLights.Add(light);
+            }
+
+            shadowDive.RefreshLightList();
+            hasSpawnedLights = true;
+        }
+        
+
+        // Activate Boss Barrier
+        barrierObject.SetActive(true);
+        Debug.Log("Barrier enabled: " + barrierObject.activeSelf);
+        damageableCharacter.Targetable = true;
+
+        yield return new WaitForSeconds(1.5f);
+        currentPhase = BossPhase.Phase2;
+
+
+        damageableCharacter.OnDamage += HandleBossDamaged;
+
+
+        StartCoroutine(Phase2ProjectileRoutine());
+        isAttacking = false;
+        
+       
+    }
+    
+    
+    
+    public void OnBarrierBrokenByLight()
+    {
+        if (currentPhase != BossPhase.WaitingLightHit) return;
+
+        barrierBroken = true;
+        currentPhase = BossPhase.BarrierBreakSequence01;
+    }
+    
+    IEnumerator HandleBarrierBreakSequence()
+    {
+        isAttacking = true;
+
+        // Disable barrier
+        barrierObject.SetActive(false);
+        damageableCharacter.Targetable = true;
+
+        yield return new WaitForSeconds(0.5f);
+
+        // If player is in the center, push them back
+
+        yield return new WaitForSeconds(1f);
+
+        // Pull lights to boss or reset them
+        foreach (var light in spawnedLights)
+        {
+            if (light != null)
+            {
+                
+                StartCoroutine(MoveObjectToTarget(light.transform, transform.position));
+            }
+        }
+
+        yield return new WaitForSeconds(2f);
+
+        // Reactivate barrier
+        barrierObject.SetActive(true);
+        Debug.Log("Barrier enabled: " + barrierObject.activeSelf);
+        damageableCharacter.Targetable = false;
+
+        // Begin lightning strike attacks
+        currentPhase = BossPhase.LightningStrike;
+        isAttacking = false;
+    }
+    
+    IEnumerator MoveObjectToTarget(Transform obj, Vector3 target)
+    {
+        while (Vector2.Distance(obj.position, target) > 0.1f)
+        {
+            obj.position = Vector2.MoveTowards(obj.position, target, 5f * Time.deltaTime);
+            yield return null;
+        }
+
+       
+    }
+
+    IEnumerator Phase2ProjectileRoutine()
+    {
+        while (currentPhase == BossPhase.Phase2 && !isDead)
+        {
+            if (!isAttacking && !isRadialAttacking)
+            {
+                Debug.Log("Phase2: Shooting projectiles");
+                yield return ShootAtPlayer(); 
+            }
+
+            yield return new WaitForSeconds(5f); // Wait seconds between attacks
+        }
+    }
 }

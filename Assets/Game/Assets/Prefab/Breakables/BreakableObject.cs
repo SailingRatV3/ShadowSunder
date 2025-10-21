@@ -9,6 +9,7 @@ public class BreakableObject : MonoBehaviour, IDamageable
     [SerializeField] private ParticleSystem psDestroy;
     [SerializeField] private ParticleSystem psHit;
     private Vector2 lastHitDirection = Vector2.down; // Default
+    [SerializeField] private CameraShakeManager cameraShakeManager;
     
     [Header("Knockback")]
     public float knockbackForce = 5f;
@@ -25,6 +26,10 @@ public class BreakableObject : MonoBehaviour, IDamageable
     public bool hasItemInside = false;
     public float maxDropChance = 0.5f;
     public float minDropChance = 0.1f;
+    
+    public bool isWall = false;
+    public BreakableWall breakableWall;
+    public SpriteRenderer roomShade;
     public float Health { set
         {
             
@@ -42,6 +47,7 @@ public class BreakableObject : MonoBehaviour, IDamageable
                 Debug.Log("Triggering hit animation");
                 // Make Hit Animation: player hit animation
                 // animator.SetTrigger("hit");
+                cameraShakeManager.TriggerShakeByName("Hit");
                 PlayDirectionalParticles(psHit,lastHitDirection);
                 GetComponent<DamageFlash>().Flash();
             }
@@ -56,10 +62,28 @@ public class BreakableObject : MonoBehaviour, IDamageable
                 // isAlive = false;
                 // Make Death Animation: play animation before destroy
                // animator.SetBool("isAlive", false);
+               
+               if (hasKnockback)
+               { 
+                   cameraShakeManager.TriggerShakeByName("Wall");
+               }
+               else
+               {
+                   cameraShakeManager.TriggerShakeByName("Hit");
+
+               }
                PlayParticles(psDestroy);
                // Targetable = false; 
                 //Destroy(gameObject);
-                OnObjectDestroyed();
+                if (isWall)
+                {
+                    breakableWall.FadeOutAndDisable(roomShade, 0.5f);
+                }
+                else
+                {
+                                                        
+                }
+                OnObjectDestroyed(); 
             }
         }
         get => hitPoints;
@@ -114,8 +138,9 @@ public class BreakableObject : MonoBehaviour, IDamageable
             Instantiate(itemDropPrefab, transform.position, Quaternion.identity);
             
         }
-        
+       
         Destroy(gameObject); 
+        
     }
 
     void PlayParticles(ParticleSystem ps)

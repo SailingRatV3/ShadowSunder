@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -17,7 +19,14 @@ public class UIInventory : MonoBehaviour
     }
     private void UpdateUI(int count)
     {
-        healthPickuptext.text = count.ToString();
+        StartCoroutine(DelayedTextUpdate(count));
+    }
+
+    private IEnumerator DelayedTextUpdate(int count)
+    {
+        yield return null; // wait for next frame
+        if (healthPickuptext != null)
+            healthPickuptext.text = count.ToString();
     }
     
 }

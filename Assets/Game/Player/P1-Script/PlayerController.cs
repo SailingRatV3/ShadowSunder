@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isMoving", isMoving);
         }
     }
-    
+    [Header(("Movement"))]
     public float moveSpeed = 500f;
     public float maxSpeed = 8f;
     
@@ -33,6 +33,17 @@ public class PlayerController : MonoBehaviour
     
     bool isMoving = false;
     bool canMove = true;
+    
+    // Swinging side to side
+    private bool isSwingRightToLeft = true;
+    private bool isSwinging = false;
+    private bool queuedSwing = false;
+    // Timed Swings
+    private int comboStep = 0;
+    private float comboResetTimer = 0f;
+    public float comboResetTime = 1.0f;
+    
+   
 
     void Start()
     {
@@ -42,6 +53,18 @@ public class PlayerController : MonoBehaviour
        spriteRenderer = GetComponent<SpriteRenderer>();
        swordCollider = swordHitbox.GetComponent<Collider2D>();
        swordHitboxScript = swordHitbox.GetComponent<SwordHitbox>();
+    }
+
+    private void Update()
+    {
+        if (comboStep > 0)
+        {
+            comboResetTimer -= Time.deltaTime;
+            if (comboResetTimer <= 0f)
+            {
+                ResetCombo();
+            }
+        }
     }
 
     [Obsolete("Obsolete")]
@@ -82,16 +105,12 @@ public class PlayerController : MonoBehaviour
                 rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, Vector2.zero, idleFriction);
                 IsMoving = false;
             }            
-            // UpdateAnimatorParameters();
+            
 
         
             
         }
-       // else
-        //{
-            //rb.velocity = Vector2.zero;
-        //}
-   // }
+       
     
     // Input Values
     void OnMove(InputValue value)
@@ -102,27 +121,14 @@ public class PlayerController : MonoBehaviour
     // play attack animation
     void OnFire()
     {
-        //9/24 NEW
-        SwordHitbox.AttackDirection attackDir;
-        if (moveInput.y > 0.5f)
+        if (isSwinging)
         {
-            attackDir = SwordHitbox.AttackDirection.Up;
-        }else if (moveInput.y < -0.5f)
-        {
-            attackDir = SwordHitbox.AttackDirection.Down;
+            if(comboStep < 2)
+             queuedSwing = true;
+            return;
+        }
 
-        }else if (spriteRenderer.flipX)
-        {
-            attackDir = SwordHitbox.AttackDirection.Left;
-        }
-        else
-        {
-            attackDir = SwordHitbox.AttackDirection.Right;
-        }
-         swordHitboxScript.SetAttackDirection(attackDir);
-         swordHitboxScript.StartAttack();
-        
-        animator.SetTrigger("swordAttack");
+        StartSwing();
     }
 
     
@@ -143,5 +149,68 @@ public class PlayerController : MonoBehaviour
        // animator.SetFloat("moveY", moveInput.y);
        animator.SetBool("isMoving", isMoving);
     }*/
-  
+
+  void StartSwing()
+  {
+      isSwinging = true;
+      
+      SwordHitbox.AttackDirection attackDir;
+      if (moveInput.y > 0.5f)
+      {
+          attackDir = SwordHitbox.AttackDirection.Up;
+      }else if (moveInput.y < -0.5f)
+      {
+          attackDir = SwordHitbox.AttackDirection.Down;
+
+      }else if (spriteRenderer.flipX)
+      {
+          attackDir = SwordHitbox.AttackDirection.Left;
+      }
+      else
+      {
+          attackDir = SwordHitbox.AttackDirection.Right;
+      }
+      swordHitboxScript.SetAttackDirection(attackDir);
+      swordHitboxScript.StartAttack();
+         
+      // Alternate Swing Animation
+      if (comboStep == 0)
+      {
+          animator.SetTrigger("swordAttack");
+          isSwingRightToLeft = false;
+      }
+      else if (comboStep == 1)
+      {
+          animator.SetTrigger("swordAttackAgain");
+          isSwingRightToLeft = true;
+      }
+
+      comboStep++;
+      comboResetTimer = comboResetTime;
+      //isSwingRightToLeft = !isSwingRightToLeft;
+  }
+  void EndSwing()
+  {
+      isSwinging = false;
+
+      if (comboStep >= 2)
+      {
+          ResetCombo();
+          return;
+      }
+      
+      if (queuedSwing)
+      {
+          queuedSwing = false;
+          StartSwing(); // Begin next swing immediately
+          
+      }
+  }
+  void ResetCombo()
+  {
+      comboStep = 0;
+      comboResetTimer = 0f;
+      queuedSwing = false;
+      isSwingRightToLeft = true;
+  }
 }
