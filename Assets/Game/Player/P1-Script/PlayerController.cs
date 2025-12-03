@@ -42,7 +42,8 @@ public class PlayerController : MonoBehaviour
     private int comboStep = 0;
     private float comboResetTimer = 0f;
     public float comboResetTime = 1.0f;
-    
+    [Header("Audio Clips")]
+    [SerializeField] private AudioClip[] swordSounds;
    
 
     void Start()
@@ -133,12 +134,12 @@ public class PlayerController : MonoBehaviour
 
     
 
-    void LockMovement()
+   public void LockMovement()
     {
         canMove = false;
     }
 
-    void UnlockMovement()
+   public void UnlockMovement()
     {
         canMove = true;
     }
@@ -172,7 +173,7 @@ public class PlayerController : MonoBehaviour
       }
       swordHitboxScript.SetAttackDirection(attackDir);
       swordHitboxScript.StartAttack();
-         
+      SoundFXManager.instance.PlayRandomSoundFXClip(swordSounds, this.transform, 0.5f);   
       // Alternate Swing Animation
       if (comboStep == 0)
       {

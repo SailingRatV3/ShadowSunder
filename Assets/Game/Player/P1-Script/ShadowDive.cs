@@ -1,10 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using NUnit.Framework.Internal.Filters;
+//using Microsoft.Unity.VisualStudio.Editor;
+//using NUnit.Framework.Internal.Filters;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.UI;
+using Image = UnityEngine.UI.Image;
 
 public class ShadowDive : MonoBehaviour
 {
@@ -15,10 +18,12 @@ public class ShadowDive : MonoBehaviour
     private static readonly int ShadowDiveTrigger = Animator.StringToHash("shadowDive"); 
     private static readonly int ExitShadowTrigger = Animator.StringToHash("exitShadow"); 
    
-    [Header("State")] private bool isInShadow = true; // For testing — replace with actual trigger logic
+    [Header("State")] private bool isInShadow = true; // replace with trigger logic
     private bool isShadowForm = false; 
     private bool wasHoldingE = false; 
-    private bool ignoreNextExit = false; 
+    private bool ignoreNextExit = false;
+
+    private Image gateImage;
     public bool IsDiving { get; private set; }
 
     public void StartDive()
@@ -71,8 +76,8 @@ public class ShadowDive : MonoBehaviour
        
         normalLayer = LayerMask.NameToLayer(normalLayerName);
         shadowLayer = LayerMask.NameToLayer(shadowLayerName);
-        Debug.Log("Normal Layer: " + normalLayer);     
-        Debug.Log("Shadow Layer: " + shadowLayer);
+//        Debug.Log("Normal Layer: " + normalLayer);     
+ //       Debug.Log("Shadow Layer: " + shadowLayer);
         GameObject[] lightObjects = GameObject.FindGameObjectsWithTag(lightTag);
         foreach (GameObject lightObj in lightObjects)
         {
@@ -205,6 +210,7 @@ public class ShadowDive : MonoBehaviour
         foreach (Transform child in obj.transform)
         {
             SetLayerRecursively(child.gameObject, newLayer);
+            
         }
     }
     
@@ -230,7 +236,20 @@ public class ShadowDive : MonoBehaviour
             EnterShadowForm();
         }
     }
-    
+    IEnumerator FadeImage(Image img, float from, float to, float duration)
+    {
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(from, to, elapsed / duration);
+            img.color = new Color(img.color.r, img.color.g, img.color.b, alpha);
+            yield return null;
+        }
+
+        img.color = new Color(img.color.r, img.color.g, img.color.b, to);
+    }
     }
     
 

@@ -1,13 +1,14 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class LeverInteractDoor : MonoBehaviour
 {
     private IDoor door;
-   // bool canOpen = false;
+   
    bool leverOpen = false;
-  [SerializeField] public Teleporter teleporter; // Change this 
+  
    public bool triggerEvent = false; // Change this to an event system
    Animator animator;
    [SerializeField] InputActionReference interactAction;
@@ -15,10 +16,13 @@ public class LeverInteractDoor : MonoBehaviour
    [SerializeField] private Transform playerTransform;
    [SerializeField] private DetectionZone rangeZone;
    [SerializeField] private GameObject interactionText;
+   [SerializeField] private CameraController cameraController;
+   [SerializeField] private int doorIndex; 
     void Awake()
     {
         leverOpen = false;
         door = doorGameObject.GetComponent<IDoor>();
+        
         animator = GetComponent<Animator>();
         interactAction.action.Enable();
         interactionText.SetActive(false);
@@ -51,6 +55,7 @@ public class LeverInteractDoor : MonoBehaviour
 
     private void OnInteract(InputAction.CallbackContext context)
     {
+        //Debug.Log("OnInteract Triggered");  // Add this to check if it's called
         if (leverOpen)
         {
             TriggerLever(); 
@@ -67,7 +72,17 @@ public class LeverInteractDoor : MonoBehaviour
         door.OpenDoor();
         if (triggerEvent)
         {
-             teleporter.SetActive(true);
+            Debug.Log($"Triggering event for door {doorIndex}");
+           // cameraController.FocusOnDoor();
+            cameraController.FocusOnDoor(doorIndex);
+            StartCoroutine(ReturnCameraToPlayer());
         }
+    }
+    private IEnumerator ReturnCameraToPlayer()
+    {
+        
+        Debug.Log("Returning camera to player");
+        cameraController.FocusOnPlayer();
+        yield return null; 
     }
 }

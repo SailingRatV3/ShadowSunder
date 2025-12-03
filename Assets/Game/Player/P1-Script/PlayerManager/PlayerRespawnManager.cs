@@ -15,6 +15,10 @@ public class PlayerRespawnManager : MonoBehaviour
         {
             transform.position = SaveSystem.LoadCheckpoint();
         }
+        else
+        {
+            NewGame();
+        }
     }
 
     void Update()
@@ -36,6 +40,7 @@ public class PlayerRespawnManager : MonoBehaviour
     // Call this on Player Death (playerRespawnManager.OnPlayerDeath();
     public void OnPlayerDeath()
     {
+        Debug.Log("Player Death");
         // reloadMenu.SetActive(true);
         uiManager.reloadPanelAnim();
        // UIManager.reloadPanelAnim();
@@ -45,9 +50,14 @@ public class PlayerRespawnManager : MonoBehaviour
     public static void NewGame()
     {
         SaveSystem.ClearCheckpoint();
-       // SceneManager.LoadScene("Level01");
+       // SceneManager.LoadScene("DemoLevel_01");
     }
 
+    public void StartNewGame()
+    {
+        SaveSystem.ClearCheckpoint();
+        SceneManager.LoadScene("DemoLevel_01");
+    }
     
     
 }

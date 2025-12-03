@@ -1,0 +1,1428 @@
+fileFormatVersion: 2
+guid: fccd479ff2558a0409cf862456bd143d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5979728347644684602
+    second: ShadowSunder_StormMage_FINAL_0
+  - first:
+      213: 2477003076652345335
+    second: ShadowSunder_StormMage_FINAL_1
+  - first:
+      213: 8396235103871733125
+    second: ShadowSunder_StormMage_FINAL_2
+  - first:
+      213: 8563976008543863873
+    second: ShadowSunder_StormMage_FINAL_3
+  - first:
+      213: -6302108277173414941
+    second: ShadowSunder_StormMage_FINAL_4
+  - first:
+      213: 5537464278145644952
+    second: ShadowSunder_StormMage_FINAL_5
+  - first:
+      213: -6478739892534236737
+    second: ShadowSunder_StormMage_FINAL_6
+  - first:
+      213: -7297795504088260133
+    second: ShadowSunder_StormMage_FINAL_7
+  - first:
+      213: -8493267117661711498
+    second: ShadowSunder_StormMage_FINAL_8
+  - first:
+      213: 4020181108809635361
+    second: ShadowSunder_StormMage_FINAL_9
+  - first:
+      213: 8344040547998866542
+    second: ShadowSunder_StormMage_FINAL_10
+  - first:
+      213: 5739206286803479877
+    second: ShadowSunder_StormMage_FINAL_11
+  - first:
+      213: -2394144328820538054
+    second: ShadowSunder_StormMage_FINAL_12
+  - first:
+      213: -3839820066361486856
+    second: ShadowSunder_StormMage_FINAL_13
+  - first:
+      213: -6925974837205147904
+    second: ShadowSunder_StormMage_FINAL_14
+  - first:
+      213: -6161003997644995470
+    second: ShadowSunder_StormMage_FINAL_15
+  - first:
+      213: -4160851703416081151
+    second: ShadowSunder_StormMage_FINAL_16
+  - first:
+      213: -990643319490699911
+    second: ShadowSunder_StormMage_FINAL_17
+  - first:
+      213: -2257998122290823177
+    second: ShadowSunder_StormMage_FINAL_18
+  - first:
+      213: -3404356015052962396
+    second: ShadowSunder_StormMage_FINAL_19
+  - first:
+      213: 6244194220127303820
+    second: ShadowSunder_StormMage_FINAL_20
+  - first:
+      213: 95676941731141615
+    second: ShadowSunder_StormMage_FINAL_21
+  - first:
+      213: 1765128750831312035
+    second: ShadowSunder_StormMage_FINAL_22
+  - first:
+      213: -3715407942181418172
+    second: ShadowSunder_StormMage_FINAL_23
+  - first:
+      213: -1164721854903535470
+    second: ShadowSunder_StormMage_FINAL_24
+  - first:
+      213: -4959555058846221678
+    second: ShadowSunder_StormMage_FINAL_25
+  - first:
+      213: 6012931882028250484
+    second: ShadowSunder_StormMage_FINAL_26
+  - first:
+      213: 1148475266128102045
+    second: ShadowSunder_StormMage_FINAL_27
+  - first:
+      213: 5914993926276169401
+    second: ShadowSunder_StormMage_FINAL_28
+  - first:
+      213: -979911256398758727
+    second: ShadowSunder_StormMage_FINAL_29
+  - first:
+      213: -1754388314712972479
+    second: ShadowSunder_StormMage_FINAL_30
+  - first:
+      213: 6832995415890556883
+    second: ShadowSunder_StormMage_FINAL_31
+  - first:
+      213: 6494982727640532989
+    second: ShadowSunder_StormMage_FINAL_32
+  - first:
+      213: 8182656941602108560
+    second: ShadowSunder_StormMage_FINAL_33
+  - first:
+      213: -2379873717266543182
+    second: ShadowSunder_StormMage_FINAL_34
+  - first:
+      213: 1017942074559136335
+    second: ShadowSunder_StormMage_FINAL_35
+  - first:
+      213: 6320608797997065796
+    second: ShadowSunder_StormMage_FINAL_36
+  - first:
+      213: -6081811859267036719
+    second: ShadowSunder_StormMage_FINAL_37
+  - first:
+      213: 6377569920402638123
+    second: ShadowSunder_StormMage_FINAL_38
+  - first:
+      213: -4485646569367394559
+    second: ShadowSunder_StormMage_FINAL_39
+  - first:
+      213: 5021399987068121272
+    second: ShadowSunder_StormMage_FINAL_40
+  - first:
+      213: 5483013756132181311
+    second: ShadowSunder_StormMage_FINAL_41
+  - first:
+      213: 8214356820173229977
+    second: ShadowSunder_StormMage_FINAL_42
+  - first:
+      213: -6727014907896487896
+    second: ShadowSunder_StormMage_FINAL_43
+  - first:
+      213: 7888339911735883854
+    second: ShadowSunder_StormMage_FINAL_44
+  - first:
+      213: 2545316529185899500
+    second: ShadowSunder_StormMage_FINAL_45
+  - first:
+      213: -6152422130146081149
+    second: ShadowSunder_StormMage_FINAL_46
+  - first:
+      213: 8721322153563410994
+    second: ShadowSunder_StormMage_FINAL_47
+  - first:
+      213: -6001967766883538062
+    second: ShadowSunder_StormMage_FINAL_48
+  - first:
+      213: 7961205861777680009
+    second: ShadowSunder_StormMage_FINAL_49
+  - first:
+      213: -350325959414136352
+    second: ShadowSunder_StormMage_FINAL_50
+  - first:
+      213: -4403788999708306810
+    second: ShadowSunder_StormMage_FINAL_51
+  - first:
+      213: -4297109552899775943
+    second: ShadowSunder_StormMage_FINAL_52
+  - first:
+      213: 660327048513517579
+    second: ShadowSunder_StormMage_FINAL_53
+  - first:
+      213: 1394385805069930780
+    second: ShadowSunder_StormMage_FINAL_54
+  - first:
+      213: -6287875605617293823
+    second: ShadowSunder_StormMage_FINAL_55
+  - first:
+      213: -3145400856620654777
+    second: ShadowSunder_StormMage_FINAL_56
+  - first:
+      213: 1683485258929349287
+    second: ShadowSunder_StormMage_FINAL_57
+  - first:
+      213: -8221215273072955247
+    second: ShadowSunder_StormMage_FINAL_58
+  - first:
+      213: -1861418222973920828
+    second: ShadowSunder_StormMage_FINAL_59
+  - first:
+      213: -4585653268134408262
+    second: ShadowSunder_StormMage_FINAL_60
+  - first:
+      213: -8114704246582550155
+    second: ShadowSunder_StormMage_FINAL_61
+  - first:
+      213: 4255745059207229924
+    second: ShadowSunder_StormMage_FINAL_62
+  - first:
+      213: 568362154140075529
+    second: ShadowSunder_StormMage_FINAL_63
+  - first:
+      213: -2241878003680912611
+    second: ShadowSunder_StormMage_FINAL_64
+  - first:
+      213: -8745414273236193182
+    second: ShadowSunder_StormMage_FINAL_65
+  - first:
+      213: -5959353714220326240
+    second: ShadowSunder_StormMage_FINAL_66
+  - first:
+      213: 2860608217809960690
+    second: ShadowSunder_StormMage_FINAL_67
+  - first:
+      213: -8887934418375262669
+    second: ShadowSunder_StormMage_FINAL_68
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39e1be00434cf250800000000000000
+      internalID: 5979728347644684602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7a96bac25106220800000000000000
+      internalID: 2477003076652345335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d80f0875b658470800000000000000
+      internalID: 8396235103871733125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 144893e4eca59d670800000000000000
+      internalID: 8563976008543863873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e3970379e96a88a0800000000000000
+      internalID: -6302108277173414941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_5
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89939471c6609dc40800000000000000
+      internalID: 5537464278145644952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_6
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb92851c464e616a0800000000000000
+      internalID: -6478739892534236737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1606787a509ba90800000000000000
+      internalID: -7297795504088260133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67394454e8ad12a80800000000000000
+      internalID: -8493267117661711498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_9
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126955b2b6d8ac730800000000000000
+      internalID: 4020181108809635361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_10
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c9de67bacfbc370800000000000000
+      internalID: 8344040547998866542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_11
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d2c91d5b1c5af40800000000000000
+      internalID: 5739206286803479877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_12
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35c2abea6a46ced0800000000000000
+      internalID: -2394144328820538054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_13
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f15b1f6ef736bac0800000000000000
+      internalID: -3839820066361486856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00fd719b49ef1ef90800000000000000
+      internalID: -6925974837205147904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 274cb9ca187bf7aa0800000000000000
+      internalID: -6161003997644995470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_16
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1053ecebb6fa146c0800000000000000
+      internalID: -4160851703416081151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_17
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d94aa46278042f0800000000000000
+      internalID: -990643319490699911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_18
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff3b51dbaaf9a0e0800000000000000
+      internalID: -2257998122290823177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_19
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5cdc9cd3c41c0d0800000000000000
+      internalID: -3404356015052962396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_20
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c883c3f5f85d7a650800000000000000
+      internalID: 6244194220127303820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7941deba9e35100800000000000000
+      internalID: 95676941731141615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_22
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac11203f3ffe7810800000000000000
+      internalID: 1765128750831312035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_23
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b8c926928307cc0800000000000000
+      internalID: -3715407942181418172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_24
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2983758d4a316dfe0800000000000000
+      internalID: -1164721854903535470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_25
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29aba7963fe1c2bb0800000000000000
+      internalID: -4959555058846221678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_26
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4753ae650b9327350800000000000000
+      internalID: 6012931882028250484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_27
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9243ee6b2430ff00800000000000000
+      internalID: 1148475266128102045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9beb84013a7461250800000000000000
+      internalID: 5914993926276169401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_29
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bcf1f277e7a662f0800000000000000
+      internalID: -979911256398758727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_30
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 143ef677f1927a7e0800000000000000
+      internalID: -1754388314712972479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_31
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d77704c02da3de50800000000000000
+      internalID: 6832995415890556883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_32
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df7cf4ff060d22a50800000000000000
+      internalID: 6494982727640532989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_33
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094f3138223ae8170800000000000000
+      internalID: 8182656941602108560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_34
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd0a08967df8fed0800000000000000
+      internalID: -2379873717266543182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42850c6ce4702e00800000000000000
+      internalID: 1017942074559136335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_36
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446e2d8b63057b750800000000000000
+      internalID: 6320608797997065796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_37
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d951a93650199ba0800000000000000
+      internalID: -6081811859267036719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_38
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b25c0d38d0ea18850800000000000000
+      internalID: 6377569920402638123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_39
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10728ec0638cfb1c0800000000000000
+      internalID: -4485646569367394559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_40
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0b8580fa89fa540800000000000000
+      internalID: 5021399987068121272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f35c6d006f3971c40800000000000000
+      internalID: 5483013756132181311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_42
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f8bb4a1024ff170800000000000000
+      internalID: 8214356820173229977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_43
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820a2102597d4a2a0800000000000000
+      internalID: -6727014907896487896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_44
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48bd820b53097d60800000000000000
+      internalID: 7888339911735883854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_45
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce34e0bc5e7c25320800000000000000
+      internalID: 2545316529185899500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_46
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38604686ba43e9aa0800000000000000
+      internalID: -6152422130146081149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_StormMage_FINAL_47
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23254e68a4c580970800000000000000
+      internalID: 8721322153563410994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9b0f376ddeb1b14469a612d9e4239bcd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ShadowSunder_StormMage_FINAL_0: 5979728347644684602
+      ShadowSunder_StormMage_FINAL_1: 2477003076652345335
+      ShadowSunder_StormMage_FINAL_10: 8344040547998866542
+      ShadowSunder_StormMage_FINAL_11: 5739206286803479877
+      ShadowSunder_StormMage_FINAL_12: -2394144328820538054
+      ShadowSunder_StormMage_FINAL_13: -3839820066361486856
+      ShadowSunder_StormMage_FINAL_14: -6925974837205147904
+      ShadowSunder_StormMage_FINAL_15: -6161003997644995470
+      ShadowSunder_StormMage_FINAL_16: -4160851703416081151
+      ShadowSunder_StormMage_FINAL_17: -990643319490699911
+      ShadowSunder_StormMage_FINAL_18: -2257998122290823177
+      ShadowSunder_StormMage_FINAL_19: -3404356015052962396
+      ShadowSunder_StormMage_FINAL_2: 8396235103871733125
+      ShadowSunder_StormMage_FINAL_20: 6244194220127303820
+      ShadowSunder_StormMage_FINAL_21: 95676941731141615
+      ShadowSunder_StormMage_FINAL_22: 1765128750831312035
+      ShadowSunder_StormMage_FINAL_23: -3715407942181418172
+      ShadowSunder_StormMage_FINAL_24: -1164721854903535470
+      ShadowSunder_StormMage_FINAL_25: -4959555058846221678
+      ShadowSunder_StormMage_FINAL_26: 6012931882028250484
+      ShadowSunder_StormMage_FINAL_27: 1148475266128102045
+      ShadowSunder_StormMage_FINAL_28: 5914993926276169401
+      ShadowSunder_StormMage_FINAL_29: -979911256398758727
+      ShadowSunder_StormMage_FINAL_3: 8563976008543863873
+      ShadowSunder_StormMage_FINAL_30: -1754388314712972479
+      ShadowSunder_StormMage_FINAL_31: 6832995415890556883
+      ShadowSunder_StormMage_FINAL_32: 6494982727640532989
+      ShadowSunder_StormMage_FINAL_33: 8182656941602108560
+      ShadowSunder_StormMage_FINAL_34: -2379873717266543182
+      ShadowSunder_StormMage_FINAL_35: 1017942074559136335
+      ShadowSunder_StormMage_FINAL_36: 6320608797997065796
+      ShadowSunder_StormMage_FINAL_37: -6081811859267036719
+      ShadowSunder_StormMage_FINAL_38: 6377569920402638123
+      ShadowSunder_StormMage_FINAL_39: -4485646569367394559
+      ShadowSunder_StormMage_FINAL_4: -6302108277173414941
+      ShadowSunder_StormMage_FINAL_40: 5021399987068121272
+      ShadowSunder_StormMage_FINAL_41: 5483013756132181311
+      ShadowSunder_StormMage_FINAL_42: 8214356820173229977
+      ShadowSunder_StormMage_FINAL_43: -6727014907896487896
+      ShadowSunder_StormMage_FINAL_44: 7888339911735883854
+      ShadowSunder_StormMage_FINAL_45: 2545316529185899500
+      ShadowSunder_StormMage_FINAL_46: -6152422130146081149
+      ShadowSunder_StormMage_FINAL_47: 8721322153563410994
+      ShadowSunder_StormMage_FINAL_5: 5537464278145644952
+      ShadowSunder_StormMage_FINAL_6: -6478739892534236737
+      ShadowSunder_StormMage_FINAL_7: -7297795504088260133
+      ShadowSunder_StormMage_FINAL_8: -8493267117661711498
+      ShadowSunder_StormMage_FINAL_9: 4020181108809635361
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

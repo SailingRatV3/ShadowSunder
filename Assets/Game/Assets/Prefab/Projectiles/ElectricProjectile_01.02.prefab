@@ -132,6 +132,10 @@ MonoBehaviour:
   speed: 10
   knockbackForce: 10
   damage: 1
+  hitSound:
+  - {fileID: 8300000, guid: e69e930e70bdeb54db0d2fd86b0cd08a, type: 3}
+  - {fileID: 8300000, guid: c7d290fe7fc967542b4ed63c6a49805d, type: 3}
+  - {fileID: 8300000, guid: a26bcbcd3c971e344b7afe8e0a1725ff, type: 3}
   lifetime: 5
 --- !u!58 &2486834032046880787
 CircleCollider2D:

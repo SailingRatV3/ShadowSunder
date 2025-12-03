@@ -94,7 +94,7 @@ public class SwordHitbox : MonoBehaviour
 
     public void StartAttack()
     {
-        Debug.Log("StartAttack called: clearing hitEnemies list");
+       //Debug.Log("StartAttack called: clearing hitEnemies list");
         hitEnemies.Clear();
         // enable the collider here if you disable it outside attack time
         //swordCollider.enabled = true;

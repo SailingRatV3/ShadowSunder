@@ -10,7 +10,7 @@ public class RingBarrier : MonoBehaviour
     public float damage = 1f;
     public float knockbackForce = 100f;
     public float damageInterval = 1f;
-    
+    [SerializeField] private AudioClip hitSound;
     private Dictionary<GameObject, float> lastDamageTime = new Dictionary<GameObject, float>();
     void OnTriggerStay2D(Collider2D other)
     {
@@ -31,6 +31,7 @@ public class RingBarrier : MonoBehaviour
                 IDamageable damageable = other.GetComponent<IDamageable>();
                 if (damageable != null)
                 {
+                    SoundFXManager.instance.PlayeSoundFXClip(hitSound, this.transform, 0.1f);
                     Vector2 direction = (Vector2)(other.transform.position - transform.position).normalized;
                     Vector2 knockback = direction * knockbackForce;
                     damageable.OnHit(damage, knockback);

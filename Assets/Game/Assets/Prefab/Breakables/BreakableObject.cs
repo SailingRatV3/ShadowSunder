@@ -10,6 +10,8 @@ public class BreakableObject : MonoBehaviour, IDamageable
     [SerializeField] private ParticleSystem psHit;
     private Vector2 lastHitDirection = Vector2.down; // Default
     [SerializeField] private CameraShakeManager cameraShakeManager;
+    [SerializeField] private Sprite brokenSprite;
+    [SerializeField] private AudioClip[] brokenSound;
     
     [Header("Knockback")]
     public float knockbackForce = 5f;
@@ -17,6 +19,7 @@ public class BreakableObject : MonoBehaviour, IDamageable
     public float knockbackDuration = 0.2f;
     private Coroutine knockbackRoutine;
     Rigidbody2D rb;
+    private Sprite spriteRenderer;
     
     [Header("HP")]
     public float hitPoints = 2;
@@ -49,6 +52,8 @@ public class BreakableObject : MonoBehaviour, IDamageable
                 // animator.SetTrigger("hit");
                 cameraShakeManager.TriggerShakeByName("Hit");
                 PlayDirectionalParticles(psHit,lastHitDirection);
+                spriteRenderer = brokenSprite;
+                SoundFXManager.instance.PlayRandomSoundFXClip(brokenSound, this.transform, 0.5f);
                 GetComponent<DamageFlash>().Flash();
             }
             
@@ -95,6 +100,7 @@ public class BreakableObject : MonoBehaviour, IDamageable
     {
         lastHitDirection = knockback.normalized;
         Health -= damage;
+       
         if (hasKnockback)
         {
             if (knockbackRoutine != null)
@@ -109,6 +115,7 @@ public class BreakableObject : MonoBehaviour, IDamageable
     {
         lastHitDirection = Vector2.down; // Default direction
         Health -= damage;
+        
     }
 
     private void DropItemBasedOnPlayerHealth()
@@ -166,6 +173,7 @@ public class BreakableObject : MonoBehaviour, IDamageable
 
     private void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>().sprite;
         rb = GetComponent<Rigidbody2D>();
     }
 }

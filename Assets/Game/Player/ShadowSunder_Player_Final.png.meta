@@ -1,0 +1,2737 @@
+fileFormatVersion: 2
+guid: 54052e86e34192b488755367e6e52b53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5608653477260362401
+    second: ShadowSunder_Player_Final_0
+  - first:
+      213: 6662896325451082659
+    second: ShadowSunder_Player_Final_1
+  - first:
+      213: 9061359246742221088
+    second: ShadowSunder_Player_Final_2
+  - first:
+      213: 2574279042879389502
+    second: ShadowSunder_Player_Final_3
+  - first:
+      213: 7646141565980005990
+    second: ShadowSunder_Player_Final_4
+  - first:
+      213: -5102959860385567853
+    second: ShadowSunder_Player_Final_5
+  - first:
+      213: -5102634137738528876
+    second: ShadowSunder_Player_Final_6
+  - first:
+      213: 1165446328151831176
+    second: ShadowSunder_Player_Final_7
+  - first:
+      213: -2970860129281430918
+    second: ShadowSunder_Player_Final_8
+  - first:
+      213: -569486248023948845
+    second: ShadowSunder_Player_Final_9
+  - first:
+      213: 7584968839847001931
+    second: ShadowSunder_Player_Final_10
+  - first:
+      213: 278534898273025406
+    second: ShadowSunder_Player_Final_11
+  - first:
+      213: -9043312278866661351
+    second: ShadowSunder_Player_Final_12
+  - first:
+      213: 939002465118118918
+    second: ShadowSunder_Player_Final_13
+  - first:
+      213: 3615657490691015256
+    second: ShadowSunder_Player_Final_14
+  - first:
+      213: -2426704509094426120
+    second: ShadowSunder_Player_Final_15
+  - first:
+      213: -2816169723117919467
+    second: ShadowSunder_Player_Final_16
+  - first:
+      213: 8324208364523346392
+    second: ShadowSunder_Player_Final_17
+  - first:
+      213: 5953568619386256592
+    second: ShadowSunder_Player_Final_18
+  - first:
+      213: 4383182462567640423
+    second: ShadowSunder_Player_Final_19
+  - first:
+      213: -3761600745892126357
+    second: ShadowSunder_Player_Final_20
+  - first:
+      213: -4202830198539398466
+    second: ShadowSunder_Player_Final_21
+  - first:
+      213: -1727885803619647883
+    second: ShadowSunder_Player_Final_22
+  - first:
+      213: 1743696339926531627
+    second: ShadowSunder_Player_Final_23
+  - first:
+      213: 5106266693227419343
+    second: ShadowSunder_Player_Final_24
+  - first:
+      213: -2900927430002400593
+    second: ShadowSunder_Player_Final_25
+  - first:
+      213: -9157476257594353918
+    second: ShadowSunder_Player_Final_26
+  - first:
+      213: 6761391169127626557
+    second: ShadowSunder_Player_Final_27
+  - first:
+      213: 4511575515082327518
+    second: ShadowSunder_Player_Final_28
+  - first:
+      213: 8263672071846239311
+    second: ShadowSunder_Player_Final_29
+  - first:
+      213: -6627151686705646051
+    second: ShadowSunder_Player_Final_30
+  - first:
+      213: 5259654320999638929
+    second: ShadowSunder_Player_Final_31
+  - first:
+      213: -548905173069267509
+    second: ShadowSunder_Player_Final_32
+  - first:
+      213: -1156521464189237240
+    second: ShadowSunder_Player_Final_33
+  - first:
+      213: -486968506877973896
+    second: ShadowSunder_Player_Final_34
+  - first:
+      213: 8145383643013456737
+    second: ShadowSunder_Player_Final_35
+  - first:
+      213: 1754635073014130371
+    second: ShadowSunder_Player_Final_36
+  - first:
+      213: 954284331438863268
+    second: ShadowSunder_Player_Final_37
+  - first:
+      213: 6397069409286019172
+    second: ShadowSunder_Player_Final_38
+  - first:
+      213: -4706789366407487600
+    second: ShadowSunder_Player_Final_39
+  - first:
+      213: 7854388580720108079
+    second: ShadowSunder_Player_Final_40
+  - first:
+      213: -2727323788731877175
+    second: ShadowSunder_Player_Final_41
+  - first:
+      213: -8682413301564942845
+    second: ShadowSunder_Player_Final_42
+  - first:
+      213: -1959230916415829183
+    second: ShadowSunder_Player_Final_43
+  - first:
+      213: -7700525259948719869
+    second: ShadowSunder_Player_Final_44
+  - first:
+      213: -7265448767719651817
+    second: ShadowSunder_Player_Final_45
+  - first:
+      213: 2472012451561195111
+    second: ShadowSunder_Player_Final_46
+  - first:
+      213: 1590039957018280770
+    second: ShadowSunder_Player_Final_47
+  - first:
+      213: 9186649000027200009
+    second: ShadowSunder_Player_Final_48
+  - first:
+      213: -1284079115183509471
+    second: ShadowSunder_Player_Final_49
+  - first:
+      213: -1044868126144813914
+    second: ShadowSunder_Player_Final_50
+  - first:
+      213: 6870259876563266141
+    second: ShadowSunder_Player_Final_51
+  - first:
+      213: -8029040630743219864
+    second: ShadowSunder_Player_Final_52
+  - first:
+      213: 5451982433514952606
+    second: ShadowSunder_Player_Final_53
+  - first:
+      213: -8824498876661868764
+    second: ShadowSunder_Player_Final_54
+  - first:
+      213: 4891763698659797208
+    second: ShadowSunder_Player_Final_55
+  - first:
+      213: 2977092354730309464
+    second: ShadowSunder_Player_Final_56
+  - first:
+      213: 6991801103645192218
+    second: ShadowSunder_Player_Final_57
+  - first:
+      213: -3844540926610001461
+    second: ShadowSunder_Player_Final_58
+  - first:
+      213: -5471111583798299056
+    second: ShadowSunder_Player_Final_59
+  - first:
+      213: -3555860326541784148
+    second: ShadowSunder_Player_Final_60
+  - first:
+      213: 3614261570973601825
+    second: ShadowSunder_Player_Final_61
+  - first:
+      213: 9155330910985996383
+    second: ShadowSunder_Player_Final_62
+  - first:
+      213: -6537460953335160995
+    second: ShadowSunder_Player_Final_63
+  - first:
+      213: -7170299931435762640
+    second: ShadowSunder_Player_Final_64
+  - first:
+      213: 3381810891512513073
+    second: ShadowSunder_Player_Final_65
+  - first:
+      213: 5642011105813534359
+    second: ShadowSunder_Player_Final_66
+  - first:
+      213: 6423235961658608573
+    second: ShadowSunder_Player_Final_67
+  - first:
+      213: -639714614789870504
+    second: ShadowSunder_Player_Final_68
+  - first:
+      213: -6404480887102175796
+    second: ShadowSunder_Player_Final_69
+  - first:
+      213: -7011598146047350452
+    second: ShadowSunder_Player_Final_70
+  - first:
+      213: -2008683712993000867
+    second: ShadowSunder_Player_Final_71
+  - first:
+      213: 8002770918338247350
+    second: ShadowSunder_Player_Final_72
+  - first:
+      213: -1555628100355697576
+    second: ShadowSunder_Player_Final_73
+  - first:
+      213: 5891390242280959582
+    second: ShadowSunder_Player_Final_74
+  - first:
+      213: 5962337357480496204
+    second: ShadowSunder_Player_Final_75
+  - first:
+      213: -8544395858907143655
+    second: ShadowSunder_Player_Final_76
+  - first:
+      213: 5966355450897221496
+    second: ShadowSunder_Player_Final_77
+  - first:
+      213: 2788030414552098622
+    second: ShadowSunder_Player_Final_78
+  - first:
+      213: 5693254605099368453
+    second: ShadowSunder_Player_Final_79
+  - first:
+      213: -545958962287172913
+    second: ShadowSunder_Player_Final_80
+  - first:
+      213: 8316285625873328634
+    second: ShadowSunder_Player_Final_81
+  - first:
+      213: -516120863067270582
+    second: ShadowSunder_Player_Final_82
+  - first:
+      213: 9055216658540169509
+    second: ShadowSunder_Player_Final_83
+  - first:
+      213: -4801560799580123358
+    second: ShadowSunder_Player_Final_84
+  - first:
+      213: -3710212452855400739
+    second: ShadowSunder_Player_Final_85
+  - first:
+      213: 5441160976293279661
+    second: ShadowSunder_Player_Final_86
+  - first:
+      213: 8950357725653806552
+    second: ShadowSunder_Player_Final_87
+  - first:
+      213: -4948592978521056361
+    second: ShadowSunder_Player_Final_88
+  - first:
+      213: -7349685965633263073
+    second: ShadowSunder_Player_Final_89
+  - first:
+      213: 1894520065552982048
+    second: ShadowSunder_Player_Final_90
+  - first:
+      213: -9208115539528344319
+    second: ShadowSunder_Player_Final_91
+  - first:
+      213: 1505259654298358071
+    second: ShadowSunder_Player_Final_92
+  - first:
+      213: 8874389437278953304
+    second: ShadowSunder_Player_Final_93
+  - first:
+      213: 161165324352376464
+    second: ShadowSunder_Player_Final_94
+  - first:
+      213: 7427437367566877514
+    second: ShadowSunder_Player_Final_95
+  - first:
+      213: -1101746661325090492
+    second: ShadowSunder_Player_Final_96
+  - first:
+      213: -2598670700162028531
+    second: ShadowSunder_Player_Final_97
+  - first:
+      213: -3132768414630492283
+    second: ShadowSunder_Player_Final_98
+  - first:
+      213: -2850473420030571545
+    second: ShadowSunder_Player_Final_99
+  - first:
+      213: 2273066846129561340
+    second: ShadowSunder_Player_Final_100
+  - first:
+      213: -5822184567726472007
+    second: ShadowSunder_Player_Final_101
+  - first:
+      213: -7191480650387140598
+    second: ShadowSunder_Player_Final_102
+  - first:
+      213: -7012247569430268920
+    second: ShadowSunder_Player_Final_103
+  - first:
+      213: -4073640422098214149
+    second: ShadowSunder_Player_Final_104
+  - first:
+      213: -3187887537444700087
+    second: ShadowSunder_Player_Final_105
+  - first:
+      213: 2737424715376795883
+    second: ShadowSunder_Player_Final_106
+  - first:
+      213: -4993347037736641244
+    second: ShadowSunder_Player_Final_107
+  - first:
+      213: -8312378826093094048
+    second: ShadowSunder_Player_Final_108
+  - first:
+      213: 3918447153437703186
+    second: ShadowSunder_Player_Final_109
+  - first:
+      213: -9153024780043228828
+    second: ShadowSunder_Player_Final_110
+  - first:
+      213: 4015355883437714218
+    second: ShadowSunder_Player_Final_111
+  - first:
+      213: 1973784353279216084
+    second: ShadowSunder_Player_Final_112
+  - first:
+      213: -8524442910990225695
+    second: ShadowSunder_Player_Final_113
+  - first:
+      213: 2085093410273862085
+    second: ShadowSunder_Player_Final_114
+  - first:
+      213: 2333936909493651299
+    second: ShadowSunder_Player_Final_115
+  - first:
+      213: -4624179191635431436
+    second: ShadowSunder_Player_Final_116
+  - first:
+      213: -2381855124225376719
+    second: ShadowSunder_Player_Final_117
+  - first:
+      213: 1072128674629997018
+    second: ShadowSunder_Player_Final_118
+  - first:
+      213: 3611622760246716429
+    second: ShadowSunder_Player_Final_119
+  - first:
+      213: 5854832288029190801
+    second: ShadowSunder_Player_Final_120
+  - first:
+      213: 1759657927596398580
+    second: ShadowSunder_Player_Final_121
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5760
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5df2abd06f0a22b0800000000000000
+      internalID: -5608653477260362401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 5760
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab64cd08ec577c50800000000000000
+      internalID: 6662896325451082659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 5760
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021754cc93a60cd70800000000000000
+      internalID: 9061359246742221088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 5760
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3ffe8f762da9b320800000000000000
+      internalID: 2574279042879389502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 5760
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66656964e3d8c1a60800000000000000
+      internalID: 7646141565980005990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_5
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 5760
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b24aa2b05ae29b0800000000000000
+      internalID: -5102959860385567853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_6
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 5760
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4973051694dcf29b0800000000000000
+      internalID: -5102634137738528876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_7
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 5760
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882f54ab24f7c2010800000000000000
+      internalID: 1165446328151831176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_8
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 5760
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a2fc4e37265c6d0800000000000000
+      internalID: -2970860129281430918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5120
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d100125647c818f0800000000000000
+      internalID: -569486248023948845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 5120
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4fbc7319f8334960800000000000000
+      internalID: 7584968839847001931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_11
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 5120
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7dfc15a30e8dd300800000000000000
+      internalID: 278534898273025406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_12
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 5120
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91079395563bf7280800000000000000
+      internalID: -9043312278866661351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_13
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 5120
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604e49854c1080d00800000000000000
+      internalID: 939002465118118918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_14
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 5120
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8524e1ac4556d2230800000000000000
+      internalID: 3615657490691015256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_15
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 5120
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f986903b1d925ed0800000000000000
+      internalID: -2426704509094426120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_16
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 5120
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 513a85abe84fae8d0800000000000000
+      internalID: -2816169723117919467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_17
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 5120
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9dfbb6767858370800000000000000
+      internalID: 8324208364523346392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4480
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc3e60bd135f9250800000000000000
+      internalID: 5953568619386256592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_19
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 4480
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76de0130a3134dc30800000000000000
+      internalID: 4383182462567640423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_20
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 4480
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b61614a2d0c1ccbc0800000000000000
+      internalID: -3761600745892126357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_21
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4480
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb256c4b33c8ca5c0800000000000000
+      internalID: -4202830198539398466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_22
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 4480
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57e7fce24015508e0800000000000000
+      internalID: -1727885803619647883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_23
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 4480
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e3879259ad23810800000000000000
+      internalID: 1743696339926531627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_24
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 4480
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc69a3ad08a1dd640800000000000000
+      internalID: 5106266693227419343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_25
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 4480
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa225874fd5ddb7d0800000000000000
+      internalID: -2900927430002400593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_26
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 4480
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 207d303bcdb1ae080800000000000000
+      internalID: -9157476257594353918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_27
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 4480
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37b057e17945dd50800000000000000
+      internalID: 6761391169127626557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed505d117065c9e30800000000000000
+      internalID: 4511575515082327518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_29
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c16be67f57ea270800000000000000
+      internalID: 8263672071846239311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_30
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16774137a0a704a0800000000000000
+      internalID: -6627151686705646051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_31
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1972884fcbb0ef840800000000000000
+      internalID: 5259654320999638929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_32
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcdf4df37a5e168f0800000000000000
+      internalID: -548905173069267509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_33
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808c2e71bd533ffe0800000000000000
+      internalID: -1156521464189237240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_34
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a6cba19b0fd39f0800000000000000
+      internalID: -486968506877973896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_35
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163281964473a0170800000000000000
+      internalID: 8145383643013456737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_36
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6e27d6d47b95810800000000000000
+      internalID: 1754635073014130371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_37
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3722e1b8c4e3d00800000000000000
+      internalID: 954284331438863268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 468d2001cb4f6c850800000000000000
+      internalID: 6397069409286019172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_39
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f12b642002eaeb0800000000000000
+      internalID: -4706789366407487600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_40
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22e4b1ccc4600d60800000000000000
+      internalID: 7854388580720108079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_41
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8f921d679962ad0800000000000000
+      internalID: -2727323788731877175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_42
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30658178a1fd18780800000000000000
+      internalID: -8682413301564942845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_43
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b421aacd96fc4e0800000000000000
+      internalID: -1959230916415829183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_44
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30185d0431d322590800000000000000
+      internalID: -7700525259948719869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_45
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 716454af6d0fb2b90800000000000000
+      internalID: -7265448767719651817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_46
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 766c5a73a3a5e4220800000000000000
+      internalID: 2472012451561195111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_47
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24380c0aae4f01610800000000000000
+      internalID: 1590039957018280770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a91d2b7988d7f70800000000000000
+      internalID: 9186649000027200009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_49
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1203dfb19d80e2ee0800000000000000
+      internalID: -1284079115183509471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_50
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a4a208a9f1ef71f0800000000000000
+      internalID: -1044868126144813914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_51
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a2c2125f0185f50800000000000000
+      internalID: 6870259876563266141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_52
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8614f55061e139090800000000000000
+      internalID: -8029040630743219864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_53
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97145f232559ab40800000000000000
+      internalID: 5451982433514952606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_54
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4275cbf9605198580800000000000000
+      internalID: -8824498876661868764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_55
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8a4cf8a2903e340800000000000000
+      internalID: 4891763698659797208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_56
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8573b3b29b1c05920800000000000000
+      internalID: 2977092354730309464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_57
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10b4f24f0ed70160800000000000000
+      internalID: 6991801103645192218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1b5f0856275aac0800000000000000
+      internalID: -3844540926610001461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_59
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0567d217005b214b0800000000000000
+      internalID: -5471111583798299056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_60
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab829d6fdb07aec0800000000000000
+      internalID: -3555860326541784148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_61
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1201a37efbf682230800000000000000
+      internalID: 3614261570973601825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_62
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f58497ed4f44e0f70800000000000000
+      internalID: 9155330910985996383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_63
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f987f56e54645a0800000000000000
+      internalID: -6537460953335160995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_64
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c73c5c33afd7c90800000000000000
+      internalID: -7170299931435762640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_65
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1328626961b9eee20800000000000000
+      internalID: 3381810891512513073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_66
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79613d445337c4e40800000000000000
+      internalID: 5642011105813534359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_67
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb0d2b431be32950800000000000000
+      internalID: 6423235961658608573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ce2db72f64f17f0800000000000000
+      internalID: -639714614789870504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_69
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc50f79c096be17a0800000000000000
+      internalID: -6404480887102175796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_70
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c496f0d92acc1be90800000000000000
+      internalID: -7011598146047350452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_71
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5280f43ec8bf14e0800000000000000
+      internalID: -2008683712993000867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_72
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bab06eefbd8f0f60800000000000000
+      internalID: 8002770918338247350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_73
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854deab1c7c496ae0800000000000000
+      internalID: -1555628100355697576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_74
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5eeb50263c62c150800000000000000
+      internalID: 5891390242280959582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_75
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c8aaf9c3a7eb250800000000000000
+      internalID: 5962337357480496204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_76
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91265898c353c6980800000000000000
+      internalID: -8544395858907143655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_77
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877c176eba0ccc250800000000000000
+      internalID: 5966355450897221496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37ec52f3e211b620800000000000000
+      internalID: 2788030414552098622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_79
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5000ec036e0820f40800000000000000
+      internalID: 5693254605099368453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_80
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc2aee6673d5c68f0800000000000000
+      internalID: -545958962287172913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_81
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9edd417b1696370800000000000000
+      internalID: 8316285625873328634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_82
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4215bf3fce56d8f0800000000000000
+      internalID: -516120863067270582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_83
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5298c7803979aad70800000000000000
+      internalID: 9055216658540169509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_84
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f069d74ed6d5db0800000000000000
+      internalID: -4801560799580123358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_85
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6b2528e6da28cc0800000000000000
+      internalID: -3710212452855400739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_86
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7bda55413e28b40800000000000000
+      internalID: 5441160976293279661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_87
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dda4423eee063c70800000000000000
+      internalID: 8950357725653806552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b9241a7e0135bb0800000000000000
+      internalID: -4948592978521056361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_89
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a61c7fd8ba00a90800000000000000
+      internalID: -7349685965633263073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_90
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 020a22746ffaa4a10800000000000000
+      internalID: 1894520065552982048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_91
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d98a714b3363080800000000000000
+      internalID: -9208115539528344319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_92
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7315e2d2ea1c3e410800000000000000
+      internalID: 1505259654298358071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_93
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f9d77bc2a282b70800000000000000
+      internalID: 8874389437278953304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_94
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e422432039c3200800000000000000
+      internalID: 161165324352376464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_95
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43494dfeee831760800000000000000
+      internalID: 7427437367566877514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_96
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 441de33bf3fc5b0f0800000000000000
+      internalID: -1101746661325090492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Player_Final_97
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c60ac34caafebd0800000000000000
+      internalID: -2598670700162028531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 44a728c26df278b4e8f8293268dafe2e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ShadowSunder_Player_Final_0: -5608653477260362401
+      ShadowSunder_Player_Final_1: 6662896325451082659
+      ShadowSunder_Player_Final_10: 7584968839847001931
+      ShadowSunder_Player_Final_11: 278534898273025406
+      ShadowSunder_Player_Final_12: -9043312278866661351
+      ShadowSunder_Player_Final_13: 939002465118118918
+      ShadowSunder_Player_Final_14: 3615657490691015256
+      ShadowSunder_Player_Final_15: -2426704509094426120
+      ShadowSunder_Player_Final_16: -2816169723117919467
+      ShadowSunder_Player_Final_17: 8324208364523346392
+      ShadowSunder_Player_Final_18: 5953568619386256592
+      ShadowSunder_Player_Final_19: 4383182462567640423
+      ShadowSunder_Player_Final_2: 9061359246742221088
+      ShadowSunder_Player_Final_20: -3761600745892126357
+      ShadowSunder_Player_Final_21: -4202830198539398466
+      ShadowSunder_Player_Final_22: -1727885803619647883
+      ShadowSunder_Player_Final_23: 1743696339926531627
+      ShadowSunder_Player_Final_24: 5106266693227419343
+      ShadowSunder_Player_Final_25: -2900927430002400593
+      ShadowSunder_Player_Final_26: -9157476257594353918
+      ShadowSunder_Player_Final_27: 6761391169127626557
+      ShadowSunder_Player_Final_28: 4511575515082327518
+      ShadowSunder_Player_Final_29: 8263672071846239311
+      ShadowSunder_Player_Final_3: 2574279042879389502
+      ShadowSunder_Player_Final_30: -6627151686705646051
+      ShadowSunder_Player_Final_31: 5259654320999638929
+      ShadowSunder_Player_Final_32: -548905173069267509
+      ShadowSunder_Player_Final_33: -1156521464189237240
+      ShadowSunder_Player_Final_34: -486968506877973896
+      ShadowSunder_Player_Final_35: 8145383643013456737
+      ShadowSunder_Player_Final_36: 1754635073014130371
+      ShadowSunder_Player_Final_37: 954284331438863268
+      ShadowSunder_Player_Final_38: 6397069409286019172
+      ShadowSunder_Player_Final_39: -4706789366407487600
+      ShadowSunder_Player_Final_4: 7646141565980005990
+      ShadowSunder_Player_Final_40: 7854388580720108079
+      ShadowSunder_Player_Final_41: -2727323788731877175
+      ShadowSunder_Player_Final_42: -8682413301564942845
+      ShadowSunder_Player_Final_43: -1959230916415829183
+      ShadowSunder_Player_Final_44: -7700525259948719869
+      ShadowSunder_Player_Final_45: -7265448767719651817
+      ShadowSunder_Player_Final_46: 2472012451561195111
+      ShadowSunder_Player_Final_47: 1590039957018280770
+      ShadowSunder_Player_Final_48: 9186649000027200009
+      ShadowSunder_Player_Final_49: -1284079115183509471
+      ShadowSunder_Player_Final_5: -5102959860385567853
+      ShadowSunder_Player_Final_50: -1044868126144813914
+      ShadowSunder_Player_Final_51: 6870259876563266141
+      ShadowSunder_Player_Final_52: -8029040630743219864
+      ShadowSunder_Player_Final_53: 5451982433514952606
+      ShadowSunder_Player_Final_54: -8824498876661868764
+      ShadowSunder_Player_Final_55: 4891763698659797208
+      ShadowSunder_Player_Final_56: 2977092354730309464
+      ShadowSunder_Player_Final_57: 6991801103645192218
+      ShadowSunder_Player_Final_58: -3844540926610001461
+      ShadowSunder_Player_Final_59: -5471111583798299056
+      ShadowSunder_Player_Final_6: -5102634137738528876
+      ShadowSunder_Player_Final_60: -3555860326541784148
+      ShadowSunder_Player_Final_61: 3614261570973601825
+      ShadowSunder_Player_Final_62: 9155330910985996383
+      ShadowSunder_Player_Final_63: -6537460953335160995
+      ShadowSunder_Player_Final_64: -7170299931435762640
+      ShadowSunder_Player_Final_65: 3381810891512513073
+      ShadowSunder_Player_Final_66: 5642011105813534359
+      ShadowSunder_Player_Final_67: 6423235961658608573
+      ShadowSunder_Player_Final_68: -639714614789870504
+      ShadowSunder_Player_Final_69: -6404480887102175796
+      ShadowSunder_Player_Final_7: 1165446328151831176
+      ShadowSunder_Player_Final_70: -7011598146047350452
+      ShadowSunder_Player_Final_71: -2008683712993000867
+      ShadowSunder_Player_Final_72: 8002770918338247350
+      ShadowSunder_Player_Final_73: -1555628100355697576
+      ShadowSunder_Player_Final_74: 5891390242280959582
+      ShadowSunder_Player_Final_75: 5962337357480496204
+      ShadowSunder_Player_Final_76: -8544395858907143655
+      ShadowSunder_Player_Final_77: 5966355450897221496
+      ShadowSunder_Player_Final_78: 2788030414552098622
+      ShadowSunder_Player_Final_79: 5693254605099368453
+      ShadowSunder_Player_Final_8: -2970860129281430918
+      ShadowSunder_Player_Final_80: -545958962287172913
+      ShadowSunder_Player_Final_81: 8316285625873328634
+      ShadowSunder_Player_Final_82: -516120863067270582
+      ShadowSunder_Player_Final_83: 9055216658540169509
+      ShadowSunder_Player_Final_84: -4801560799580123358
+      ShadowSunder_Player_Final_85: -3710212452855400739
+      ShadowSunder_Player_Final_86: 5441160976293279661
+      ShadowSunder_Player_Final_87: 8950357725653806552
+      ShadowSunder_Player_Final_88: -4948592978521056361
+      ShadowSunder_Player_Final_89: -7349685965633263073
+      ShadowSunder_Player_Final_9: -569486248023948845
+      ShadowSunder_Player_Final_90: 1894520065552982048
+      ShadowSunder_Player_Final_91: -9208115539528344319
+      ShadowSunder_Player_Final_92: 1505259654298358071
+      ShadowSunder_Player_Final_93: 8874389437278953304
+      ShadowSunder_Player_Final_94: 161165324352376464
+      ShadowSunder_Player_Final_95: 7427437367566877514
+      ShadowSunder_Player_Final_96: -1101746661325090492
+      ShadowSunder_Player_Final_97: -2598670700162028531
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

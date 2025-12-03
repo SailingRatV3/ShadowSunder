@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6601081217044405019, guid: 4e154eb2750a45b40b368e7dc6b04344, type: 3}
+  m_Sprite: {fileID: 5979728347644684602, guid: fccd479ff2558a0409cf862456bd143d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -166,7 +166,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7530790975130730857}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 89457fad571185442aab534c5baec8ae, type: 2}
   m_CullingMode: 0
@@ -232,6 +232,7 @@ MonoBehaviour:
   knockbackForce: 300
   movementSpeed: 50
   uiManager: {fileID: 0}
+  shadowDive: {fileID: 0}
   detectionZone: {fileID: 0}
   lightningStrikeHealthThreshold: 0.5
   hitsBeforeRadialAttack: 3
@@ -247,8 +248,11 @@ MonoBehaviour:
   lightSpawnPoints: []
   lightPrefab: {fileID: 0}
   pushbackForce: 500
-  pushbackPosition: {fileID: 0}
+  teleportPositions: []
+  teleportDelay: 0.2
+  teleportCooldown: 2
   knockbackCooldown: 0.5
+  knockbackMultiplier: 0.5
 --- !u!114 &61275350367882425
 MonoBehaviour:
   m_ObjectHideFlags: 0

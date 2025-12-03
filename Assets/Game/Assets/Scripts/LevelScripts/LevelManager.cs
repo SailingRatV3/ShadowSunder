@@ -23,14 +23,26 @@ public class LevelManager : MonoBehaviour
     
     void Start()
     {
-        Debug.Log("newGame = " + newGameCount);
-        if (isNewGame == true && newGameCount == 0)
+        if (SaveSystem.HasCheckpoint())
         {
-            PlayerRespawnManager.NewGame();
-            
+            transform.position = SaveSystem.LoadCheckpoint();
         }
-        Debug.Log("Pause Menu Active: " + pauseMenuPanel.activeSelf);
-        Debug.Log("Time Scale: " + Time.timeScale);
+        else
+        {
+            // Place player at starting point
+            // DO NOT call NewGame here
+            Debug.Log("No checkpoint found — starting fresh.");
+        }
+       // PlayerRespawnManager.NewGame();
+       // isNewGame = true;
+//        Debug.Log("newGame = " + newGameCount);
+       // if (isNewGame == true && newGameCount == 0)
+      //  {
+     //       PlayerRespawnManager.NewGame();
+            
+     //   }
+       // Debug.Log("Pause Menu Active: " + pauseMenuPanel.activeSelf);
+       // Debug.Log("Time Scale: " + Time.timeScale);
        // if (resumeButton == null)
       //  {
        //     Debug.LogWarning("Resume Button is null in Start() — will attempt to reassign on scene load.");
@@ -42,7 +54,7 @@ public class LevelManager : MonoBehaviour
     private void OnEnable()
     {
         
-        Debug.Log("OnEnable");
+       // Debug.Log("OnEnable");
         usePauseAction.action.Enable();
         usePauseAction.action.performed += OnPausePerformed;
        // SceneManager.sceneLoaded += OnSceneLoaded;

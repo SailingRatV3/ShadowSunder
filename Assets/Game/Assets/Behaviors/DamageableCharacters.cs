@@ -19,7 +19,10 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
     private float invincibilityTimeElapse = 0f;
     [Header("Knockback Settings")]
     public bool canRecieveKnockback = true;
-    
+    [Header("Audio Clips")]
+   // [SerializeField] private AudioClip[] knockbackSounds;
+    [SerializeField] private AudioClip[] damageSounds;
+   // [SerializeField] private AudioClip[] deathSounds;
     public event Action OnDamage;
     public event Action OnDeath;
    
@@ -55,7 +58,8 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
              //   Debug.Log("Triggering hit animation");
                 // Make Hit Animation: player hit animation
                 animator.SetTrigger("hit");
-               // animator.SetBool("isAlive", true);
+                SoundFXManager.instance.PlayRandomSoundFXClip(damageSounds, this.transform, 0.5f);
+                // animator.SetBool("isAlive", true);
             }
             
 
@@ -153,6 +157,7 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
         if (!Invincible)
         {
            Health -= damage; 
+           OnDamage?.Invoke(); 
            // apply knockback force
            if (canRecieveKnockback)
            {
@@ -180,6 +185,7 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
         {
             //Debug.Log("Dog Hit " + damage);
             Health -= damage;
+            OnDamage?.Invoke(); 
             //cameraShakeManager.TriggerShakeByName("Hit");
             if (isInvinciblityEnable)
             {
@@ -194,8 +200,12 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
     {
         
             Debug.Log("Destroying enemy");
-           Destroy(gameObject); 
-        
+           Destroy(gameObject);
+           if (gameObject.tag == "Player")
+           {
+               PlayerRespawnManager playerRespawnManager = gameObject.GetComponentInParent<PlayerRespawnManager>();
+               playerRespawnManager.OnPlayerDeath();
+           }
         
     }
 

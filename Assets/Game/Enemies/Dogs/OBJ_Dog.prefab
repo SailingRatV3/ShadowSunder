@@ -332,7 +332,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 224473303075231194, guid: 9d767d83240348444a9be145067e4e46, type: 3}
+  m_Sprite: {fileID: 1064345227341938176, guid: 10f4071ad681edc4f80f29f7afe33443, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -462,6 +462,11 @@ MonoBehaviour:
   invincibilityTime: 0.25
   isInvinciblityEnable: 0
   canRecieveKnockback: 1
+  damageSounds:
+  - {fileID: 8300000, guid: 417f6aecf473a9840a93d1be8719727f, type: 3}
+  - {fileID: 8300000, guid: 3968bd3616128ff49910688c88abafde, type: 3}
+  - {fileID: 8300000, guid: 0811712ceee97b141823b3539baf9cb5, type: 3}
+  - {fileID: 8300000, guid: 39d97096ce460034f8b52f1a38d93922, type: 3}
   cameraShakeManager: {fileID: 8162843768540481221, guid: d7dd6ba972958b3459cba7d99ecb7d14, type: 3}
   _health: 3
   _maxHealth: 3

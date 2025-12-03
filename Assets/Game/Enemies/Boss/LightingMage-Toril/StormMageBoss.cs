@@ -31,6 +31,11 @@ public class StormMageBoss : MonoBehaviour
     public GameObject lightPrefab;
     public float pushbackForce = 500f;
    
+    [Header("Phase 2 Teleport Settings")]
+    public Transform[] teleportPositions;
+    public float teleportDelay = 0.2f;
+    private float lastTeleportTime = -999f;
+    public float teleportCooldown = 2f;
     
     private List<GameObject> spawnedLights = new List<GameObject>();
     private bool barrierBroken = false;
@@ -192,13 +197,11 @@ public class StormMageBoss : MonoBehaviour
 
     void HandlePhase1()
     {
-       // Debug.Log("HandlePhase1");
-        
-        if (player == null) return;
+       if (player == null) return;
         
         if (!isMoving && !isAttacking && !isWaitingAfterMove)
         {
-           // Debug.Log("Moving to new Position");
+           
             // Random target position to move
             currentTargetPosition = movePositions[Random.Range(0, movePositions.Length)].position;
             isMoving = true;
@@ -213,8 +216,7 @@ public class StormMageBoss : MonoBehaviour
             
             
             
-        // Debug.Log($"Target: {currentTargetPosition}, Current: {rb.position}");
-            if (Vector2.Distance(rb.position, currentTargetPosition) < 0.5f)
+         if (Vector2.Distance(rb.position, currentTargetPosition) < 0.5f)
             {
                 isMoving = false;
 
@@ -256,6 +258,13 @@ public class StormMageBoss : MonoBehaviour
         if (shootRadial != null)
         {
             shootRadial.isShooting = true;
+            if (currentPhase == BossPhase.Phase2)
+            {
+                // If want the projectile speed to gradually increase
+               // shootRadial.projectileSpeed += 3f;
+               shootRadial.projectileSpeed = 8f;
+               // Debug.Log("Projectile Speed: " + shootRadial.projectileSpeed);
+            }
             yield return StartCoroutine(shootRadial.ShootRadialBursts());
             shootRadial.isShooting = false;
         }
@@ -266,7 +275,7 @@ public class StormMageBoss : MonoBehaviour
     void HandleLightningPhase()
     {
         if (isDead) return;
-        Debug.Log("Handling Lightning Phase");
+        //Debug.Log("Handling Lightning Phase");
       
         if (!isAttacking)
         {
@@ -293,12 +302,12 @@ public class StormMageBoss : MonoBehaviour
 
     IEnumerator DoRadialAttack()
     {
-        Debug.Log("Doing Radial Attack");
+       // Debug.Log("Doing Radial Attack");
         isAttacking = true;
         isRadialAttacking = true;
         if (shootRadial != null)
         {
-            Debug.Log("Shoot Radial");
+           // Debug.Log("Shoot Radial");
             shootRadial.isShooting = true;
             StartCoroutine(shootRadial.ShootRadialBursts());
             shootRadial.isShooting = false;
@@ -316,11 +325,21 @@ public class StormMageBoss : MonoBehaviour
         timesHit++;
         Debug.Log($"Boss Damaged | Barrier Active: {barrierObject.activeSelf} | IsRadialAttacking: {isRadialAttacking} | IsAttacking: {isAttacking} | IsDead: {isDead}");
         
-        if (barrierObject.activeSelf && !isRadialAttacking && !isDead)
+        if (barrierObject.activeSelf && currentPhase == BossPhase.Phase2 && !isRadialAttacking && !isDead)
         {
-            Debug.Log("Boss inside barrier took damage. Reacting with radial attack.");
-            StartCoroutine(ReactWithRadialAttack());
-            return; 
+           // Debug.Log("Boss hit during Phase 2");
+            StartCoroutine(TeleportBossAndBarrier());
+            return;
+            
+            /*
+             * if (Time.time - lastTeleportTime >= teleportCooldown)
+    {
+        lastTeleportTime = Time.time;
+        StartCoroutine(TeleportBossAndBarrier());
+    }
+    return;
+             */
+            
         }
 
         
@@ -470,7 +489,7 @@ public class StormMageBoss : MonoBehaviour
 
         // Activate Boss Barrier
         barrierObject.SetActive(true);
-        Debug.Log("Barrier enabled: " + barrierObject.activeSelf);
+       // Debug.Log("Barrier enabled: " + barrierObject.activeSelf);
         damageableCharacter.Targetable = true;
 
         yield return new WaitForSeconds(1.5f);
@@ -478,7 +497,7 @@ public class StormMageBoss : MonoBehaviour
 
 
         damageableCharacter.OnDamage += HandleBossDamaged;
-
+       // Debug.Log("Subscribed HandleBossDamaged to OnDamage event");
 
         StartCoroutine(Phase2ProjectileRoutine());
         isAttacking = false;
@@ -495,6 +514,10 @@ public class StormMageBoss : MonoBehaviour
         barrierBroken = true;
         currentPhase = BossPhase.BarrierBreakSequence01;
     }
+    
+    /*
+     * Enumerators --------------------------------------------------------------------------------------------------------------------------------------------------
+     */
     
     IEnumerator HandleBarrierBreakSequence()
     {
@@ -556,4 +579,35 @@ public class StormMageBoss : MonoBehaviour
             yield return new WaitForSeconds(5f); // Wait seconds between attacks
         }
     }
+    
+    IEnumerator TeleportBossAndBarrier()
+    {
+        if (teleportPositions == null || teleportPositions.Length == 0)
+            yield break;
+
+        
+        // Add a sigil for the boss teleporting plus disappearing animation 
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (sr != null) sr.enabled = false;
+        barrierObject.SetActive(false);
+
+        yield return new WaitForSeconds(teleportDelay);
+
+        // Pick a random teleport position
+        Transform target = teleportPositions[Random.Range(0, teleportPositions.Length)];
+
+        transform.position = target.position;
+
+        // Move the barrier with the boss
+        barrierObject.transform.position = target.position;
+
+        yield return new WaitForSeconds(0.1f);
+
+        // Reappear
+        if (sr != null) sr.enabled = true;
+        barrierObject.SetActive(true);
+
+        Debug.Log("Boss teleported to new position!");
+    }
+    
 }

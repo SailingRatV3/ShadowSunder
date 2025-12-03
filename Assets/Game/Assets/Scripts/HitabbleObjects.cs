@@ -9,6 +9,8 @@ public class HitabbleObjects : MonoBehaviour, IDamageable
     public float knockbackDuration = 0.2f;
     private Coroutine knockbackRoutine;
     
+    [SerializeField] private AudioClip[] hitSound;
+    
     public float Health { get; set; }
     public bool Invincible { get; set; }
     public bool Targetable { get; set; }
@@ -24,6 +26,7 @@ public class HitabbleObjects : MonoBehaviour, IDamageable
             StopCoroutine(knockbackRoutine);
 
         knockbackRoutine = StartCoroutine(ApplyKnockback(knockback.normalized * knockbackforce));
+        SoundFXManager.instance.PlayRandomSoundFXClip(hitSound, this.transform, 0.3f);
     }
 
     public void OnHit(float damage)

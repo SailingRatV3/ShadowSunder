@@ -8,6 +8,7 @@ public class ProjectileControl : MonoBehaviour
     public float damage = 1f;
     private Vector2 moveDirection;
     private Rigidbody2D rb;
+    [SerializeField] private AudioClip[] hitSound;
 
     // This method will be called by the turret to set the direction.
     public void SetDirection(Vector2 direction)
@@ -44,6 +45,7 @@ public class ProjectileControl : MonoBehaviour
             IDamageable damageable = col.GetComponent<IDamageable>();
             if (damageable != null)
             {
+                SoundFXManager.instance.PlayRandomSoundFXClip(hitSound, this.transform, 0.2f);
                 Vector2 direction = (Vector2)(col.transform.position - transform.position).normalized;
                 Vector2 knockback = direction * knockbackForce;
                 damageable.OnHit(damage, knockback);

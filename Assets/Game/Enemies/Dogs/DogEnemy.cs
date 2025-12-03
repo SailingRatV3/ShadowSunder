@@ -21,8 +21,10 @@ public class DogEnemy : MonoBehaviour
     public DetectionZone detectionZone;
      Rigidbody2D rb;
     DamageableCharacters damageableCharacter;
+    private SpriteRenderer spriteRenderer;
      void Start()
     {
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();    
         damageableCharacter = GetComponent<DamageableCharacters>();
         if (player == null)
@@ -41,30 +43,38 @@ public class DogEnemy : MonoBehaviour
             return;
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-       // Debug.Log($"Distance to Player: {distanceToPlayer}");
+       
         if (distanceToPlayer <= wakeUpRange)
         {
-           // if(!isAwake) Debug.Log("Awake");
-          //  Debug.Log("Awake");
+           
             isAwake = true;
             Vector2 direction = (player.position - transform.position).normalized;
-            rb.AddForce(direction * movementSpeed, ForceMode2D.Force);        }
+            rb.AddForce(direction * movementSpeed, ForceMode2D.Force);
+            
+            if (player.position.x < transform.position.x)
+            {
+                // Player is to the left
+                if (spriteRenderer != null)
+                    spriteRenderer.flipX = false; 
+                else
+                    transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            }
+            else
+            {
+                // Player is to the right
+                if (spriteRenderer != null)
+                    spriteRenderer.flipX = true;
+                else
+                    transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            }
+        }
         else
         {
-          //  if(isAwake) Debug.Log("Sleeping");
-          //  Debug.Log("Sleeping");
+          
             isAwake = false;
             rb.linearVelocity = Vector2.zero;
         }
-       /*
-        if (damageableCharacter.Targetable && detectionZone.detectedObjects.Count > 0)
-        {
-            // Calc directiong to target 0 
-            Vector2 direction = (detectionZone.detectedObjects[0].transform.position - transform.position).normalized;
-            
-            // move to first detected object
-            rb.AddForce(direction * (movementSpeed * Time.deltaTime));
-        }*/
+       
     }
     void OnCollisionEnter2D(Collision2D col)
     {

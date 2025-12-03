@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public float HealthPercent => damageableCharacter.Health / maxHealth;
     public bool IsFullHealth => damageableCharacter.Health >= maxHealth;
     
+    [SerializeField] private PlayerRespawnManager playerRespawnManager;    
     [SerializeField] private DamageableCharacters damageableCharacter;
 
     private void Start()
@@ -24,10 +25,20 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         {
             maxHealth = damageableCharacter.Health;  // Sync health max value
         }
+
+        if (playerRespawnManager == null)
+            playerRespawnManager = FindObjectOfType<PlayerRespawnManager>();
     }
 
     private void Update()
     {
+        if (damageableCharacter == null) return;
+
+        if (damageableCharacter.Health <= 0)
+        {
+            Die();
+        }
+
         if (damageableCharacter != null)
         {
             healthSlider.value = damageableCharacter.Health ;
@@ -71,7 +82,8 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     public void OnObjectDestroyed()
     {
-        throw new System.NotImplementedException();
+        playerRespawnManager.OnPlayerDeath();
+        
     }
 
     public void Heal(float healAmount)
@@ -79,5 +91,17 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         damageableCharacter.Health += healAmount;
         damageableCharacter.Health = Mathf.Min(damageableCharacter.Health, maxHealth);
         
+    }
+    
+    private void Die()
+    {
+        if (playerRespawnManager != null)
+        {
+            playerRespawnManager.OnPlayerDeath();
+        }
+        else
+        {
+            Debug.LogError("RespawnManager NOT FOUND!");
+        }
     }
 }

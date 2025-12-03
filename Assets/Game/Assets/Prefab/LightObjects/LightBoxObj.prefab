@@ -301,6 +301,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   knockbackforce: 10
   knockbackDuration: 0.3
+  hitSound:
+  - {fileID: 8300000, guid: 417f6aecf473a9840a93d1be8719727f, type: 3}
+  - {fileID: 8300000, guid: 3968bd3616128ff49910688c88abafde, type: 3}
+  - {fileID: 8300000, guid: 0811712ceee97b141823b3539baf9cb5, type: 3}
+  - {fileID: 8300000, guid: 39d97096ce460034f8b52f1a38d93922, type: 3}
 --- !u!50 &2199381564336489302
 Rigidbody2D:
   serializedVersion: 5

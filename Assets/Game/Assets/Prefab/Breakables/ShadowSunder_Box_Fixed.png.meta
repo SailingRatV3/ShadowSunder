@@ -1,0 +1,885 @@
+fileFormatVersion: 2
+guid: 2d804d0199cc8eb488de6a0adbe743cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4571269611128716800
+    second: ShadowSunder_Box_Fixed_0
+  - first:
+      213: 3518446761402772607
+    second: ShadowSunder_Box_Fixed_1
+  - first:
+      213: 2832929210237631934
+    second: ShadowSunder_Box_Fixed_2
+  - first:
+      213: 4855453338806866251
+    second: ShadowSunder_Box_Fixed_3
+  - first:
+      213: 9214717479146167109
+    second: ShadowSunder_Box_Fixed_4
+  - first:
+      213: -5018131341467630579
+    second: ShadowSunder_Box_Fixed_5
+  - first:
+      213: 4284688619168109737
+    second: ShadowSunder_Box_Fixed_6
+  - first:
+      213: 7236986237764833140
+    second: ShadowSunder_Box_Fixed_7
+  - first:
+      213: 1021142564888959023
+    second: ShadowSunder_Box_Fixed_8
+  - first:
+      213: 3356275318023218017
+    second: ShadowSunder_Box_Fixed_9
+  - first:
+      213: -423007573134051828
+    second: ShadowSunder_Box_Fixed_10
+  - first:
+      213: -4757252799048580007
+    second: ShadowSunder_Box_Fixed_11
+  - first:
+      213: 4913835345987403664
+    second: ShadowSunder_Box_Fixed_12
+  - first:
+      213: 6079016546599237526
+    second: ShadowSunder_Box_Fixed_13
+  - first:
+      213: 3079166747845420988
+    second: ShadowSunder_Box_Fixed_14
+  - first:
+      213: 5015730229204508495
+    second: ShadowSunder_Box_Fixed_15
+  - first:
+      213: -7985651885827759672
+    second: ShadowSunder_Box_Fixed_16
+  - first:
+      213: -5273105001087851879
+    second: ShadowSunder_Box_Fixed_17
+  - first:
+      213: 8249563074287493175
+    second: ShadowSunder_Box_Fixed_18
+  - first:
+      213: -3292773154174502962
+    second: ShadowSunder_Box_Fixed_19
+  - first:
+      213: -6559748791316115129
+    second: ShadowSunder_Box_Fixed_20
+  - first:
+      213: 5839893413080130730
+    second: ShadowSunder_Box_Fixed_21
+  - first:
+      213: 72401910622166791
+    second: ShadowSunder_Box_Fixed_22
+  - first:
+      213: 2460797231301581393
+    second: ShadowSunder_Box_Fixed_23
+  - first:
+      213: -6388951003099025659
+    second: ShadowSunder_Box_Fixed_24
+  - first:
+      213: -7926193041972342839
+    second: ShadowSunder_Box_Fixed_25
+  - first:
+      213: -115992189107797626
+    second: ShadowSunder_Box_Fixed_26
+  - first:
+      213: -6621462810037654805
+    second: ShadowSunder_Box_Fixed_27
+  - first:
+      213: -2818636325649265715
+    second: ShadowSunder_Box_Fixed_28
+  - first:
+      213: -2123335705516044665
+    second: ShadowSunder_Box_Fixed_29
+  - first:
+      213: -7988136480946296286
+    second: ShadowSunder_Box_Fixed_30
+  - first:
+      213: 6783639959730060868
+    second: ShadowSunder_Box_Fixed_31
+  - first:
+      213: -5121771853530228786
+    second: ShadowSunder_Box_Fixed_32
+  - first:
+      213: 1960884932995210787
+    second: ShadowSunder_Box_Fixed_33
+  - first:
+      213: -6721962649879616922
+    second: ShadowSunder_Box_Fixed_34
+  - first:
+      213: -7673207410160453147
+    second: ShadowSunder_Box_Fixed_35
+  - first:
+      213: 3415255646224711067
+    second: ShadowSunder_Box_Fixed_36
+  - first:
+      213: 5789462577897585070
+    second: ShadowSunder_Box_Fixed_37
+  - first:
+      213: -4016184827702302824
+    second: ShadowSunder_Box_Fixed_38
+  - first:
+      213: -526572676690649272
+    second: ShadowSunder_Box_Fixed_39
+  - first:
+      213: 3588836863711829024
+    second: ShadowSunder_Box_Fixed_40
+  - first:
+      213: -2767268234757381109
+    second: ShadowSunder_Box_Fixed_41
+  - first:
+      213: 4136972644006504371
+    second: ShadowSunder_Box_Fixed_42
+  - first:
+      213: -3420075290820216370
+    second: ShadowSunder_Box_Fixed_43
+  - first:
+      213: 4388435776868948150
+    second: ShadowSunder_Box_Fixed_44
+  - first:
+      213: -4809586450366270671
+    second: ShadowSunder_Box_Fixed_45
+  - first:
+      213: -121209602348642163
+    second: ShadowSunder_Box_Fixed_46
+  - first:
+      213: -7378071381319509541
+    second: ShadowSunder_Box_Fixed_47
+  - first:
+      213: 2140509938462036464
+    second: ShadowSunder_Box_Fixed_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 160
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002822022869f80c0800000000000000
+      internalID: -4571269611128716800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1600
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c298e10b804d030800000000000000
+      internalID: 3518446761402772607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1600
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebdba027b16905720800000000000000
+      internalID: 2832929210237631934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1600
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41511b1619026340800000000000000
+      internalID: 4855453338806866251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_4
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1600
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b1712c9b041ef70800000000000000
+      internalID: 9214717479146167109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d044193d1240c5ab0800000000000000
+      internalID: -5018131341467630579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1280
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a49cae0995467b30800000000000000
+      internalID: 4284688619168109737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_7
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1280
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f0d5ad3a0fe6460800000000000000
+      internalID: 7236986237764833140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_8
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1280
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28dc35a0c3db2e00800000000000000
+      internalID: 1021142564888959023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_9
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1636f239e92e39e20800000000000000
+      internalID: 3356275318023218017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c067b0a7adc212af0800000000000000
+      internalID: -423007573134051828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_11
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 960
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9540af5c8c7dafdb0800000000000000
+      internalID: -4757252799048580007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_12
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 960
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f765a6633713440800000000000000
+      internalID: 4913835345987403664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_13
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 960
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697f4c357510d5450800000000000000
+      internalID: 6079016546599237526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_14
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 960
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb76581d7d56bba20800000000000000
+      internalID: 3079166747845420988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f5ce8a1147b9540800000000000000
+      internalID: 5015730229204508495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_16
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c1ee4d6be34d2190800000000000000
+      internalID: -7985651885827759672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_17
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992a2da80fa22d6b0800000000000000
+      internalID: -5273105001087851879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_18
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730e51378e55c7270800000000000000
+      internalID: 8249563074287493175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_19
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec77c7b1348bd42d0800000000000000
+      internalID: -3292773154174502962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7411ec5ba3717f4a0800000000000000
+      internalID: -6559748791316115129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4e8cc3e187b0150800000000000000
+      internalID: 5839893413080130730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_22
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 320
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f91b37729310100800000000000000
+      internalID: 72401910622166791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_23
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 320
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15adef34b02862220800000000000000
+      internalID: 2460797231301581393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_24
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 320
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f28eca9e2e557a0800000000000000
+      internalID: -6388951003099025659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cfc0105c61800290800000000000000
+      internalID: -7926193041972342839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Box_Fixed_26
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6818283f7b9e36ef0800000000000000
+      internalID: -115992189107797626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6cf992628d8c32d40ac5f3b3aa884125
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ShadowSunder_Box_Fixed_0: -4571269611128716800
+      ShadowSunder_Box_Fixed_1: 3518446761402772607
+      ShadowSunder_Box_Fixed_10: -423007573134051828
+      ShadowSunder_Box_Fixed_11: -4757252799048580007
+      ShadowSunder_Box_Fixed_12: 4913835345987403664
+      ShadowSunder_Box_Fixed_13: 6079016546599237526
+      ShadowSunder_Box_Fixed_14: 3079166747845420988
+      ShadowSunder_Box_Fixed_15: 5015730229204508495
+      ShadowSunder_Box_Fixed_16: -7985651885827759672
+      ShadowSunder_Box_Fixed_17: -5273105001087851879
+      ShadowSunder_Box_Fixed_18: 8249563074287493175
+      ShadowSunder_Box_Fixed_19: -3292773154174502962
+      ShadowSunder_Box_Fixed_2: 2832929210237631934
+      ShadowSunder_Box_Fixed_20: -6559748791316115129
+      ShadowSunder_Box_Fixed_21: 5839893413080130730
+      ShadowSunder_Box_Fixed_22: 72401910622166791
+      ShadowSunder_Box_Fixed_23: 2460797231301581393
+      ShadowSunder_Box_Fixed_24: -6388951003099025659
+      ShadowSunder_Box_Fixed_25: -7926193041972342839
+      ShadowSunder_Box_Fixed_26: -115992189107797626
+      ShadowSunder_Box_Fixed_3: 4855453338806866251
+      ShadowSunder_Box_Fixed_4: 9214717479146167109
+      ShadowSunder_Box_Fixed_5: -5018131341467630579
+      ShadowSunder_Box_Fixed_6: 4284688619168109737
+      ShadowSunder_Box_Fixed_7: 7236986237764833140
+      ShadowSunder_Box_Fixed_8: 1021142564888959023
+      ShadowSunder_Box_Fixed_9: 3356275318023218017
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
