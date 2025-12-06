@@ -45,7 +45,7 @@ public class MainMenuManager : MonoBehaviour
         playButton.onClick.AddListener(OnPlayButtonPressed);
         
         
-        cutsceneBackground.SetActive(false);
+      //  cutsceneBackground.SetActive(false);
     }
 
     void OnPlayButtonPressed()

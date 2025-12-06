@@ -17,7 +17,7 @@ public class CutsceneManager : MonoBehaviour
     public CanvasGroup FadeOutCanvasGroup;
 
     [Header("Key Press Prompt")]
-    public Image spacebarImage;
+    public SpriteRenderer spacebarImage;
    // public Image holdSpacebarImage;
     public TextMeshProUGUI spacebarText;
     
@@ -54,19 +54,6 @@ public class CutsceneManager : MonoBehaviour
     {
         // --- Show the skip hint ---
         yield return StartCoroutine(ShowSkipHintAtStart());
-        
-        // --- Show images ---
-        for (int i = 0; i < cutsceneImages.Length; i++)
-        {
-            if (Input.GetKey(skipKey))
-            {
-                EndCutscene();
-                yield break;
-            }
-            
-            cutsceneImages[i].gameObject.SetActive(true);
-            yield return new WaitForSeconds(imageDisplayTimes[i]);
-        }
 
         // --- Show dialogue lines ---
         for (int i = 0; i < dialogueLines.Length; i++)
@@ -76,12 +63,31 @@ public class CutsceneManager : MonoBehaviour
                 EndCutscene();
                 yield break;
             }
+
+            // If it's a different image, fade out the current one and fade in the new one
+            if (i > 0 && cutsceneImages[i].sprite != cutsceneImages[i - 1].sprite)
+            {
+                StartCoroutine(FadeImage(cutsceneImages[i - 1], 1f, 0f, 1f));  // Fade out previous image
+                cutsceneImages[i].gameObject.SetActive(true);  // Show new image
+                yield return StartCoroutine(FadeImage(cutsceneImages[i], 0f, 1f, 1f));  // Fade in new image
+            }
+            else if (i == 0)
+            {
+                // First image, just show it without fading out anything
+                cutsceneImages[i].gameObject.SetActive(true);
+                yield return StartCoroutine(FadeImage(cutsceneImages[i], 0f, 1f, 1f));
+            }
+
+            // Show the text
             cutsceneText.text = dialogueLines[i];
-            yield return StartCoroutine(FadeInText(textCanvasGroup, 1f)); // fade in
-           // yield return new WaitForSeconds(textDisplayTime);
-           yield return StartCoroutine(ShowSpacebarPrompt());             
-           yield return StartCoroutine(WaitForAnyKeyOrSkip());
-            yield return StartCoroutine(FadeOutText(textCanvasGroup, 1f)); // fade out
+            yield return StartCoroutine(FadeInText(textCanvasGroup, 1f));  // fade in text
+
+            // Wait for player input to proceed
+            yield return StartCoroutine(ShowSpacebarPrompt());
+            yield return StartCoroutine(WaitForAnyKeyOrSkip());
+
+            // Fade out text after the player presses a key
+            yield return StartCoroutine(FadeOutText(textCanvasGroup, 1f));  // fade out text
         }
 
         EndCutscene();
@@ -150,7 +156,7 @@ public class CutsceneManager : MonoBehaviour
         }
     }
 
-    IEnumerator FadeImage(Image img, float from, float to, float duration)
+    IEnumerator FadeImage(SpriteRenderer img, float from, float to, float duration)
     {
         float elapsed = 0f;
 
