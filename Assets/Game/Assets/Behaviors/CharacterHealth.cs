@@ -6,7 +6,7 @@ public class CharacterHealth : MonoBehaviour, IDamageable
 {
     public Slider healthSlider;
     public Slider easeHealthSlider;
-    // public TextMeshProUGUI healthText;
+    
     public float maxHealth = 3f;
     private float lerpSpeed = 0.05f;
     
@@ -17,7 +17,7 @@ public class CharacterHealth : MonoBehaviour, IDamageable
         damageableCharacter = GetComponent<DamageableCharacters>();
         if (damageableCharacter != null)
         {
-            maxHealth = damageableCharacter.Health;  // Sync health max value
+            maxHealth = damageableCharacter.Health;  
         }
     }
 
@@ -27,7 +27,6 @@ public class CharacterHealth : MonoBehaviour, IDamageable
         {
             healthSlider.value = damageableCharacter.Health ;
             
-          //  healthText.text = Mathf.RoundToInt(damageableCharacter.Health).ToString() + " / " + maxHealth.ToString();
             
             if (healthSlider.value != easeHealthSlider.value)
             {
@@ -53,7 +52,7 @@ public class CharacterHealth : MonoBehaviour, IDamageable
     public bool Targetable { get; set; }
 
     public float _health = 3f;
-    //public bool _targetable = true;
+   
     public void OnHit(float damage, Vector2 knockback)
     {
         throw new System.NotImplementedException();

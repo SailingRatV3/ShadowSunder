@@ -49,17 +49,17 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
                 _health = 0;
             }
             
-            Debug.Log($"{gameObject.name} new Health: {_health}");
+            //Debug.Log($"{gameObject.name} new Health: {_health}");
 
             if (_health > 0)
             { 
                 cameraShakeManager.TriggerShakeByName("Hit");
 
-             //   Debug.Log("Triggering hit animation");
-                // Make Hit Animation: player hit animation
+             
+            
                 animator.SetTrigger("hit");
                 SoundFXManager.instance.PlayRandomSoundFXClip(damageSounds, this.transform, 0.5f);
-                // animator.SetBool("isAlive", true);
+                
             }
             
 
@@ -67,14 +67,14 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
 
             if (_health <= 0)
             {
-            //    Debug.Log("Health is zero. Setting isAlive = false");
+            
                 _health = 0;
                 isAlive = false;
-               // Make Death Animation: play animation before destroy
+              
                cameraShakeManager.TriggerShakeByName("Hit");
               animator.SetBool("isAlive", false);
               Targetable = false; 
-              //Destroy(gameObject);
+              
                 
             }
         }
@@ -110,7 +110,7 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
                    invincibilityFlashCoroutine = null;
                }
 
-               // Ensure sprite is fully visible
+               
                if (spriteRenderer != null)
                {
                    var color = spriteRenderer.color;
@@ -130,10 +130,10 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
             _targetable = value; 
             if (disableSimulation)
             {
-               rb.simulated = false; // if targetable turn on phsyics // Can commit this off if want the enemy death to still move
+               rb.simulated = false; // Can commit this off to make enemy death still animate
                             
             }
-            physicsCollider.enabled = value; // the last hit will eeffect the object
+            physicsCollider.enabled = value; 
         }
     }
 
@@ -153,7 +153,7 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
 // Interface
     public void OnHit(float damage, Vector2 knockback)
     {
-        Debug.Log($"[OnHit] {gameObject.name} took {damage} damage (vector knockback)");
+        //Debug.Log($"[OnHit] {gameObject.name} took {damage} damage (vector knockback)");
         if (!Invincible)
         {
            Health -= damage; 
@@ -174,8 +174,6 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
            }
         }
         
-        
-        //Debug.Log("Force : " + knockback);
     }
 
     public void OnHit(float damage)
@@ -186,7 +184,7 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
             //Debug.Log("Dog Hit " + damage);
             Health -= damage;
             OnDamage?.Invoke(); 
-            //cameraShakeManager.TriggerShakeByName("Hit");
+            
             if (isInvinciblityEnable)
             {
                 // activate invincibility + timer
@@ -239,7 +237,7 @@ public class DamageableCharacters : MonoBehaviour, IDamageable
             if (spriteRenderer != null)
             {
                 var color = spriteRenderer.color;
-                color.a = (color.a == 1f) ? 0.2f : 1f; // Toggle between faded and visible
+                color.a = (color.a == 1f) ? 0.2f : 1f; 
                 spriteRenderer.color = color;
             }
 

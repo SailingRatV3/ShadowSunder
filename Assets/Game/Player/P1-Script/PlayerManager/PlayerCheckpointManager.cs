@@ -12,7 +12,7 @@ public class PlayerCheckpointManager : MonoBehaviour
 
     void Update()
     {
-        // Press R to Reset -- change this before final Demo Test
+        // Press R to Reset 
         if (Keyboard.current.rKey.wasPressedThisFrame)
         {
             ResetToCheckpoint();
@@ -29,7 +29,7 @@ public class PlayerCheckpointManager : MonoBehaviour
         Debug.Log("Player reset to Checkpoint at:" + CheckpointPosition);
     }
     
-    // Call this on Player Death (playerCheckpointManager.OnPlayerDeath();
+    // Call this on Player Death 
     public void OnPlayerDeath()
     {
         ResetToCheckpoint();

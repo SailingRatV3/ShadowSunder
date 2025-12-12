@@ -8,13 +8,13 @@ public class TurretProjectile : MonoBehaviour
     public Transform player;
     public Transform firePoint;
     public GameObject projectilePrefab;
-   // public GameObject lightningProjectilePrefab;
+  
    public DetectionZone detectionZone;
    DamageableCharacters damageableCharacter;
    Rigidbody2D rb;
    Collider AlertCollider;
     Collider FireCollider;
-    // public int damage = 2;
+    
     Animator animator;
     [Header("Ranges")]
     public float wakeUpRange = 10f;
@@ -51,7 +51,7 @@ public class TurretProjectile : MonoBehaviour
 
        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-       // Wake up if player is within wakeUpRange
+       // Wake up if player is in wakeUpRange
        if (distanceToPlayer <= wakeUpRange)
        {
            if (!isAwake)
@@ -94,7 +94,7 @@ public class TurretProjectile : MonoBehaviour
         {
             projectileScript.SetDirection(direction);
         }
-        // Sound
+        // add Sound
     }
   
     private void HandleShooting()
@@ -110,16 +110,12 @@ public class TurretProjectile : MonoBehaviour
     }
     private void OnWakeUp()
     {
-        // Play wake up animation, change color, sound, etc.
         animator.SetBool("isAwake", true);
-        Debug.Log("Turret is now awake!");
     }
 
     private void OnSleep()
     {
-        // Play sleep animation, change color back, sound, etc.
         animator.SetBool("isAwake", false);
-        Debug.Log("Turret went back to sleep.");
     }
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -127,13 +123,11 @@ public class TurretProjectile : MonoBehaviour
         IDamageable damageable = collider.GetComponent<IDamageable>();
         if (damageable != null)
         {
-            
-            // Vector3 parentPosition = gameObject.GetComponentInParent<Transform>().position;
-            Vector3 parentPosition = transform.position; // Get sprite orgin position
-            Vector2 direction = (Vector2) (collider.gameObject.transform.position - transform.position).normalized; // normalized to not change the magnitude
+            Vector3 parentPosition = transform.position; 
+            Vector2 direction = (Vector2) (collider.gameObject.transform.position - transform.position).normalized; 
             Vector2 knockback = direction * knockbackForce;
                   
-            damageable.OnHit(playerDMG, knockback); // implement OnHit
+            damageable.OnHit(playerDMG, knockback); 
 
         }
     }
@@ -141,11 +135,11 @@ public class TurretProjectile : MonoBehaviour
     private void OnDrawGizmos()
     {
         // Wake-up range
-        Gizmos.color = new Color(1f, 1f, 0f, 0.3f); // Yellow (semi-transparent)
+        Gizmos.color = new Color(1f, 1f, 0f, 0.3f); 
         Gizmos.DrawWireSphere(transform.position, wakeUpRange);
 
         // Fire range
-        Gizmos.color = new Color(1f, 0f, 0f, 0.3f); // Red (semi-transparent)
+        Gizmos.color = new Color(1f, 0f, 0f, 0.3f); 
         Gizmos.DrawWireSphere(transform.position, fireRange);
     }
     

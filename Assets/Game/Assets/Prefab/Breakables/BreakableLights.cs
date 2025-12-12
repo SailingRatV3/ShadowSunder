@@ -27,7 +27,6 @@ public class BreakableLights : MonoBehaviour, IDamageable
             
             if (hitPoints == 0)
             {
-                // Health = 0;
                 TurnOffLight();
             }
 
@@ -61,11 +60,9 @@ public class BreakableLights : MonoBehaviour, IDamageable
         }
         else
         {
-            Debug.LogWarning("No Light2D component found on BreakableLight!");
+          //  Debug.LogWarning("No Light2D component found on BreakableLight!");
         }
 
-        // Add visual/sound effects
-        // GetComponent<Animator>()?.SetTrigger("break");
     }
     
 }

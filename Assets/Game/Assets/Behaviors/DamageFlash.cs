@@ -18,8 +18,7 @@ public class DamageFlash : MonoBehaviour
         }
     }
 
-    // Call this method when hit
-    // GetComponent<DamageFlash>().Flash();
+    
     public void Flash()
     {
         if (spriteRenderer != null)

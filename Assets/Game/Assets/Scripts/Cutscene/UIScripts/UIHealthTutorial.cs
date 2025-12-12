@@ -35,7 +35,7 @@ public class UIHealthTutorial : MonoBehaviour
 
     private void HandleInventoryChanged(int newCount)
     {
-        // Only trigger tutorial when first pickup is added
+        // Only trigger when the Player first pickup gem is added
         if (!tutorialShown && newCount == 1)
         {
             tutorialShown = true;

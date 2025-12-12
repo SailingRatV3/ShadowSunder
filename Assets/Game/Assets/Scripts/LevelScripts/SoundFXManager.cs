@@ -3,6 +3,7 @@ using UnityEngine;
 public class SoundFXManager : MonoBehaviour
 {
     public static SoundFXManager instance;
+    public AudioClip buttonSoundFXClip;
     
     [SerializeField] private AudioSource soundFXObject;
     private void Awake()
@@ -46,5 +47,18 @@ public class SoundFXManager : MonoBehaviour
         Destroy(audioSource.gameObject, clipLength);
     }
     
-    
+    public void PlayButtonSoundFXClip()
+    {
+        AudioSource audioSource = Instantiate(soundFXObject, Vector3.zero, Quaternion.identity);
+        
+        audioSource.clip = buttonSoundFXClip;
+        
+        audioSource.volume = 0.3f;
+        
+        audioSource.Play();
+        
+        float clipLength = audioSource.clip.length;
+        
+        Destroy(audioSource.gameObject, clipLength);
+    }
 }

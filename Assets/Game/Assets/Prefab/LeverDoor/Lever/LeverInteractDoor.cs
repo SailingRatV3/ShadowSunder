@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class LeverInteractDoor : MonoBehaviour
 {
     private IDoor door;
+    private bool leverUsed = false;
    
    bool leverOpen = false;
   
@@ -18,6 +19,7 @@ public class LeverInteractDoor : MonoBehaviour
    [SerializeField] private GameObject interactionText;
    [SerializeField] private CameraController cameraController;
    [SerializeField] private int doorIndex; 
+   [SerializeField] private AudioClip doorOpenSound;
     void Awake()
     {
         leverOpen = false;
@@ -37,30 +39,33 @@ public class LeverInteractDoor : MonoBehaviour
    
     private void FixedUpdate()
     {
-        if (rangeZone.detectedObjects.Count > 0)
-        {
-            //
-            if (interactionText != null)
-            {
-                interactionText.SetActive(true);
-            }
-            leverOpen = true;
-        } 
-        if (rangeZone.detectedObjects.Count == 0)
+        if (leverUsed)
         {
             interactionText.SetActive(false);
+            return; 
+        }
+
+        if (rangeZone.detectedObjects.Count > 0)
+        {
+            interactionText.SetActive(true);
+            leverOpen = true;
+        }
+        else
+        {
+            interactionText.SetActive(false);
+            leverOpen = false;
         }
        
     }
 
     private void OnInteract(InputAction.CallbackContext context)
     {
-        //Debug.Log("OnInteract Triggered");  // Add this to check if it's called
-        if (leverOpen)
-        {
-            TriggerLever(); 
-        }
-       
+        if (leverUsed) return;         
+        if (!leverOpen) return;        
+
+        TriggerLever();
+        leverUsed = true;             
+        interactionText.SetActive(false);
     }
     
 
@@ -72,8 +77,8 @@ public class LeverInteractDoor : MonoBehaviour
         door.OpenDoor();
         if (triggerEvent)
         {
-            Debug.Log($"Triggering event for door {doorIndex}");
-           // cameraController.FocusOnDoor();
+          //  Debug.Log($"Triggering event for door {doorIndex}");
+            SoundFXManager.instance.PlayeSoundFXClip(doorOpenSound, this.transform, 0.4f);
             cameraController.FocusOnDoor(doorIndex);
             StartCoroutine(ReturnCameraToPlayer());
         }
@@ -81,7 +86,7 @@ public class LeverInteractDoor : MonoBehaviour
     private IEnumerator ReturnCameraToPlayer()
     {
         
-        Debug.Log("Returning camera to player");
+       // Debug.Log("Returning camera to player");
         cameraController.FocusOnPlayer();
         yield return null; 
     }

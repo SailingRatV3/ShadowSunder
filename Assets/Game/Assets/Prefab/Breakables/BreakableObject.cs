@@ -8,7 +8,7 @@ public class BreakableObject : MonoBehaviour, IDamageable
     [Header("FX")]
     [SerializeField] private ParticleSystem psDestroy;
     [SerializeField] private ParticleSystem psHit;
-    private Vector2 lastHitDirection = Vector2.down; // Default
+    private Vector2 lastHitDirection = Vector2.down;
     [SerializeField] private CameraShakeManager cameraShakeManager;
     [SerializeField] private Sprite brokenSprite;
     [SerializeField] private AudioClip[] brokenSound;
@@ -49,7 +49,7 @@ public class BreakableObject : MonoBehaviour, IDamageable
             {
                 Debug.Log("Triggering hit animation");
                 // Make Hit Animation: player hit animation
-                // animator.SetTrigger("hit");
+               
                 cameraShakeManager.TriggerShakeByName("Hit");
                 PlayDirectionalParticles(psHit,lastHitDirection);
                 spriteRenderer = brokenSprite;
@@ -62,11 +62,10 @@ public class BreakableObject : MonoBehaviour, IDamageable
 
             if (hitPoints <= 0)
             {
-                Debug.Log("Health is zero. Setting isAlive = false");
                 hitPoints = 0;
-                // isAlive = false;
+          
                 // Make Death Animation: play animation before destroy
-               // animator.SetBool("isAlive", false);
+             
                
                if (hasKnockback)
                { 
@@ -78,8 +77,9 @@ public class BreakableObject : MonoBehaviour, IDamageable
 
                }
                PlayParticles(psDestroy);
-               // Targetable = false; 
-                //Destroy(gameObject);
+               SoundFXManager.instance.PlayRandomSoundFXClip(brokenSound, this.transform, 0.4f);
+
+              
                 if (isWall)
                 {
                     breakableWall.FadeOutAndDisable(roomShade, 0.5f);
@@ -113,7 +113,7 @@ public class BreakableObject : MonoBehaviour, IDamageable
 
     public void OnHit(float damage)
     {
-        lastHitDirection = Vector2.down; // Default direction
+        lastHitDirection = Vector2.down; 
         Health -= damage;
         
     }
@@ -154,8 +154,6 @@ public class BreakableObject : MonoBehaviour, IDamageable
     {
         ParticleSystem effect = Instantiate(ps, transform.position, transform.rotation);
        effect.Emit(1);
-       // effect.Play(); 
-      //  Destroy(this.gameObject, effect.main.duration + effect.main.startLifetime.constantMax);
     }
 
     void PlayDirectionalParticles(ParticleSystem ps, Vector2 direction)

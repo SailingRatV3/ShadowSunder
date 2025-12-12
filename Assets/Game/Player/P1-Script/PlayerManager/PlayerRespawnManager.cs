@@ -9,8 +9,6 @@ public class PlayerRespawnManager : MonoBehaviour
     
     void Start()
     {
-        //  uiManager = GetComponent<UIManager>();
-//        reloadMenu.SetActive(false);
         if (SaveSystem.HasCheckpoint())
         {
             transform.position = SaveSystem.LoadCheckpoint();
@@ -32,25 +30,23 @@ public class PlayerRespawnManager : MonoBehaviour
 
     public void ReloadSceneToCheckpoint()
     {
-       // reloadPanelAnim();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     
     
-    // Call this on Player Death (playerRespawnManager.OnPlayerDeath();
+    // Call this on Player Death 
     public void OnPlayerDeath()
     {
-        Debug.Log("Player Death");
-        // reloadMenu.SetActive(true);
+       // Debug.Log("Player Death");
+      
         uiManager.reloadPanelAnim();
-       // UIManager.reloadPanelAnim();
+      
         ReloadSceneToCheckpoint();
     }
     // Clear Saved Checkpoint in Starting a new Game
     public static void NewGame()
     {
         SaveSystem.ClearCheckpoint();
-       // SceneManager.LoadScene("DemoLevel_01");
     }
 
     public void StartNewGame()

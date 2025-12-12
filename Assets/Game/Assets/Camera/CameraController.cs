@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-//using Unity.Cinemachine;
+
 public class CameraController : MonoBehaviour
 {
     [Header("Camera Setup")]
@@ -26,21 +26,16 @@ public class CameraController : MonoBehaviour
     }
     public void FocusOnDoor(int doorIndex)
     {
-        // playerController.LockMovement();   
+        
         if (isTransitioning || doorIndex >= doorTransforms.Length) return;
-       // playerController.LockMovement();
-       // Debug.Log($"Focusing on door {doorIndex}");
-      //  Debug.Log("Target door position: " + doorTransforms[doorIndex].position);
       isFollowingPlayer = false; 
         StartCoroutine(FocusDoorSequence(doorTransforms[doorIndex]));
     }
 
-    // Switch back to player camera 
+   
     public void FocusOnPlayer()
     {
         if (isTransitioning) return;
-        Debug.Log("Focusing on player");
-       // playerController.UnlockMovement(); 
         StartCoroutine(SmoothTransitionToTarget(playerTransform, shouldUnlockAfter:true));
         
     }
@@ -48,13 +43,11 @@ public class CameraController : MonoBehaviour
     private IEnumerator FocusDoorSequence(Transform doorTarget)
     {
         playerController.LockMovement();
-        // Move camera to the door
+       
         yield return StartCoroutine(SmoothTransitionToTarget(doorTarget, shouldUnlockAfter:false));
 
-        Debug.Log($"[Camera] Holding on door for {holdDuration} seconds...");
         yield return new WaitForSeconds(holdDuration);
 
-        // Move camera back to player and unlock movement
         yield return StartCoroutine(SmoothTransitionToTarget(playerTransform, shouldUnlockAfter:true));
         playerController.UnlockMovement();
         isFollowingPlayer = true;
@@ -77,7 +70,7 @@ public class CameraController : MonoBehaviour
             float t = Mathf.Clamp01(timeElapsed / transitionSpeed);
             float smoothT = Mathf.SmoothStep(0f, 1f, t);
 
-            // Smoothly interpolate the position
+         
             Vector3 newPosition = new Vector3(
                 Mathf.Lerp(initialPosition.x, targetPosition.x, smoothT),
                 Mathf.Lerp(initialPosition.y, targetPosition.y, smoothT),
@@ -88,14 +81,12 @@ public class CameraController : MonoBehaviour
             yield return null;
         }
 
-        // Ensure the camera is exactly at the target position at the end of the transition
         mainCamera.transform.position = new Vector3(target.position.x, target.position.y, initialZ);
 
         isTransitioning = false;
 
         if (shouldUnlockAfter)
         {
-            Debug.Log("[Camera] Transition complete — unlocking player movement");
             playerController.UnlockMovement();
         }
     }

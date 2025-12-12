@@ -23,7 +23,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         damageableCharacter = GetComponent<DamageableCharacters>();
         if (damageableCharacter != null)
         {
-            maxHealth = damageableCharacter.Health;  // Sync health max value
+            maxHealth = damageableCharacter.Health;  
         }
 
         if (playerRespawnManager == null)
@@ -69,7 +69,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public bool Targetable { get; set; }
 
     public float _health = 3f;
-    //public bool _targetable = true;
+ 
     public void OnHit(float damage, Vector2 knockback)
     {
         throw new System.NotImplementedException();
@@ -99,9 +99,6 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         {
             playerRespawnManager.OnPlayerDeath();
         }
-        else
-        {
-            Debug.LogError("RespawnManager NOT FOUND!");
-        }
+        
     }
 }

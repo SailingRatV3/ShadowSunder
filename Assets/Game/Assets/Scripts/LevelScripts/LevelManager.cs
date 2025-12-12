@@ -27,44 +27,18 @@ public class LevelManager : MonoBehaviour
         {
             transform.position = SaveSystem.LoadCheckpoint();
         }
-        else
-        {
-            // Place player at starting point
-            // DO NOT call NewGame here
-            Debug.Log("No checkpoint found — starting fresh.");
-        }
-       // PlayerRespawnManager.NewGame();
-       // isNewGame = true;
-//        Debug.Log("newGame = " + newGameCount);
-       // if (isNewGame == true && newGameCount == 0)
-      //  {
-     //       PlayerRespawnManager.NewGame();
-            
-     //   }
-       // Debug.Log("Pause Menu Active: " + pauseMenuPanel.activeSelf);
-       // Debug.Log("Time Scale: " + Time.timeScale);
-       // if (resumeButton == null)
-      //  {
-       //     Debug.LogWarning("Resume Button is null in Start() — will attempt to reassign on scene load.");
-      //  }
-        //Debug.Log("EventSystem present: " + (EventSystem.current != null));
-        // if (resumeButton == null) Debug.LogError("Resume Button is null after reload!");
-       // playerRespawnManager = gameObject.AddComponent<PlayerRespawnManager>();
+        
     }
     private void OnEnable()
     {
-        
-       // Debug.Log("OnEnable");
         usePauseAction.action.Enable();
         usePauseAction.action.performed += OnPausePerformed;
-       // SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnDisable()
     {
         usePauseAction.action.performed -= OnPausePerformed;
         usePauseAction.action.Disable();
-      //  SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     private void OnPausePerformed(InputAction.CallbackContext context)
@@ -75,7 +49,6 @@ public class LevelManager : MonoBehaviour
     
     private void TogglePause()
     {
-        // paused = !paused;
 
         if (paused)
         {
@@ -92,10 +65,8 @@ public class LevelManager : MonoBehaviour
     {
         if (pauseMenuPanel == null)
         {
-            Debug.LogError("PauseMenuPanel is null! Cannot resume.");
             return;
         }
-        Debug.Log("Resume Button Clicked");
         pauseMenuPanel.SetActive(false);
         Time.timeScale = 1f;     
         paused = false;
@@ -107,10 +78,8 @@ public class LevelManager : MonoBehaviour
     {
         if (pauseMenuPanel == null)
         {
-            Debug.LogError("PauseMenuPanel is null! Scene might have changed. Did you forget to reassign it?");
             return;
         }
-        Debug.Log("Pause Button Clicked");
         pauseMenuPanel.SetActive(true);
         Time.timeScale = 0f;
         paused = true;
@@ -126,17 +95,6 @@ public class LevelManager : MonoBehaviour
     
     void Awake()
     {
-        
-
-       // DontDestroyOnLoad(gameObject);
-        /*
-        resumeButton.onClick.AddListener(Resume);
-        restartButton.onClick.AddListener(RestartGame);
-        settingsButton.onClick.AddListener(OpenSettings);
-        quitButton.onClick.AddListener(ReturnToMainMenu);
-    */
-       
-        
         Time.timeScale = 1f;
     }
     public void ResumeGame()
@@ -154,6 +112,11 @@ public class LevelManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void EndGame()
+    {
+        
     }
 
     public void OpenSettings()

@@ -26,13 +26,13 @@ public class MainMenuManager : MonoBehaviour
     }
     
     [Header("Main Menu Animation")]
-    public GameObject mainMenuPanel; // main menu panel 
-    public GameObject cutsceneBackground; // Reference to the cutscene background image
-    public Button playButton; // Reference to the Play button
-    public Animator mainMenuAnimator; // Reference to the main menu animator
+    public GameObject mainMenuPanel; 
+    public GameObject cutsceneBackground; 
+    public Button playButton; 
+    public Animator mainMenuAnimator; 
 
     public string cutsceneSceneName = "CutsceneScene"; 
-    public float transitionDuration = 1f; // Duration of the transition
+    public float transitionDuration = 1f; 
 
     private CutsceneManager cutsceneManager;
     
@@ -43,41 +43,27 @@ public class MainMenuManager : MonoBehaviour
 
         
         playButton.onClick.AddListener(OnPlayButtonPressed);
-        
-        
-      //  cutsceneBackground.SetActive(false);
+       
     }
 
     void OnPlayButtonPressed()
     {
-        // Start the transition out for the main menu and background move-in
         StartCoroutine(PlayCutsceneTransition());
     }
 
     IEnumerator PlayCutsceneTransition()
     {
-        // Play the main menu exit animation (move off-screen)
         mainMenuAnimator.SetTrigger("ExitMenu"); 
         
-        // Wait for the transition duration (same time as the menu animation)
         yield return new WaitForSeconds(transitionDuration);
 
-        // Optionally, enable and play the cutscene background enter animation if needed
-        // cutsceneBackground.SetActive(true); // Show the cutscene background
-        // cutscene background
-        //cutsceneBackgroundAnimator.SetTrigger("EnterBackground");
-
-        // Wait for the cutscene background animation to complete (if applicable)
         yield return new WaitForSeconds(transitionDuration);
 
-        // Now trigger the CutsceneManager to start the cutscene
         if (cutsceneManager != null)
         {
-            cutsceneManager.StartCutscene(); // Assuming you have a StartCutscene method
+            cutsceneManager.StartCutscene(); 
         }
 
-        // Optionally, you can load the cutscene scene directly if the CutsceneManager is in a different scene
-        //SceneManager.LoadScene(cutsceneSceneName);
     }
     
 }

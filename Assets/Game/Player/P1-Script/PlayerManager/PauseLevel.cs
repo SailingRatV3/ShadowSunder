@@ -12,9 +12,9 @@ public class PauseLevel : MonoBehaviour
     
     void Start()
     {
-        Debug.Log("Pause Menu Active: " + pauseMenuPanel.activeSelf);
-        Debug.Log("Time Scale: " + Time.timeScale);
-        //Debug.Log("EventSystem present: " + (EventSystem.current != null));
+       // Debug.Log("Pause Menu Active: " + pauseMenuPanel.activeSelf);
+      //  Debug.Log("Time Scale: " + Time.timeScale);
+       
     }
     private void OnEnable()
     {
@@ -36,8 +36,6 @@ public class PauseLevel : MonoBehaviour
     
     private void TogglePause()
     {
-        // paused = !paused;
-
         if (paused)
         {
             
@@ -51,8 +49,7 @@ public class PauseLevel : MonoBehaviour
 
     public void Resume()
     {
-        
-        Debug.Log("Resume Button Clicked");
+      //  Debug.Log("Resume Button Clicked");
         pauseMenuPanel.SetActive(false);
         Time.timeScale = 1f;     
         paused = false;

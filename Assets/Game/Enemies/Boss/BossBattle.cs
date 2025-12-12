@@ -80,12 +80,10 @@ public class BossBattle : MonoBehaviour
 
     private void StartBattle()
     {
-        Debug.Log("StartBattle");
+        // Debug.Log("StartBattle");
         stormMageBoss.StartBossPhase();
         StartNextStage();
-       // StartNextStage();
-        // SpawnLights
-        // Note: Have when the boss spawn Lights
+       
         OnBossStarted?.Invoke(this, EventArgs.Empty);
     }
 
@@ -93,13 +91,13 @@ public class BossBattle : MonoBehaviour
     {
         switch (stage)
         {
-           // default: 
+           
                 case Stage.WaitingToStart:
                     stage = Stage.Stage_1;
                     break;
             case Stage.Stage_1:
                 stage = Stage.Stage_2;
-                // Add 
+                
                 break;
             case Stage.Stage_2:
                 stage = Stage.Stage_3;
@@ -107,7 +105,7 @@ public class BossBattle : MonoBehaviour
             
                 
         }
-        Debug.Log("StartNext Stage" + stage);
+      
     }
     private void SpawnEnemy()
     {
@@ -117,13 +115,13 @@ public class BossBattle : MonoBehaviour
         // Enemy Alive
         // aliveCount++;
         // if(aliveCount >=3){
-        // return; // Don't spawn more Enemies
+        // return; 
         //}
         //}
         // }
         // Vector3 spawnPosition = spawnLocationList[Random.Range(0, spawnLocationList.Count)];
-       // EnemySpawn enemySpawn = Instantiate(enemySpawnPrefab, spawnPosition, Quaternion.identity); // Spawn Enemy
-       // enemySpawn.Spawn(); // Call Spawn Function
+       // EnemySpawn enemySpawn = Instantiate(enemySpawnPrefab, spawnPosition, Quaternion.identity);
+       // enemySpawn.Spawn(); 
        
        // enemySpawnList.Add(enemySpawn);
     }

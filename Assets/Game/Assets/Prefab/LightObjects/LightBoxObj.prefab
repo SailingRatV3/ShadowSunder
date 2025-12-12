@@ -302,10 +302,9 @@ MonoBehaviour:
   knockbackforce: 10
   knockbackDuration: 0.3
   hitSound:
-  - {fileID: 8300000, guid: 417f6aecf473a9840a93d1be8719727f, type: 3}
-  - {fileID: 8300000, guid: 3968bd3616128ff49910688c88abafde, type: 3}
-  - {fileID: 8300000, guid: 0811712ceee97b141823b3539baf9cb5, type: 3}
-  - {fileID: 8300000, guid: 39d97096ce460034f8b52f1a38d93922, type: 3}
+  - {fileID: 8300000, guid: fe417bfe22f7a304bb78d063b995d929, type: 3}
+  - {fileID: 8300000, guid: af6102f57a155de45b4044d080e89ced, type: 3}
+  - {fileID: 8300000, guid: a8b6ace1224e8874a8812fe1b94f177c, type: 3}
 --- !u!50 &2199381564336489302
 Rigidbody2D:
   serializedVersion: 5
@@ -319,7 +318,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
+  m_LinearDamping: 5
   m_AngularDamping: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}

@@ -23,11 +23,12 @@ public class CameraShake : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             float strength = preset.curve.Evaluate(elapsedTime / preset.duration)*preset.shakeStrength;
-            // Smoothing randomness
+            
             float xShake = Mathf.PerlinNoise(Time.time * preset.shakeFrequency, 0f) * 2f - 1f;
             float yShake = Mathf.PerlinNoise(0f, Time.time * preset.shakeFrequency) * 2f - 1f;
             
-            transform.localPosition = originalPosition + new Vector3(xShake, yShake, 0f) * strength;            yield return null;
+            transform.localPosition = originalPosition + new Vector3(xShake, yShake, 0f) * strength;            
+            yield return null;
         }
         transform.localPosition = originalPosition;        
         isShaking = false;

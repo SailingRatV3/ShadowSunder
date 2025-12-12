@@ -36,10 +36,10 @@ public class SwordHitbox : MonoBehaviour
    }
     void Start()
    {
-     //  swordCollider = GetComponent<Collider2D>();
+     
      if (swordCollider == null)
      {
-         Debug.LogWarning("Sword Collider is not Set!");
+         Debug.LogWarning("Sword Collider is null");
      }
    }
     
@@ -47,34 +47,29 @@ public class SwordHitbox : MonoBehaviour
     // Trigger Event
    void OnTriggerEnter2D(Collider2D collider)
     {
-        //StartAttack();
+       
         GameObject root = collider.transform.root.gameObject;
-        // Debug.Log($"Hit detected on: {collider.name} (Root: {root.name})");
+        
         if (hitEnemies.Contains(root)) return;
-       // if (!root.CompareTag("Enemy")) return;
+     
         hitEnemies.Add(root);
         StartAttack();
-        //EndAttack();
+      
        IDamageable damageableObject = collider.GetComponentInParent<IDamageable>();
        if (damageableObject != null)
        {
            
            
           // Calculating knockback force
-                  // Vector3 parentPosition = gameObject.GetComponentInParent<Transform>().position;
-                  Vector3 parentPosition = transform.parent.position; // Get sprite orgin position
-                  Vector2 direction = (collider.transform.position - parentPosition).normalized; // normalized to not change the magnitude
+                 
+                  Vector3 parentPosition = transform.parent.position; 
+                  Vector2 direction = (collider.transform.position - parentPosition).normalized; 
                   Vector2 knockback = direction * knockbackForce;
                   
-                  //collider.SendMessage("OnHit", swordDamage, knockback); // Only work with x and y value
-                  damageableObject.OnHit(swordDamage, knockback); // implement OnHit
+                  
+                  damageableObject.OnHit(swordDamage, knockback); 
                   
                   // Debug.Log("Hit"); 
-       }
-       else
-       {
-           // Check if object hit is implement or not
-           Debug.LogWarning("Sword Collider does not implement IDamageable!");
        }
        
        
@@ -94,22 +89,19 @@ public class SwordHitbox : MonoBehaviour
 
     public void StartAttack()
     {
-       //Debug.Log("StartAttack called: clearing hitEnemies list");
+       
         hitEnemies.Clear();
-        // enable the collider here if you disable it outside attack time
-        //swordCollider.enabled = true;
          StartCoroutine(EnableColliderForAttack());
     }
 
     public void EndAttack()
     {
-        // disable collider to avoid stray hits
          swordCollider.enabled = false;
     }
     
     private IEnumerator EnableColliderForAttack()
     {
-        swordCollider.enabled = true; // Enable the collider just before the attack.
+        swordCollider.enabled = true; 
         yield return null; 
         yield return new WaitForFixedUpdate(); 
         

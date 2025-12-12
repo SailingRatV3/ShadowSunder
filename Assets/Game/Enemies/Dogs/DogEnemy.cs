@@ -33,7 +33,7 @@ public class DogEnemy : MonoBehaviour
             if (foundPlayer != null)
                 player = foundPlayer.transform;
             else
-                Debug.LogWarning("DogEnemy: Could not find player with tag 'Player'");
+                Debug.LogWarning("Could not find tag 'Player'");
         }
     }
 
@@ -82,13 +82,11 @@ public class DogEnemy : MonoBehaviour
         IDamageable damageable = collider.GetComponent<IDamageable>();
         if (damageable != null)
         {
-            
-            // Vector3 parentPosition = gameObject.GetComponentInParent<Transform>().position;
-            Vector3 parentPosition = transform.position; // Get sprite orgin position
+            Vector3 parentPosition = transform.position; 
             Vector2 direction = (Vector2) (collider.gameObject.transform.position - transform.position).normalized; 
             Vector2 knockback = direction * knockbackForce;
                   
-            damageable.OnHit(damage, knockback); // implement OnHit
+            damageable.OnHit(damage, knockback); 
 
         }
     }
@@ -97,7 +95,7 @@ public class DogEnemy : MonoBehaviour
     private void OnDrawGizmos()
     {
         // Wake-up range
-        Gizmos.color = new Color(1f, 1f, 0f, 0.3f); // Yellow (semi-transparent)
+        Gizmos.color = new Color(1f, 1f, 0f, 0.3f); 
         Gizmos.DrawWireSphere(transform.position, wakeUpRange);
 
     }

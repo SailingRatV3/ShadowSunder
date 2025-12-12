@@ -24,7 +24,6 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 500f;
     public float maxSpeed = 8f;
     
-    // VAR for the frame of physics that will shave off the velocity
     public float idleFriction = 0.9f;
     Rigidbody2D rb;
     Animator animator;
@@ -34,14 +33,15 @@ public class PlayerController : MonoBehaviour
     bool isMoving = false;
     bool canMove = true;
     
-    // Swinging side to side
+    
     private bool isSwingRightToLeft = true;
     private bool isSwinging = false;
     private bool queuedSwing = false;
-    // Timed Swings
+    
     private int comboStep = 0;
     private float comboResetTimer = 0f;
     public float comboResetTime = 1.0f;
+    
     [Header("Audio Clips")]
     [SerializeField] private AudioClip[] swordSounds;
    
@@ -71,19 +71,16 @@ public class PlayerController : MonoBehaviour
     [Obsolete("Obsolete")]
     void FixedUpdate()
     {
-        //if (!gc.retracting)
-        //{
             if(canMove == true && moveInput != Vector2.zero)
             {
-                // Move Anim & +Velocity
+                // Move Anim + Velocity
                 
                 // Moving Accelerates Player
                 // IMPORTANT: Acceleration max <= Max Speed
-                // rb.linearVelocity = Vector2.ClampMagnitude(rb.linearVelocity + (moveInput * moveSpeed * Time.deltaTime), maxSpeed);
+              
                 rb.AddForce(moveInput * (moveSpeed * Time.deltaTime));
                 if (rb.velocity.magnitude > maxSpeed)
                 {
-                   // rb.velocity = Vector2.Lerp(rb.velocity, maxSpeed, idleFriction);
                     float limitSpeed = Mathf.Lerp(rb.velocity.x, maxSpeed, idleFriction);
                     rb.velocity = rb.velocity.normalized * limitSpeed;
                 }
@@ -102,7 +99,6 @@ public class PlayerController : MonoBehaviour
             else
             {
                 // No Movement
-               // Don't need this line if using angular damp
                 rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, Vector2.zero, idleFriction);
                 IsMoving = false;
             }            
@@ -143,13 +139,7 @@ public class PlayerController : MonoBehaviour
     {
         canMove = true;
     }
-    
-  /*  void UpdateAnimatorParameters()
-    {
-        // animator.SetFloat("moveX", moveInput.x);
-       // animator.SetFloat("moveY", moveInput.y);
-       animator.SetBool("isMoving", isMoving);
-    }*/
+   
 
   void StartSwing()
   {
@@ -188,7 +178,7 @@ public class PlayerController : MonoBehaviour
 
       comboStep++;
       comboResetTimer = comboResetTime;
-      //isSwingRightToLeft = !isSwingRightToLeft;
+      
   }
   void EndSwing()
   {
@@ -203,7 +193,7 @@ public class PlayerController : MonoBehaviour
       if (queuedSwing)
       {
           queuedSwing = false;
-          StartSwing(); // Begin next swing immediately
+          StartSwing(); 
           
       }
   }

@@ -463,10 +463,9 @@ MonoBehaviour:
   isInvinciblityEnable: 0
   canRecieveKnockback: 1
   damageSounds:
-  - {fileID: 8300000, guid: 417f6aecf473a9840a93d1be8719727f, type: 3}
-  - {fileID: 8300000, guid: 3968bd3616128ff49910688c88abafde, type: 3}
-  - {fileID: 8300000, guid: 0811712ceee97b141823b3539baf9cb5, type: 3}
-  - {fileID: 8300000, guid: 39d97096ce460034f8b52f1a38d93922, type: 3}
+  - {fileID: 8300000, guid: fe417bfe22f7a304bb78d063b995d929, type: 3}
+  - {fileID: 8300000, guid: af6102f57a155de45b4044d080e89ced, type: 3}
+  - {fileID: 8300000, guid: a8b6ace1224e8874a8812fe1b94f177c, type: 3}
   cameraShakeManager: {fileID: 8162843768540481221, guid: d7dd6ba972958b3459cba7d99ecb7d14, type: 3}
   _health: 3
   _maxHealth: 3

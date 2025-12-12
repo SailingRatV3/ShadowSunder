@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class UIInventory : MonoBehaviour
 {
-    // Healing GEM UI
+    // Healing Gem UI
     public TextMeshProUGUI healthPickuptext;
 
     private void OnEnable()
@@ -24,7 +24,7 @@ public class UIInventory : MonoBehaviour
 
     private IEnumerator DelayedTextUpdate(int count)
     {
-        yield return null; // wait for next frame
+        yield return null; 
         if (healthPickuptext != null)
             healthPickuptext.text = count.ToString();
     }

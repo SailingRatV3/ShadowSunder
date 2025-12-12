@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: c03ff7d4524aff542b763491c019b829
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4085164634603358207
+    second: ShadowSunder_Door (1)_0
+  - first:
+      213: 1589096501017742393
+    second: ShadowSunder_Door (1)_1
+  - first:
+      213: -7232989787657196431
+    second: ShadowSunder_Door (1)_2
+  - first:
+      213: -2583801428987977206
+    second: ShadowSunder_Door (1)_3
+  - first:
+      213: 7316617537185935733
+    second: ShadowSunder_Door (1)_4
+  - first:
+      213: -2381894810582642045
+    second: ShadowSunder_Door (1)_5
+  - first:
+      213: -5456858039894336583
+    second: ShadowSunder_Door (1)_6
+  - first:
+      213: -4828413999252798196
+    second: ShadowSunder_Door (1)_7
+  - first:
+      213: 3821133575211097365
+    second: ShadowSunder_Door (1)_8
+  - first:
+      213: -7328360536933314939
+    second: ShadowSunder_Door (1)_9
+  - first:
+      213: -345797261202447307
+    second: ShadowSunder_Door (1)_10
+  - first:
+      213: -6320105387811323894
+    second: ShadowSunder_Door (1)_11
+  - first:
+      213: -6980918812453147688
+    second: ShadowSunder_Door (1)_12
+  - first:
+      213: -7480463364575372602
+    second: ShadowSunder_Door (1)_13
+  - first:
+      213: -5565467629114266341
+    second: ShadowSunder_Door (1)_14
+  - first:
+      213: 5153358366590220230
+    second: ShadowSunder_Door (1)_15
+  - first:
+      213: 112116065322860779
+    second: ShadowSunder_Door (1)_16
+  - first:
+      213: -2979264015029662410
+    second: ShadowSunder_Door (1)_17
+  - first:
+      213: -7746662089356392141
+    second: ShadowSunder_Door (1)_18
+  - first:
+      213: 8118521503317649646
+    second: ShadowSunder_Door (1)_19
+  - first:
+      213: 1048554011143614354
+    second: ShadowSunder_Door (1)_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28159
+        width: 960
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1087a71b8649e47c0800000000000000
+      internalID: -4085164634603358207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 26879
+        width: 960
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c8af829da9d0610800000000000000
+      internalID: 1589096501017742393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25599
+        width: 681
+        height: 1002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c2aa23c124f9b90800000000000000
+      internalID: -7232989787657196431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24319
+        width: 111
+        height: 1022
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0266073a4e742cd0800000000000000
+      internalID: -2583801428987977206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23039
+        width: 111
+        height: 1022
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5717c5d82e8d98560800000000000000
+      internalID: 7316617537185935733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21759
+        width: 111
+        height: 1022
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38210e22a4fc1fed0800000000000000
+      internalID: -2381894810582642045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_6
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 20479
+        width: 681
+        height: 982
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb1d5e36885544b0800000000000000
+      internalID: -5456858039894336583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_7
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 19199
+        width: 111
+        height: 1022
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05830abc070efcb0800000000000000
+      internalID: -4828413999252798196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_8
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 17919
+        width: 111
+        height: 1022
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51d96cdcdb4670530800000000000000
+      internalID: 3821133575211097365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_9
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 16639
+        width: 111
+        height: 1022
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e49124bee6c4a90800000000000000
+      internalID: -7328360536933314939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15359
+        width: 111
+        height: 1022
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534a9b9193b733bf0800000000000000
+      internalID: -345797261202447307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14079
+        width: 960
+        height: 972
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00497892a97a48a0800000000000000
+      internalID: -6320105387811323894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12799
+        width: 960
+        height: 972
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db63e9935bce1f90800000000000000
+      internalID: -6980918812453147688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_13
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 11519
+        width: 101
+        height: 1022
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca592ff33e003890800000000000000
+      internalID: -7480463364575372602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_14
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 10239
+        width: 101
+        height: 1262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d65bdadac73c2b0800000000000000
+      internalID: -5565467629114266341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8959
+        width: 101
+        height: 1022
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7b5e87128648740800000000000000
+      internalID: 5153358366590220230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7679
+        width: 101
+        height: 1262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be00f27a7f05e8100800000000000000
+      internalID: 112116065322860779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_17
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 6399
+        width: 101
+        height: 1022
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d8d04c92787a6d0800000000000000
+      internalID: -2979264015029662410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5119
+        width: 101
+        height: 1022
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3394de09fd35e7490800000000000000
+      internalID: -7746662089356392141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1349
+        width: 960
+        height: 3512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee86e922b48caa070800000000000000
+      internalID: 8118521503317649646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSunder_Door (1)_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 960
+        height: 1141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29fa60251563d8e00800000000000000
+      internalID: 1048554011143614354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ShadowSunder_Door (1)_0: -4085164634603358207
+      ShadowSunder_Door (1)_1: 1589096501017742393
+      ShadowSunder_Door (1)_10: -345797261202447307
+      ShadowSunder_Door (1)_11: -6320105387811323894
+      ShadowSunder_Door (1)_12: -6980918812453147688
+      ShadowSunder_Door (1)_13: -7480463364575372602
+      ShadowSunder_Door (1)_14: -5565467629114266341
+      ShadowSunder_Door (1)_15: 5153358366590220230
+      ShadowSunder_Door (1)_16: 112116065322860779
+      ShadowSunder_Door (1)_17: -2979264015029662410
+      ShadowSunder_Door (1)_18: -7746662089356392141
+      ShadowSunder_Door (1)_19: 8118521503317649646
+      ShadowSunder_Door (1)_2: -7232989787657196431
+      ShadowSunder_Door (1)_20: 1048554011143614354
+      ShadowSunder_Door (1)_3: -2583801428987977206
+      ShadowSunder_Door (1)_4: 7316617537185935733
+      ShadowSunder_Door (1)_5: -2381894810582642045
+      ShadowSunder_Door (1)_6: -5456858039894336583
+      ShadowSunder_Door (1)_7: -4828413999252798196
+      ShadowSunder_Door (1)_8: 3821133575211097365
+      ShadowSunder_Door (1)_9: -7328360536933314939
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,7 +4,8 @@ public class DoorSetActive : MonoBehaviour, IDoor
 {
     private bool isOpen = false;
     private Animator animator;
-
+    public BreakableWall breakableWall;
+    public SpriteRenderer roomShade;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -12,18 +13,18 @@ public class DoorSetActive : MonoBehaviour, IDoor
     public void OpenDoor()
     {
         gameObject.SetActive(false);
-      // animator.SetBool("OpenDoor", true);
+        breakableWall.FadeOutAndDisable(roomShade, 0.5f);
+     
     }
 
     public void CloseDoor()
     {
         gameObject.SetActive(true);
-     // animator.SetBool("OpenDoor", false);
     }
 
     public void PlayOpenFailAnim()
     {
-        // animator.SetTrigger("OpenFail");
+     
     }
     
     public void ToggleDoor()

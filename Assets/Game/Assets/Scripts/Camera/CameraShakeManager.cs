@@ -29,13 +29,11 @@ public class CameraShakeManager : MonoBehaviour
     {
         if (cameraShake == null)
         {
-            Debug.LogError("CameraShake reference is missing in CameraShakeManager.");
             return;
         }
 
         if (shakePresets == null || shakePresets.Count == 0)
         {
-            Debug.LogError("Shake presets list is null or empty.");
             return;
         }
 

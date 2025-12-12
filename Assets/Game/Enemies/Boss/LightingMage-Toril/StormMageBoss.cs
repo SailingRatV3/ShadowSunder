@@ -11,7 +11,7 @@ public class StormMageBoss : MonoBehaviour
     [Header("Settings")]
     public float damage = 1;
     public float knockbackForce = 300f;
-    public float movementSpeed = 2f; // Boss Movement
+    public float movementSpeed = 2f; 
     public UIManager uiManager;
     public ShadowDive shadowDive;
     
@@ -46,6 +46,17 @@ public class StormMageBoss : MonoBehaviour
     public float knockbackCooldown = 0.5f;
     public float knockbackMultiplier = 0.5f;
     
+    [Header("Phase Opening Settings")]
+    public DoorSetActive doorSetActive;
+    [SerializeField] private GameObject doorGameObject;
+    
+    [Header("Death Settings")]
+    public Sprite deadSprite;                 
+    public SpriteRenderer bossSpriteRenderer; 
+    public FadeController fadeController;     
+    public GameObject playerCanvas;
+    
+    
     Rigidbody2D rb;
     DamageableCharacters damageableCharacter;
     CharacterHealth healthCharacter;
@@ -53,10 +64,10 @@ public class StormMageBoss : MonoBehaviour
     BossLightningStrike bossLightningStrike;
     PlayerController player;
 
-    private int timesHit = 0;    // Number of times hit
-    private float restTimer = 0f; // Resting timer
+    private int timesHit = 0;    
+    private float restTimer = 0f; 
     
-    private BossPhase currentPhase = BossPhase.Inactive; // Boss is Inactive
+    private BossPhase currentPhase = BossPhase.Inactive; 
     
     private Vector2 currentTargetPosition;
     private bool isMoving = false;
@@ -83,6 +94,7 @@ public class StormMageBoss : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();  
+       doorSetActive = GetComponent<DoorSetActive>();
        
         healthCharacter = GetComponent<CharacterHealth>();
         damageableCharacter = GetComponent<DamageableCharacters>();
@@ -97,11 +109,9 @@ public class StormMageBoss : MonoBehaviour
     void Update()
     {
         
-        
-        //Debug.Log($"Phase: {currentPhase}, IsDead: {isDead}");
         if (!isDead && damageableCharacter._health <= 0)
         {
-           // Debug.Log("On Death not called");
+        
             HandleBossDeath();
         }
         
@@ -110,7 +120,6 @@ public class StormMageBoss : MonoBehaviour
         switch (currentPhase)
         {
             case BossPhase.Inactive:
-                // Wait for Boss Trigger
                 break;
             case BossPhase.Phase1:
                 HandlePhase1();
@@ -143,22 +152,13 @@ public class StormMageBoss : MonoBehaviour
                 }
                 break;
             case BossPhase.Dead:
-                // No Actions 
-                // Add Ending Cutscene
                 break;
         }
         
-        
-        
-
         if (damageableCharacter.Targetable && detectionZone.detectedObjects.Count > 0)
         {
             uiManager.moveBossPanel();
-            
         }
-        
-        
-        
     }
     
     void OnDrawGizmos()
@@ -184,8 +184,6 @@ public class StormMageBoss : MonoBehaviour
             distance = Vector2.Distance(transform.position, centerPosition.position);
         }
 
-        
-
         rb.linearVelocity = Vector2.zero; 
         isReturningToCenter = false;
     }
@@ -193,6 +191,7 @@ public class StormMageBoss : MonoBehaviour
     public void StartBossPhase()
     {
         currentPhase = BossPhase.Phase1;
+        doorGameObject.SetActive(true);
     }
 
     void HandlePhase1()
@@ -202,19 +201,14 @@ public class StormMageBoss : MonoBehaviour
         if (!isMoving && !isAttacking && !isWaitingAfterMove)
         {
            
-            // Random target position to move
             currentTargetPosition = movePositions[Random.Range(0, movePositions.Length)].position;
             isMoving = true;
         }
 
         if (isMoving)
         {
-          //  Debug.Log("Is Moving");
             Vector2 newPos = Vector2.MoveTowards(rb.position, currentTargetPosition, movementSpeed * Time.deltaTime);
             rb.MovePosition(newPos);
-            
-            
-            
             
          if (Vector2.Distance(rb.position, currentTargetPosition) < 0.5f)
             {
@@ -224,7 +218,6 @@ public class StormMageBoss : MonoBehaviour
                 {
                     pendingRadialAttack = false;
                     currentPhase = BossPhase.RadialAttack;
-                    //yield break;
                 }
                 
                 StartCoroutine(WaitAndAttack());
@@ -232,7 +225,6 @@ public class StormMageBoss : MonoBehaviour
         }
 
         float healthPercent = damageableCharacter._health / damageableCharacter._maxHealth;  
-        // Check Health
         if (!isDead && currentPhase != BossPhase.LightningStrike && healthPercent<= lightningStrikeHealthThreshold)
         {
             currentPhase = BossPhase.LightningSetup;
@@ -242,8 +234,8 @@ public class StormMageBoss : MonoBehaviour
     IEnumerator WaitAndAttack()
     {
         isWaitingAfterMove = true;
-        yield return new WaitForSeconds(0.5f); // pause
-        yield return ShootAtPlayer(); // shoot radial
+        yield return new WaitForSeconds(0.5f); 
+        yield return ShootAtPlayer(); 
         
         restTimer = restDuration;
         currentPhase = BossPhase.Resting;
@@ -263,7 +255,6 @@ public class StormMageBoss : MonoBehaviour
                 // If want the projectile speed to gradually increase
                // shootRadial.projectileSpeed += 3f;
                shootRadial.projectileSpeed = 8f;
-               // Debug.Log("Projectile Speed: " + shootRadial.projectileSpeed);
             }
             yield return StartCoroutine(shootRadial.ShootRadialBursts());
             shootRadial.isShooting = false;
@@ -275,7 +266,6 @@ public class StormMageBoss : MonoBehaviour
     void HandleLightningPhase()
     {
         if (isDead) return;
-        //Debug.Log("Handling Lightning Phase");
       
         if (!isAttacking)
         {
@@ -285,7 +275,6 @@ public class StormMageBoss : MonoBehaviour
 
     IEnumerator DoLightningPhase()
     {
-        // Debug.Log("Doing Lightning Phase");
         if(isDead) yield break;
         
         isAttacking = true;
@@ -302,18 +291,15 @@ public class StormMageBoss : MonoBehaviour
 
     IEnumerator DoRadialAttack()
     {
-       // Debug.Log("Doing Radial Attack");
         isAttacking = true;
         isRadialAttacking = true;
         if (shootRadial != null)
         {
-           // Debug.Log("Shoot Radial");
             shootRadial.isShooting = true;
             StartCoroutine(shootRadial.ShootRadialBursts());
             shootRadial.isShooting = false;
         }
-       
-
+        
         isAttacking = false;
         isRadialAttacking = false;
         currentPhase = BossPhase.Phase1;
@@ -323,23 +309,11 @@ public class StormMageBoss : MonoBehaviour
     void HandleBossDamaged()
     {
         timesHit++;
-        Debug.Log($"Boss Damaged | Barrier Active: {barrierObject.activeSelf} | IsRadialAttacking: {isRadialAttacking} | IsAttacking: {isAttacking} | IsDead: {isDead}");
         
         if (barrierObject.activeSelf && currentPhase == BossPhase.Phase2 && !isRadialAttacking && !isDead)
         {
-           // Debug.Log("Boss hit during Phase 2");
             StartCoroutine(TeleportBossAndBarrier());
             return;
-            
-            /*
-             * if (Time.time - lastTeleportTime >= teleportCooldown)
-    {
-        lastTeleportTime = Time.time;
-        StartCoroutine(TeleportBossAndBarrier());
-    }
-    return;
-             */
-            
         }
 
         
@@ -358,23 +332,19 @@ public class StormMageBoss : MonoBehaviour
     }
     IEnumerator ReactWithRadialAttack()
     {
-        Debug.Log("Starting ReactWithRadialAttack");
         isRadialAttacking = true;
         isAttacking = true;
 
         if (shootRadial != null)
         {
-            Debug.Log("Calling ShootRadialBursts");
             shootRadial.isShooting = true;
             yield return StartCoroutine(shootRadial.ShootRadialBursts());
             shootRadial.isShooting = false;
         }
         else
         {
-            Debug.LogWarning("shootRadial is null!");
+            // Debug.LogWarning("shootRadial is null!");
         }
-
-        Debug.Log("Finishing ReactWithRadialAttack");
 
         isAttacking = false;
         isRadialAttacking = false;
@@ -382,17 +352,31 @@ public class StormMageBoss : MonoBehaviour
 
     void HandleBossDeath()
     {
-        isDead = true;
-        currentPhase = BossPhase.Dead;
-    
-        shootRadial.isShooting = false;
-        StopAllCoroutines();
-    
-        damageableCharacter.OnDamage -= HandleBossDamaged;
+            if (isDead) return;
 
-        Debug.Log("Handle Boss Death");
-        // Defeated Animation
-        // Ending Cutscene
+            isDead = true;
+            currentPhase = BossPhase.Dead;
+
+            StopAllCoroutines();
+            damageableCharacter.OnDamage -= HandleBossDamaged;
+
+            
+            if (bossSpriteRenderer != null && deadSprite != null)
+                bossSpriteRenderer.sprite = deadSprite;
+
+            
+            rb.linearVelocity = Vector2.zero;
+            rb.bodyType = RigidbodyType2D.Static;
+            damageableCharacter.Targetable = false;
+            barrierObject.SetActive(false);
+            uiManager.removeBossPanel();
+            
+            if (fadeController != null)
+            {
+                
+                fadeController.StartEndDemoSequence();
+            }
+              
     }
 
     void HandlePhase2()
@@ -409,7 +393,7 @@ public class StormMageBoss : MonoBehaviour
         {
             
             Vector3 parentPosition = transform.position; 
-            Vector2 direction = (Vector2) (collider.gameObject.transform.position - transform.position).normalized; // normalized to not change the magnitude
+            Vector2 direction = (Vector2) (collider.gameObject.transform.position - transform.position).normalized; 
            
             Vector2 knockback = direction * knockbackForce;
                   
@@ -458,12 +442,6 @@ public class StormMageBoss : MonoBehaviour
         currentPhase = BossPhase.Inactive; 
         isAttacking = true;
         
-        // Push Player
-        if (player != null  && !hasSpawnedLights) 
-        {
-           
-        }
-        
         // Move to center
         while (Vector2.Distance(transform.position, centerPosition.position) > 0.1f)
         {
@@ -497,7 +475,6 @@ public class StormMageBoss : MonoBehaviour
 
 
         damageableCharacter.OnDamage += HandleBossDamaged;
-       // Debug.Log("Subscribed HandleBossDamaged to OnDamage event");
 
         StartCoroutine(Phase2ProjectileRoutine());
         isAttacking = false;
@@ -516,7 +493,7 @@ public class StormMageBoss : MonoBehaviour
     }
     
     /*
-     * Enumerators --------------------------------------------------------------------------------------------------------------------------------------------------
+     * Enumerators
      */
     
     IEnumerator HandleBarrierBreakSequence()
@@ -529,11 +506,11 @@ public class StormMageBoss : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
-        // If player is in the center, push them back
+       
 
         yield return new WaitForSeconds(1f);
 
-        // Pull lights to boss or reset them
+        
         foreach (var light in spawnedLights)
         {
             if (light != null)
@@ -547,10 +524,10 @@ public class StormMageBoss : MonoBehaviour
 
         // Reactivate barrier
         barrierObject.SetActive(true);
-        Debug.Log("Barrier enabled: " + barrierObject.activeSelf);
+        //Debug.Log("Barrier enabled: " + barrierObject.activeSelf);
         damageableCharacter.Targetable = false;
 
-        // Begin lightning strike attacks
+        
         currentPhase = BossPhase.LightningStrike;
         isAttacking = false;
     }
@@ -572,11 +549,11 @@ public class StormMageBoss : MonoBehaviour
         {
             if (!isAttacking && !isRadialAttacking)
             {
-                Debug.Log("Phase2: Shooting projectiles");
+              //  Debug.Log("Phase2: Shooting projectiles");
                 yield return ShootAtPlayer(); 
             }
 
-            yield return new WaitForSeconds(5f); // Wait seconds between attacks
+            yield return new WaitForSeconds(5f); 
         }
     }
     
@@ -586,28 +563,28 @@ public class StormMageBoss : MonoBehaviour
             yield break;
 
         
-        // Add a sigil for the boss teleporting plus disappearing animation 
+        // Add animation 
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
         if (sr != null) sr.enabled = false;
         barrierObject.SetActive(false);
 
         yield return new WaitForSeconds(teleportDelay);
 
-        // Pick a random teleport position
+        
         Transform target = teleportPositions[Random.Range(0, teleportPositions.Length)];
 
         transform.position = target.position;
 
-        // Move the barrier with the boss
+        
         barrierObject.transform.position = target.position;
 
         yield return new WaitForSeconds(0.1f);
 
-        // Reappear
+       
         if (sr != null) sr.enabled = true;
         barrierObject.SetActive(true);
 
-        Debug.Log("Boss teleported to new position!");
+        // Debug.Log("Boss teleported to new position!");
     }
     
 }

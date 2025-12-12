@@ -5,7 +5,6 @@ public class TutorialTrigger : MonoBehaviour
 {
     [Header("Tutorial Trigger")]
     public CanvasGroup tutorialPanel;
-   // public KeyCode dismissKey = KeyCode.Space; 
 
     private bool playerInside = false;
     private bool tutorialShown = false;
@@ -21,7 +20,6 @@ public class TutorialTrigger : MonoBehaviour
 
     void Update()
     {
-        // Change to when leaving the trigger 
         if (playerInside && tutorialPanel.alpha == 1f && Input.anyKeyDown)
         {
             StartCoroutine(FadeOutPanel());

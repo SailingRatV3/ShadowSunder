@@ -13,13 +13,11 @@ public class UIBHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     
     public void OnPointerEnter(PointerEventData eventData)
     {
-        // Change color
         btnText.color = hoverTxtColor;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        // Revert Colors
         btnText.color = normalTxtColor;
     }
 }

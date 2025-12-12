@@ -83,19 +83,9 @@ public class Teleporter : MonoBehaviour
             {
                 GetComponent<DamageFlash>().Flash();
 
-                // Change colors 
-                // Add Visual change
             }
         }
-        /*
-         * Activate Through Code:
-         * public Teleporter teleporter;
-
-        void SomeEvent()
-        {
-         teleporter.SetActive(true);
-        }
-         */
+        
         
         
         

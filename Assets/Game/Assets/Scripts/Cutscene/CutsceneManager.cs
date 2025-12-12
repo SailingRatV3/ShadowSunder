@@ -18,7 +18,7 @@ public class CutsceneManager : MonoBehaviour
 
     [Header("Key Press Prompt")]
     public SpriteRenderer spacebarImage;
-   // public Image holdSpacebarImage;
+   
     public TextMeshProUGUI spacebarText;
     
     private int currentIndex = 0;
@@ -31,12 +31,11 @@ public class CutsceneManager : MonoBehaviour
         FadeOutCanvasGroup = GetComponent<CanvasGroup>();
         textCanvasGroup = cutsceneText.GetComponent<CanvasGroup>();
         spacebarImage.gameObject.SetActive(false);
-      // StartCutscene();
+     
     }
 
     public void StartCutscene()
     {
-        Debug.Log("StartCutscene called");
         if (cutsceneStarted)
             return; 
         cutsceneStarted = true;
@@ -52,10 +51,10 @@ public class CutsceneManager : MonoBehaviour
 
     IEnumerator PlayCutscene()
     {
-        // --- Show the skip hint ---
+        // Show skip
         yield return StartCoroutine(ShowSkipHintAtStart());
 
-        // --- Show dialogue lines ---
+        // Show text lines
         for (int i = 0; i < dialogueLines.Length; i++)
         {
             if (Input.GetKey(skipKey))
@@ -64,30 +63,30 @@ public class CutsceneManager : MonoBehaviour
                 yield break;
             }
 
-            // If it's a different image, fade out the current one and fade in the new one
+            // If different image, fade out and fade in new image
             if (i > 0 && cutsceneImages[i].sprite != cutsceneImages[i - 1].sprite)
             {
-                StartCoroutine(FadeImage(cutsceneImages[i - 1], 1f, 0f, 1f));  // Fade out previous image
-                cutsceneImages[i].gameObject.SetActive(true);  // Show new image
-                yield return StartCoroutine(FadeImage(cutsceneImages[i], 0f, 1f, 1f));  // Fade in new image
+                StartCoroutine(FadeImage(cutsceneImages[i - 1], 1f, 0f, 1f));  
+                cutsceneImages[i].gameObject.SetActive(true);  
+                yield return StartCoroutine(FadeImage(cutsceneImages[i], 0f, 1f, 1f));  
             }
             else if (i == 0)
             {
-                // First image, just show it without fading out anything
+                
                 cutsceneImages[i].gameObject.SetActive(true);
                 yield return StartCoroutine(FadeImage(cutsceneImages[i], 0f, 1f, 1f));
             }
 
-            // Show the text
+            
             cutsceneText.text = dialogueLines[i];
-            yield return StartCoroutine(FadeInText(textCanvasGroup, 1f));  // fade in text
+            yield return StartCoroutine(FadeInText(textCanvasGroup, 1f));  
 
-            // Wait for player input to proceed
+            // Wait for player input 
             yield return StartCoroutine(ShowSpacebarPrompt());
             yield return StartCoroutine(WaitForAnyKeyOrSkip());
 
-            // Fade out text after the player presses a key
-            yield return StartCoroutine(FadeOutText(textCanvasGroup, 1f));  // fade out text
+            
+            yield return StartCoroutine(FadeOutText(textCanvasGroup, 1f));  
         }
 
         EndCutscene();
@@ -112,7 +111,7 @@ public class CutsceneManager : MonoBehaviour
             yield return null;
         }
         canvasGroup.alpha = 1f;
-        Debug.Log("Fade In Text");
+       
     }
 
     IEnumerator FadeOutText(CanvasGroup canvasGroup, float duration)
@@ -133,7 +132,7 @@ public class CutsceneManager : MonoBehaviour
     IEnumerator ShowSpacebarPrompt()
     {
         spacebarImage.gameObject.SetActive(true);
-        //yield return StartCoroutine(FadeInSpacebar(1f));
+       
         if (spacebarLoopRoutine != null)
         {
             StopCoroutine(spacebarLoopRoutine);
@@ -183,7 +182,7 @@ public class CutsceneManager : MonoBehaviour
             spacebarImage.color = new Color(spacebarImage.color.r, spacebarImage.color.g, spacebarImage.color.b, Mathf.Lerp(start, end, elapsed / duration));
             yield return null;
         }
-        spacebarImage.color = new Color(spacebarImage.color.r, spacebarImage.color.g, spacebarImage.color.b, 1f); // fully visible
+        spacebarImage.color = new Color(spacebarImage.color.r, spacebarImage.color.g, spacebarImage.color.b, 1f); 
 
     }
     
@@ -213,23 +212,15 @@ public class CutsceneManager : MonoBehaviour
     
     IEnumerator ShowSkipHintAtStart()
     {
-        // Enable
-       // holdSpacebarImage.gameObject.SetActive(true);
         spacebarText.gameObject.SetActive(true);
-
-        // Fade in
-       // yield return StartCoroutine(FadeImage(holdSpacebarImage, 0f, 1f, 1f));
+        
         yield return StartCoroutine(FadeTMP(spacebarText, 0f, 1f, 1f));
 
         
         yield return new WaitForSeconds(2f);
 
-        // Fade out
-       // yield return StartCoroutine(FadeImage(holdSpacebarImage, 1f, 0f, 1f));
         yield return StartCoroutine(FadeTMP(spacebarText, 1f, 0f, 1f));
 
-        // Disable
-      //  holdSpacebarImage.gameObject.SetActive(false);
         spacebarText.gameObject.SetActive(false);
     }
     
@@ -253,14 +244,12 @@ public class CutsceneManager : MonoBehaviour
     {
         while (true)
         {
-            // SKIP if player HOLDS space
             if (Input.GetKey(skipKey))
             {
                 EndCutscene();
                 yield break;
             }
 
-            // Advance dialogue on ANY key or mouse click
             if (Input.anyKeyDown || Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
                 break;
 

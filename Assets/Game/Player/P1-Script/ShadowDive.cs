@@ -1,8 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-//using Microsoft.Unity.VisualStudio.Editor;
-//using NUnit.Framework.Internal.Filters;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
@@ -18,7 +17,7 @@ public class ShadowDive : MonoBehaviour
     private static readonly int ShadowDiveTrigger = Animator.StringToHash("shadowDive"); 
     private static readonly int ExitShadowTrigger = Animator.StringToHash("exitShadow"); 
    
-    [Header("State")] private bool isInShadow = true; // replace with trigger logic
+    [Header("State")] private bool isInShadow = true; // replace this with trigger logic
     private bool isShadowForm = false; 
     private bool wasHoldingE = false; 
     private bool ignoreNextExit = false;
@@ -37,13 +36,13 @@ public class ShadowDive : MonoBehaviour
     }
     
     [Header("Settings")] 
-    [SerializeField] private Collider2D lightCollider; // The raycasting if player is in the light
+    [SerializeField] private Collider2D lightCollider; 
 
     [SerializeField] private Collider2D playerCollider;
     
     [Header("Lights")] 
-    [SerializeField] private float lightDetectionThreshold = 0.1f; // sensitivity light detect
-    [SerializeField] private string lightTag = "LightSource"; // Light2D Tag private
+    [SerializeField] private float lightDetectionThreshold = 0.1f; 
+    [SerializeField] private string lightTag = "LightSource"; 
     List<Light2D> detectedLights = new List<Light2D>();
 
     [Header("Layers")]
@@ -72,12 +71,11 @@ public class ShadowDive : MonoBehaviour
     
     private void Start() { 
         
-        animator = GetComponent<Animator>(); // Cache all Light2D sources with the given tag
+        animator = GetComponent<Animator>(); 
        
         normalLayer = LayerMask.NameToLayer(normalLayerName);
         shadowLayer = LayerMask.NameToLayer(shadowLayerName);
-//        Debug.Log("Normal Layer: " + normalLayer);     
- //       Debug.Log("Shadow Layer: " + shadowLayer);
+
         GameObject[] lightObjects = GameObject.FindGameObjectsWithTag(lightTag);
         foreach (GameObject lightObj in lightObjects)
         {
@@ -94,12 +92,9 @@ public class ShadowDive : MonoBehaviour
         
         bool isInLight = IsInLightRange();
 
-       // Debug.Log($"[STATE] InLight: {isInLight} | ShadowForm: {isShadowForm} | KeyHeld: {isHoldingE}");
-
-        // Exit if currently in shadow dive and in light range
+       
         if (isShadowForm && isInLight)
         {
-          //  Debug.Log("[LIGHT] Player entered light while in Shadow Form");
             PushPlayerBackFromLight();
             ExitShadowForm();
            
@@ -115,9 +110,8 @@ public class ShadowDive : MonoBehaviour
         SetLayerRecursively(gameObject, shadowLayer);
         playerCollider.enabled = false;
         
-    //    Debug.Log("[STATE] Entering Shadow Form"); 
         isShadowForm = true; ignoreNextExit = true; 
-        animator.ResetTrigger(ExitShadowTrigger); // Extra safe
+        animator.ResetTrigger(ExitShadowTrigger); 
         animator.SetTrigger(ShadowDiveTrigger); 
         // Player -> PlayerShadow 
         StartCoroutine(EnableExitDetection(0.1f)); }
@@ -130,8 +124,6 @@ public class ShadowDive : MonoBehaviour
         EndDive();
         SetLayerRecursively(gameObject, normalLayer);
         playerCollider.enabled = true;
-        
-      //  Debug.Log("[STATE] Exiting Shadow Form"); 
         isShadowForm = false; 
         animator.SetTrigger(ExitShadowTrigger); 
         // Shadow Layer -> Player 
@@ -164,7 +156,6 @@ public class ShadowDive : MonoBehaviour
     } 
     
     // Call this after spawning a new light
-
     public void RefreshLightList()
     {
         detectedLights.Clear(); 
@@ -200,7 +191,7 @@ public class ShadowDive : MonoBehaviour
                 rb.AddForce(pushDir * 15f, ForceMode2D.Impulse);
             } 
             else { transform.position += (Vector3)(pushDir * 0.1f); }
-            Debug.Log("[LIGHT] Pushed player away from light!"); }
+        }
     } 
    
     // Change Child Layers
@@ -220,19 +211,14 @@ public class ShadowDive : MonoBehaviour
 
         if (isShadowForm)
         {
-            Debug.Log("[TOGGLE] Toggling OFF shadow form");
-
-            ExitShadowForm();
+           ExitShadowForm();
         }
         else
         {
             if (isInLight)
             {
-                Debug.Log("[BLOCKED] Cannot enter shadow form in light.");
                 return;
             }
-
-            Debug.Log("[TOGGLE] Toggling ON shadow form");
             EnterShadowForm();
         }
     }

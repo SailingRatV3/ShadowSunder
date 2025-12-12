@@ -4,7 +4,6 @@ using UnityEngine;
 using DG.Tweening;
 public class UIManager : MonoBehaviour
 {
-  //  [SerializeField] private GameObject reloadMenu;
     [SerializeField] private RectTransform reloadPanelRect;
     [SerializeField] float topPosY, bottomPosY;
     [SerializeField] float topPosX, bottomPosX;
@@ -42,6 +41,12 @@ public class UIManager : MonoBehaviour
     {
         StopAllCoroutines();  
         StartCoroutine(MovePanelSmoothly(originalPosition));
+    }
+    
+    public void removeBossPanel()
+    {
+        StopAllCoroutines();  
+        bossPanelRect.gameObject.SetActive(false);
     }
 
     private IEnumerator MovePanelSmoothly(Vector3 target)
